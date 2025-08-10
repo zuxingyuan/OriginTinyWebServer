@@ -814,9 +814,9 @@ bool http_conn::process_write(HTTP_CODE ret)
         // --- 静态文件 ---
         else if (m_file_stat.st_size != 0 && m_file_address != nullptr)
         {
-            add_content_type(get_file_content_type(m_real_file)); // 动态设置Content-Type
+            // add_content_type(get_file_content_type(m_real_file)); // 动态设置Content-Type
             add_headers(m_file_stat.st_size);
-            add_blank_line();
+            // add_blank_line();
 
             m_iv[0].iov_base = m_write_buf;
             m_iv[0].iov_len = m_write_idx;
