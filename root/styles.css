@@ -1,0 +1,192 @@
+/* styles.css */
+
+/* Basic Reset & Global Styles */
+* {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* Modern, clean font stack */
+    background-color: #2c3e50; /* Deep blue-grey background */
+    color: #ecf0f1; /* Light text color for contrast */
+    line-height: 1.6;
+    min-height: 100vh; /* Ensures body takes at least full viewport height */
+    display: flex; /* Use flexbox for overall page layout */
+    flex-direction: column; /* Arrange header, main, footer vertically */
+}
+
+/* Header Styling */
+header {
+    background-color: #34495e; /* Slightly darker shade for the header */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+}
+
+header h1 {
+    color: #1abc9c; /* Vibrant accent color for the title */
+    font-size: 2.8em;
+    margin-bottom: 5px;
+    letter-spacing: 1px; /* Slightly spread letters for elegance */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Main Content Area */
+main {
+    flex-grow: 1; /* Allows main content to fill available vertical space */
+    width: 90%;
+    max-width: 1200px; /* Max width for larger screens */
+    margin: 30px auto; /* Center the main content with vertical margin */
+    padding: 30px;
+    background-color: #34495e; /* Background for the main container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Stronger shadow for the main container */
+    display: flex; /* Use flexbox for sections within main */
+    flex-wrap: wrap; /* Allow sections to wrap onto new lines on smaller screens */
+    gap: 30px; /* Space between flex items (sections) */
+}
+
+/* Section General Styling */
+section {
+    background-color: #2c3e50; /* Darker background for individual sections */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15); /* Inner shadow for subtle depth */
+    flex: 1; /* Allow sections to grow and shrink */
+    min-width: 300px; /* Minimum width for sections to avoid squishing */
+    display: flex;
+    flex-direction: column;
+}
+
+section h2 {
+    color: #1abc9c; /* Accent color for section titles */
+    font-size: 2em;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #1abc9c; /* Underline for titles */
+    padding-bottom: 10px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* Metrics Section Specifics */
+#metrics {
+    flex: 2; /* Allow metrics section to take more space than logs if available */
+    gap: 18px; /* Space between metric items */
+}
+
+.metric-item {
+    background-color: #3d5568; /* Slightly lighter background for each metric */
+    padding: 18px 25px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between; /* Aligns label to left, value to right */
+    align-items: center;
+    font-size: 1.15em;
+    border-left: 6px solid #1abc9c; /* Bold accent strip on the left */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth hover effects */
+}
+
+.metric-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+    cursor: pointer;
+}
+
+.metric-item span {
+    color: #ecf0f1; /* Value color */
+    font-weight: bold;
+    font-size: 1.3em; /* Make values stand out more */
+    text-shadow: 0 0 5px rgba(26, 188, 156, 0.5); /* Subtle glow on values */
+}
+
+/* Logs Section Specifics */
+#logs {
+    flex: 3; /* Allow logs section to take even more space */
+}
+
+#log-messages {
+    background-color: #1a252f; /* Even darker, almost black, for the log area */
+    color: #a0a8b4; /* Muted grey for log text (easier on eyes) */
+    padding: 20px;
+    border-radius: 6px;
+    font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace; /* Monospaced font for code/logs */
+    font-size: 0.95em;
+    white-space: pre-wrap; /* Preserve whitespace and wrap long lines */
+    overflow-y: auto; /* Enable vertical scrolling for log content */
+    height: 400px; /* Fixed height for the log area */
+    border: 1px solid #1abc9c; /* Border matching accent color */
+    line-height: 1.4;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #34495e;
+    color: #95a5a6; /* Muted grey for footer text */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    margin-top: 40px; /* Space above footer */
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3); /* Shadow on top of footer */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    main {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        padding: 20px;
+    }
+
+    section {
+        width: 100%; /* Sections take full width */
+        margin-bottom: 20px; /* Add space between stacked sections */
+    }
+
+    #metrics, #logs {
+        min-width: unset; /* Remove min-width constraint */
+        flex: unset; /* Remove flex grow/shrink properties */
+    }
+
+    #logs {
+        order: 1; /* Display logs section first on smaller screens */
+    }
+    #metrics {
+        order: 2; /* Display metrics section second */
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .metric-item {
+        flex-direction: column; /* Stack label and value vertically */
+        align-items: flex-start;
+        gap: 8px; /* Space between stacked items */
+        padding: 15px 20px;
+    }
+
+    .metric-item span {
+        font-size: 1.2em; /* Adjust value font size */
+    }
+
+    #log-messages {
+        height: 300px; /* Reduce log height on very small screens */
+        padding: 15px;
+        font-size: 0.85em;
+    }
+
+    main {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    section h2 {
+        font-size: 1.6em;
+        margin-bottom: 15px;
+    }
+}

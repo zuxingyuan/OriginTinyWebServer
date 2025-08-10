@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Server Monitor</title>
+    <!-- 链接外部 CSS 文件 -->
+    <link rel="stylesheet" href="./styles.css"> 
+    <!-- 链接外部 JavaScript 文件，defer 确保 DOM 加载后再执行 -->
+    <script src="./monitor.js" defer></script> 
+</head>
+<body>
+    <header>
+        <h1>服务器监控面板</h1>
+    </header>
+    <main>
+        <section id="metrics">
+            <h2>性能指标</h2>
+            <!-- 为每个动态数据项添加唯一的 ID -->
+            <div class="metric-item">CPU Usage: <span id="cpu-value">Loading...</span></div>
+            <div class="metric-item">Memory Usage: <span id="memory-value">Loading...</span></div>
+            <div class="metric-item">Total Requests: <span id="request-value">Loading...</span></div>
+            <div class="metric-item">Uptime: <span id="uptime-value">Loading...</span></div>
+            <div class="metric-item">Active Connections: <span id="connections-value">Loading...</span></div>
+            <!-- 如果你的C++实现了，可以添加线程池队列大小 -->
+            <!-- <div class="metric-item">Thread Pool Queue Size: <span id="thread-queue-value">Loading...</span></div> -->
+        </section>
+        <section id="logs">
+            <h2>服务器日志</h2>
+            <div id="log-messages">Loading logs...</div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ZXY Web Server Monitor - 动态版</p>
+    </footer>
+</body>
+</html>

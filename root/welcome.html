@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ZXY 的 WebServer - 选择</title> <!-- 更新标题以反映其功能 -->
+    <style>
+        /* 通用样式，与之前登录页和欢迎页保持一致 */
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f7f6;
+            /* 与登录页背景保持一致 */
+        }
+
+        /* 容器样式 */
+        .container {
+            background-color: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 2.2em;
+            color: #2c3e50;
+            margin-bottom: 35px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* 按钮表单样式 */
+        .button-form {
+            margin-bottom: 20px;
+            /* 每个按钮表单下方留出间距 */
+            text-align: center;
+            /* 确保按钮在div中居中 */
+        }
+
+        .button-form button {
+            background-color: #007bff;
+            /* 蓝色按钮，与之前设计语言一致 */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            width: 100%;
+            /* 按钮宽度100% */
+            max-width: 250px;
+            /* 限制按钮最大宽度 */
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-form button:hover {
+            background-color: #0056b3;
+            /* 悬停时深蓝色 */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .button-form button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 为监控按钮定义一个不同的颜色，使其更突出或表示不同类型的功能 */
+        .monitor-button button {
+            background-color: #28a745;
+            /* 绿色按钮，常用于“状态”、“查看”等 */
+        }
+
+        .monitor-button button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>是时候做出选择了</h1>
+
+        <form action="/5" method="post" class="button-form">
+            <button type="submit">查看图片 (xxx.jpg)</button>
+        </form>
+        <form action="/6" method="post" class="button-form">
+            <button type="submit">观看视频 (xxx.avi)</button>
+        </form>
+        <form action="/7" method="post" class="button-form">
+            <button type="submit">关注我</button>
+        </form>
+        <form action="/monitor.html" method="post" class="button-form">
+            <button type="submit">服务器监控</button>
+        </form>
+    </div>
+</body>
+
+</html>
