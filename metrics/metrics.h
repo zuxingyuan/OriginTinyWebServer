@@ -5,8 +5,10 @@
 #include <atomic>
 #include <chrono>
 #include "../lock/locker.h"
+#include "json/json.h"
+#include <unordered_set>
 #include <vector>
-
+#include <thread>
 class ServerMetrics
 {
 public:
@@ -37,9 +39,18 @@ public:
     // 将所有指标生成JSON格式字符串
     std::string to_json() const;
 
+    // 拓展IP地址管理
+    void addConnectedIP(const std::string &ip);
+    void removeConnectedIP(const std::string &ip);
+    void getAllConnectedIPs(std::unordered_set<std::string> &connected_ips);
+
 public:
     // 以下需要锁保护，因为它们可能由多个线程更新或读取
     mutable locker metrics_mutex_;
+
+    // 拓展功能
+    std::unordered_set<std::string> m_connected_ips; // 用于存储所有连接的 IP 地址
+    locker m_connected_ips_mutex;                    // 互斥锁保护连接的 IP 地址集合
 
 private:
     ServerMetrics(); // 私有构造函数，实现单例模式

@@ -21,8 +21,13 @@ ServerMetrics::ServerMetrics()
       last_total_cpu_time_(0),                       // Initialize CPU tracking variables
       last_idle_cpu_time_(0)
 {
-    // 可以在这里初始化或启动一些监控任务，例如定时更新系统指标的线程
-    // 为了简化，我们暂时通过 to_json() 内部模拟更新，或手动调用 update_cpu_memory
+    // 启动后台线程，每秒刷新一次 CPU 和内存使用率
+    std::thread([this]() {
+        while (true) {
+            refresh_system_metrics();
+            std::this_thread::sleep_for(std::chrono::seconds(1));
+        }
+    }).detach();
 }
 
 void ServerMetrics::increment_requests()
@@ -192,20 +197,60 @@ int ServerMetrics::get_active_connections() const
 
 std::string ServerMetrics::to_json() const
 {
-    // Note: It's important to understand that if to_json() is called without
-    // a prior call to refresh_system_metrics(), the CPU and Memory values
-    // will be stale. The lock here protects consistency of current values,
-    // but doesn't trigger an update.
-    metrics_mutex_.lock();
-    std::ostringstream oss;
-    oss << "{";
-    oss << "\"cpu_usage_percent\":" << std::fixed << std::setprecision(2) << current_cpu_usage_ << ",";
-    oss << "\"memory_usage_mb\":" << current_memory_usage_mb_ << ",";
-    oss << "\"total_requests\":" << total_requests_.load() << ",";
-    oss << "\"uptime_seconds\":" << get_uptime_seconds() << ",";
-    oss << "\"active_connections\":" << active_connections_.load();
-    oss << "}";
-    std::string result = oss.str();
-    metrics_mutex_.unlock();
-    return result;
+    // 创建一个 JSON 对象
+    Json::Value root;
+
+    // 设置基本字段
+    root["cpu_usage_percent"] = current_cpu_usage_;
+    root["memory_usage_mb"] = Json::Value(static_cast<Json::Value::UInt64>(current_memory_usage_mb_));
+    root["total_requests"] = Json::Value(static_cast<Json::Value::UInt64>(total_requests_.load()));
+    root["uptime_seconds"] = Json::Value(static_cast<Json::Value::UInt64>(get_uptime_seconds()));
+    root["active_connections"] = Json::Value(static_cast<Json::Value::UInt64>(active_connections_.load()));
+    root["start_time"] = std::chrono::system_clock::to_time_t(start_time_);
+
+    // 创建一个 JSON 数组来存储连接的 IP 地址
+    Json::Value connected_ips(Json::arrayValue);
+    for (const auto &ip : m_connected_ips)
+    {
+        connected_ips.append(ip);
+    }
+
+    // 添加 IP 地址数组到 JSON 对象中
+    root["connected_ips"] = connected_ips;
+
+    // 将 JSON 对象转为字符串
+    Json::StreamWriterBuilder writer;
+    std::string json_str = Json::writeString(writer, root);
+
+    return json_str;
+}
+
+void ServerMetrics::addConnectedIP(const std::string &ip)
+{
+    m_connected_ips_mutex.lock();
+    auto result = m_connected_ips.insert(ip);
+    if (result.second)
+    {
+        increment_active_connections(); // 只有在新IP被添加时才增加活跃连接数
+    }
+    m_connected_ips.insert(ip);
+    m_connected_ips_mutex.unlock();
+}
+
+void ServerMetrics::removeConnectedIP(const std::string &ip)
+{
+    m_connected_ips_mutex.lock();
+    auto result = m_connected_ips.erase(ip);
+    if (result>0)
+    {
+        decrement_active_connections(); // 只有在IP存在并被移除时才减少活跃连接数
+    }
+    m_connected_ips_mutex.unlock();
+}
+
+void ServerMetrics::getAllConnectedIPs(std::unordered_set<std::string> &connected_ips)
+{
+    m_connected_ips_mutex.lock();
+    connected_ips = m_connected_ips;
+    m_connected_ips_mutex.unlock();
 }

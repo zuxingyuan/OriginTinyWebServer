@@ -464,21 +464,6 @@ http_conn::HTTP_CODE http_conn::do_request()
         strncpy(m_real_file, full_path.c_str(), FILENAME_LEN - 1);
         m_real_file[FILENAME_LEN - 1] = '\0';
     }
-    // 处理静态CSS文件：/styles.css
-    else if (strcmp(m_url, "/styles.css") == 0)
-    {
-        std::string full_path = base_path + "/styles.css";
-        strncpy(m_real_file, full_path.c_str(), FILENAME_LEN - 1);
-        m_real_file[FILENAME_LEN - 1] = '\0';
-    }
-    // 处理静态JS文件：/monitor.js
-    else if (strcmp(m_url, "/monitor.js") == 0)
-    {
-        std::string full_path = base_path + "/monitor.js";
-        strncpy(m_real_file, full_path.c_str(), FILENAME_LEN - 1);
-        m_real_file[FILENAME_LEN - 1] = '\0';
-    }
-
     // 处理cgi
     // 实现登陆和注册校验
     if (cgi == 1 && (*(p + 1) == '2' || *(p + 1) == '3'))

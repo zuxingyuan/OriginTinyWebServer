@@ -1,37 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Server Monitor</title>
-    <!-- 链接外部 CSS 文件 -->
-    <link rel="stylesheet" href="./styles.css"> 
-    <!-- 链接外部 JavaScript 文件，defer 确保 DOM 加载后再执行 -->
-    <script src="./monitor.js" defer></script> 
+    <title>服务器监控面板</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .label {
+            font-size: 14px;
+            color: #666;
+        }
+        .value {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .ip-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .ip-list li {
+            background-color: #f0f2f5;
+            margin: 4px 0;
+            padding: 8px;
+            border-radius: 6px;
+            font-size: 14px;
+            word-break: break-all;
+        }
+        .uptime {
+            font-family: monospace;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>服务器监控面板</h1>
-    </header>
-    <main>
-        <section id="metrics">
-            <h2>性能指标</h2>
-            <!-- 为每个动态数据项添加唯一的 ID -->
-            <div class="metric-item">CPU Usage: <span id="cpu-value">Loading...</span></div>
-            <div class="metric-item">Memory Usage: <span id="memory-value">Loading...</span></div>
-            <div class="metric-item">Total Requests: <span id="request-value">Loading...</span></div>
-            <div class="metric-item">Uptime: <span id="uptime-value">Loading...</span></div>
-            <div class="metric-item">Active Connections: <span id="connections-value">Loading...</span></div>
-            <!-- 如果你的C++实现了，可以添加线程池队列大小 -->
-            <!-- <div class="metric-item">Thread Pool Queue Size: <span id="thread-queue-value">Loading...</span></div> -->
-        </section>
-        <section id="logs">
-            <h2>服务器日志</h2>
-            <div id="log-messages">Loading logs...</div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 ZXY Web Server Monitor - 动态版</p>
-    </footer>
+
+    <h1>服务器监控面板</h1>
+
+    <div class="dashboard">
+        <div class="card">
+            <div class="label">CPU 使用率</div>
+            <div class="value" id="cpu">-- %</div>
+        </div>
+        <div class="card">
+            <div class="label">内存占用</div>
+            <div class="value" id="memory">-- MB</div>
+        </div>
+        <div class="card">
+            <div class="label">总请求数</div>
+            <div class="value" id="requests">--</div>
+        </div>
+        <div class="card">
+            <div class="label">活跃连接数</div>
+            <div class="value" id="connections">--</div>
+        </div>
+        <div class="card">
+            <div class="label">启动时间</div>
+            <div class="value" id="start-time">--</div>
+        </div>
+        <div class="card">
+            <div class="label">运行时长</div>
+            <div class="value uptime" id="uptime">--</div>
+        </div>
+        <div class="card">
+            <div class="label">连接的 IP</div>
+            <ul class="ip-list" id="ip-list">
+                <li>--</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function formatTimestamp(unixSeconds) {
+            const date = new Date(unixSeconds * 1000);
+            return date.toLocaleString();
+        }
+
+        function formatUptime(seconds) {
+            const d = Math.floor(seconds / (3600 * 24));
+            const h = Math.floor((seconds % (3600 * 24)) / 3600);
+            const m = Math.floor((seconds % 3600) / 60);
+            const s = seconds % 60;
+            return `${d}天 ${h}小时 ${m}分钟 ${s}秒`;
+        }
+
+        async function fetchData() {
+            try {
+                const res = await fetch('/monitor');
+                if (!res.ok) throw new Error('网络请求失败');
+                const data = await res.json();
+
+                document.getElementById('cpu').textContent = data.cpu_usage_percent + " %";
+                document.getElementById('memory').textContent = data.memory_usage_mb + " MB";
+                document.getElementById('requests').textContent = data.total_requests;
+                document.getElementById('connections').textContent = data.active_connections;
+                document.getElementById('start-time').textContent = formatTimestamp(data.start_time);
+                document.getElementById('uptime').textContent = formatUptime(data.uptime_seconds);
+
+                const ipList = document.getElementById('ip-list');
+                ipList.innerHTML = '';
+                if (data.connected_ips && data.connected_ips.length > 0) {
+                    data.connected_ips.forEach(ip => {
+                        const li = document.createElement('li');
+                        li.textContent = ip;
+                        ipList.appendChild(li);
+                    });
+                } else {
+                    const li = document.createElement('li');
+                    li.textContent = '无连接';
+                    ipList.appendChild(li);
+                }
+
+            } catch (err) {
+                console.error(err);
+            }
+        }
+
+        fetchData();
+        setInterval(fetchData, 2000);
+    </script>
+
 </body>
 </html>

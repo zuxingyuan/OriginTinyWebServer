@@ -242,14 +242,19 @@ bool WebServer::dealclientdata()
             LOG_ERROR("%s:errno is:%d", "accept error", errno);
             return false;
         }
+        // 获取客户端 IP 地址
+        char client_ip[INET_ADDRSTRLEN];
+        inet_ntop(AF_INET, &client_address.sin_addr, client_ip, sizeof(client_ip));
+
+        // 将 IP 地址加入到集合中
+        ServerMetrics::get_instance().addConnectedIP(std::string(client_ip));
+
         if (http_conn::m_user_count >= MAX_FD)
         {
             utils.show_error(connfd, "Internal server busy");
             LOG_ERROR("%s", "Internal server busy");
             return false;
         }
-        // 增加连接数
-        ServerMetrics::get_instance().increment_active_connections();
         timer(connfd, client_address);
     }
 
@@ -263,6 +268,11 @@ bool WebServer::dealclientdata()
                 LOG_ERROR("%s:errno is:%d", "accept error", errno);
                 break;
             }
+            // 获取客户端 IP 地址
+            char client_ip[INET_ADDRSTRLEN];
+            inet_ntop(AF_INET, &client_address.sin_addr, client_ip, sizeof(client_ip));
+            // 将 IP 地址加入到集合中
+            ServerMetrics::get_instance().addConnectedIP(std::string(client_ip));
             if (http_conn::m_user_count >= MAX_FD)
             {
                 utils.show_error(connfd, "Internal server busy");
@@ -440,7 +450,10 @@ void WebServer::eventLoop()
                 // 服务器端关闭连接，移除对应的定时器
                 util_timer *timer = users_timer[sockfd].timer;
                 deal_timer(timer, sockfd);
-                ServerMetrics::get_instance().decrement_active_connections();
+                // 从集合中移除断开连接的 IP 地址
+                char client_ip[INET_ADDRSTRLEN];
+                inet_ntop(AF_INET, &users[sockfd].get_address()->sin_addr, client_ip, sizeof(client_ip));
+                ServerMetrics::get_instance().removeConnectedIP(std::string(client_ip));
                 LOG_INFO("client(%s) disconnected", inet_ntoa(users[sockfd].get_address()->sin_addr));
             }
             // 处理信号
