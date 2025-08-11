@@ -1,0 +1,3081 @@
+2025-08-11 16:17:57.122082 [info]: deal with the client(113.140.3.79)
+2025-08-11 16:17:57.122180 [info]: adjust timer once
+2025-08-11 16:17:57.122240 [info]: GET / HTTP/1.1
+2025-08-11 16:17:57.122263 [info]: Host: 123.207.158.143:9006
+2025-08-11 16:17:57.122270 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 16:17:57.122276 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 16:17:57.122282 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 16:17:57.122288 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 16:17:57.122295 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 16:17:57.122301 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 16:17:57.122307 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 16:17:57.122313 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 16:17:57.122318 [info]: Cache-Control: max-age=0
+2025-08-11 16:17:57.122324 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 16:17:57.122330 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 16:17:57.122336 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 16:17:57.122340 [info]: 
+2025-08-11 16:17:57.123078 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 16:17:57.123092 [info]: request:HTTP/1.1 200 OK
+Content-Length:4163
+
+2025-08-11 16:17:57.123097 [info]: request:HTTP/1.1 200 OK
+Content-Length:4163
+Connection:close
+
+2025-08-11 16:17:57.123101 [info]: request:HTTP/1.1 200 OK
+Content-Length:4163
+Connection:close
+
+
+2025-08-11 16:17:57.124165 [info]: close fd 16
+2025-08-11 16:17:57.558355 [info]: deal with the client(124.114.148.40)
+2025-08-11 16:17:57.558415 [info]: adjust timer once
+2025-08-11 16:17:57.558472 [info]: GET /your_background_image.jpg HTTP/1.1
+2025-08-11 16:17:57.558486 [info]: Host: 123.207.158.143:9006
+2025-08-11 16:17:57.558492 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 16:17:57.558497 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 16:17:57.558502 [info]: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2025-08-11 16:17:57.558507 [info]: oop!unknow header: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2025-08-11 16:17:57.558511 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 16:17:57.558516 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 16:17:57.558520 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 16:17:57.558524 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 16:17:57.558529 [info]: Referer: http://123.207.158.143:9006/
+2025-08-11 16:17:57.558533 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/
+2025-08-11 16:17:57.558538 [info]: 
+2025-08-11 16:18:00.300214 [info]: timer tick
+2025-08-11 16:41:18.136822 [info]: deal with the client(124.114.148.40)
+2025-08-11 16:41:18.137508 [info]: adjust timer once
+2025-08-11 16:41:18.137592 [info]: GET / HTTP/1.1
+2025-08-11 16:41:18.137615 [info]: Host: 123.207.158.143:9006
+2025-08-11 16:41:18.137624 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 16:41:18.137633 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 16:41:18.137640 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 16:41:18.137656 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 16:41:18.137664 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 16:41:18.137672 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 16:41:18.137679 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 16:41:18.137686 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 16:41:18.137693 [info]: Cache-Control: max-age=0
+2025-08-11 16:41:18.137700 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 16:41:18.137706 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 16:41:18.137711 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 16:41:18.137718 [info]: 
+2025-08-11 16:41:18.137778 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 16:41:18.137785 [info]: request:HTTP/1.1 200 OK
+Content-Length:4163
+
+2025-08-11 16:41:18.137790 [info]: request:HTTP/1.1 200 OK
+Content-Length:4163
+Connection:close
+
+2025-08-11 16:41:18.137796 [info]: request:HTTP/1.1 200 OK
+Content-Length:4163
+Connection:close
+
+
+2025-08-11 16:41:18.138479 [info]: close fd 16
+2025-08-11 16:41:18.554887 [info]: deal with the client(124.114.148.40)
+2025-08-11 16:41:18.554950 [info]: adjust timer once
+2025-08-11 16:41:18.555029 [info]: GET /your_background_image.jpg HTTP/1.1
+2025-08-11 16:41:18.555043 [info]: Host: 123.207.158.143:9006
+2025-08-11 16:41:18.555052 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 16:41:18.555060 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 16:41:18.555069 [info]: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2025-08-11 16:41:18.555076 [info]: oop!unknow header: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2025-08-11 16:41:18.555084 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 16:41:18.555091 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 16:41:18.555099 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 16:41:18.555107 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 16:41:18.555114 [info]: Referer: http://123.207.158.143:9006/
+2025-08-11 16:41:18.555142 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/
+2025-08-11 16:41:18.555150 [info]: 
+2025-08-11 16:41:20.187971 [info]: timer tick
+2025-08-11 16:41:25.188031 [info]: timer tick
+2025-08-11 16:41:30.188095 [info]: timer tick
+2025-08-11 16:41:35.188163 [info]: timer tick
+2025-08-11 16:41:40.188209 [info]: timer tick
+2025-08-11 16:41:45.188277 [info]: timer tick
+2025-08-11 16:41:50.188323 [info]: timer tick
+2025-08-11 16:41:55.188381 [info]: timer tick
+2025-08-11 16:42:00.188425 [info]: timer tick
+2025-08-11 16:42:05.188478 [info]: timer tick
+2025-08-11 16:42:10.188529 [info]: timer tick
+2025-08-11 16:42:15.188580 [info]: timer tick
+2025-08-11 16:42:20.188633 [info]: timer tick
+2025-08-11 16:42:25.188689 [info]: timer tick
+2025-08-11 16:42:30.188738 [info]: timer tick
+2025-08-11 16:42:35.188805 [info]: timer tick
+2025-08-11 16:42:40.188855 [info]: timer tick
+2025-08-11 16:42:45.188903 [info]: timer tick
+2025-08-11 16:42:50.188949 [info]: timer tick
+2025-08-11 16:42:55.189005 [info]: timer tick
+2025-08-11 16:43:00.189049 [info]: timer tick
+2025-08-11 16:43:05.189108 [info]: timer tick
+2025-08-11 16:43:10.189162 [info]: timer tick
+2025-08-11 16:43:15.189206 [info]: timer tick
+2025-08-11 16:43:20.189248 [info]: timer tick
+2025-08-11 16:43:25.189296 [info]: timer tick
+2025-08-11 16:43:30.189334 [info]: timer tick
+2025-08-11 16:43:35.189374 [info]: timer tick
+2025-08-11 16:43:40.189430 [info]: timer tick
+2025-08-11 16:43:45.189496 [info]: timer tick
+2025-08-11 16:43:50.189557 [info]: timer tick
+2025-08-11 16:43:55.189610 [info]: timer tick
+2025-08-11 16:44:00.189669 [info]: timer tick
+2025-08-11 16:44:05.189742 [info]: timer tick
+2025-08-11 16:44:10.189800 [info]: timer tick
+2025-08-11 16:44:15.189848 [info]: timer tick
+2025-08-11 16:44:20.189896 [info]: timer tick
+2025-08-11 16:44:25.189946 [info]: timer tick
+2025-08-11 16:44:30.189997 [info]: timer tick
+2025-08-11 16:44:35.190044 [info]: timer tick
+2025-08-11 16:44:40.190095 [info]: timer tick
+2025-08-11 16:44:45.190157 [info]: timer tick
+2025-08-11 16:44:50.190219 [info]: timer tick
+2025-08-11 16:44:55.190266 [info]: timer tick
+2025-08-11 16:45:00.190307 [info]: timer tick
+2025-08-11 16:45:05.190361 [info]: timer tick
+2025-08-11 16:45:10.190403 [info]: timer tick
+2025-08-11 16:45:15.190448 [info]: timer tick
+2025-08-11 16:45:20.190495 [info]: timer tick
+2025-08-11 16:45:25.190535 [info]: timer tick
+2025-08-11 16:45:30.190595 [info]: timer tick
+2025-08-11 16:45:35.190644 [info]: timer tick
+2025-08-11 16:45:40.190705 [info]: timer tick
+2025-08-11 16:45:45.190756 [info]: timer tick
+2025-08-11 16:45:50.190802 [info]: timer tick
+2025-08-11 16:45:55.190851 [info]: timer tick
+2025-08-11 16:46:00.190912 [info]: timer tick
+2025-08-11 16:46:05.190981 [info]: timer tick
+2025-08-11 16:46:10.191022 [info]: timer tick
+2025-08-11 16:46:15.191077 [info]: timer tick
+2025-08-11 16:46:20.191136 [info]: timer tick
+2025-08-11 16:46:25.191193 [info]: timer tick
+2025-08-11 16:46:30.191240 [info]: timer tick
+2025-08-11 16:46:35.191286 [info]: timer tick
+2025-08-11 16:46:40.191340 [info]: timer tick
+2025-08-11 16:46:45.191388 [info]: timer tick
+2025-08-11 16:46:50.191453 [info]: timer tick
+2025-08-11 16:46:55.191502 [info]: timer tick
+2025-08-11 16:47:00.191561 [info]: timer tick
+2025-08-11 16:47:05.191604 [info]: timer tick
+2025-08-11 16:47:10.191659 [info]: timer tick
+2025-08-11 16:47:15.191703 [info]: timer tick
+2025-08-11 16:47:20.191760 [info]: timer tick
+2025-08-11 16:47:25.191825 [info]: timer tick
+2025-08-11 16:47:30.191876 [info]: timer tick
+2025-08-11 16:47:35.191928 [info]: timer tick
+2025-08-11 16:47:40.191978 [info]: timer tick
+2025-08-11 16:47:45.192030 [info]: timer tick
+2025-08-11 16:47:50.192075 [info]: timer tick
+2025-08-11 16:47:55.192156 [info]: timer tick
+2025-08-11 16:48:00.192214 [info]: timer tick
+2025-08-11 16:48:05.192264 [info]: timer tick
+2025-08-11 16:48:10.192314 [info]: timer tick
+2025-08-11 16:48:15.192362 [info]: timer tick
+2025-08-11 16:48:20.192418 [info]: timer tick
+2025-08-11 16:48:25.192473 [info]: timer tick
+2025-08-11 16:48:30.192558 [info]: timer tick
+2025-08-11 16:48:35.192606 [info]: timer tick
+2025-08-11 16:48:40.192653 [info]: timer tick
+2025-08-11 16:48:45.192707 [info]: timer tick
+2025-08-11 16:48:50.192773 [info]: timer tick
+2025-08-11 16:48:55.192839 [info]: timer tick
+2025-08-11 16:49:00.192890 [info]: timer tick
+2025-08-11 16:49:05.192937 [info]: timer tick
+2025-08-11 16:49:10.192995 [info]: timer tick
+2025-08-11 16:49:15.193039 [info]: timer tick
+2025-08-11 16:49:20.193077 [info]: timer tick
+2025-08-11 16:49:25.193135 [info]: timer tick
+2025-08-11 16:49:30.193197 [info]: timer tick
+2025-08-11 16:49:35.193244 [info]: timer tick
+2025-08-11 16:49:40.193286 [info]: timer tick
+2025-08-11 16:49:45.193327 [info]: timer tick
+2025-08-11 16:49:50.193365 [info]: timer tick
+2025-08-11 16:49:55.193431 [info]: timer tick
+2025-08-11 16:50:00.193480 [info]: timer tick
+2025-08-11 16:50:05.193538 [info]: timer tick
+2025-08-11 16:50:10.193593 [info]: timer tick
+2025-08-11 16:50:15.193645 [info]: timer tick
+2025-08-11 16:50:20.193701 [info]: timer tick
+2025-08-11 16:50:25.193777 [info]: timer tick
+2025-08-11 16:50:30.193832 [info]: timer tick
+2025-08-11 16:50:35.193878 [info]: timer tick
+2025-08-11 16:50:40.193934 [info]: timer tick
+2025-08-11 16:50:45.193985 [info]: timer tick
+2025-08-11 16:50:50.194043 [info]: timer tick
+2025-08-11 16:50:55.194089 [info]: timer tick
+2025-08-11 16:51:00.194148 [info]: timer tick
+2025-08-11 16:51:05.194200 [info]: timer tick
+2025-08-11 16:51:10.194247 [info]: timer tick
+2025-08-11 16:51:15.194285 [info]: timer tick
+2025-08-11 16:51:20.194334 [info]: timer tick
+2025-08-11 16:51:25.194383 [info]: timer tick
+2025-08-11 16:51:30.194427 [info]: timer tick
+2025-08-11 16:51:35.194496 [info]: timer tick
+2025-08-11 16:51:40.194548 [info]: timer tick
+2025-08-11 16:51:45.194603 [info]: timer tick
+2025-08-11 16:51:50.194651 [info]: timer tick
+2025-08-11 16:51:55.194701 [info]: timer tick
+2025-08-11 16:52:00.194746 [info]: timer tick
+2025-08-11 16:52:05.194800 [info]: timer tick
+2025-08-11 16:52:10.194840 [info]: timer tick
+2025-08-11 16:52:15.194889 [info]: timer tick
+2025-08-11 16:52:20.194947 [info]: timer tick
+2025-08-11 16:52:25.195018 [info]: timer tick
+2025-08-11 16:52:30.195063 [info]: timer tick
+2025-08-11 16:52:35.195137 [info]: timer tick
+2025-08-11 16:52:40.195169 [info]: timer tick
+2025-08-11 16:52:45.195218 [info]: timer tick
+2025-08-11 16:52:50.195277 [info]: timer tick
+2025-08-11 16:52:55.195324 [info]: timer tick
+2025-08-11 16:53:00.195370 [info]: timer tick
+2025-08-11 16:53:05.195414 [info]: timer tick
+2025-08-11 16:53:10.195458 [info]: timer tick
+2025-08-11 16:53:15.195501 [info]: timer tick
+2025-08-11 16:53:20.195549 [info]: timer tick
+2025-08-11 16:53:25.195624 [info]: timer tick
+2025-08-11 16:53:30.195699 [info]: timer tick
+2025-08-11 16:53:35.195762 [info]: timer tick
+2025-08-11 16:53:40.195811 [info]: timer tick
+2025-08-11 16:53:45.195862 [info]: timer tick
+2025-08-11 16:53:50.195915 [info]: timer tick
+2025-08-11 16:53:55.195978 [info]: timer tick
+2025-08-11 16:54:00.196025 [info]: timer tick
+2025-08-11 16:54:05.196090 [info]: timer tick
+2025-08-11 16:54:10.196151 [info]: timer tick
+2025-08-11 16:54:15.196218 [info]: timer tick
+2025-08-11 16:54:20.196270 [info]: timer tick
+2025-08-11 16:54:25.196332 [info]: timer tick
+2025-08-11 16:54:30.196372 [info]: timer tick
+2025-08-11 16:54:35.196432 [info]: timer tick
+2025-08-11 16:54:40.196472 [info]: timer tick
+2025-08-11 16:54:45.196527 [info]: timer tick
+2025-08-11 16:54:50.196569 [info]: timer tick
+2025-08-11 16:54:55.196618 [info]: timer tick
+2025-08-11 16:55:00.196662 [info]: timer tick
+2025-08-11 16:55:05.196724 [info]: timer tick
+2025-08-11 16:55:10.196783 [info]: timer tick
+2025-08-11 16:55:15.196829 [info]: timer tick
+2025-08-11 16:55:20.196885 [info]: timer tick
+2025-08-11 16:55:25.196940 [info]: timer tick
+2025-08-11 16:55:30.196984 [info]: timer tick
+2025-08-11 16:55:35.197037 [info]: timer tick
+2025-08-11 16:55:40.197095 [info]: timer tick
+2025-08-11 16:55:45.197149 [info]: timer tick
+2025-08-11 16:55:50.197192 [info]: timer tick
+2025-08-11 16:55:55.197235 [info]: timer tick
+2025-08-11 16:56:00.197280 [info]: timer tick
+2025-08-11 16:56:05.197318 [info]: timer tick
+2025-08-11 16:56:10.197371 [info]: timer tick
+2025-08-11 16:56:15.197422 [info]: timer tick
+2025-08-11 16:56:20.197479 [info]: timer tick
+2025-08-11 16:56:25.197533 [info]: timer tick
+2025-08-11 16:56:30.197577 [info]: timer tick
+2025-08-11 16:56:35.197622 [info]: timer tick
+2025-08-11 16:56:40.197672 [info]: timer tick
+2025-08-11 16:56:45.197720 [info]: timer tick
+2025-08-11 16:56:50.197775 [info]: timer tick
+2025-08-11 16:56:55.197817 [info]: timer tick
+2025-08-11 16:57:00.197879 [info]: timer tick
+2025-08-11 16:57:05.197930 [info]: timer tick
+2025-08-11 16:57:10.197999 [info]: timer tick
+2025-08-11 16:57:15.198060 [info]: timer tick
+2025-08-11 16:57:20.198108 [info]: timer tick
+2025-08-11 16:57:25.198161 [info]: timer tick
+2025-08-11 16:57:30.198213 [info]: timer tick
+2025-08-11 16:57:35.198267 [info]: timer tick
+2025-08-11 16:57:40.198906 [info]: timer tick
+2025-08-11 16:57:45.198947 [info]: timer tick
+2025-08-11 16:57:50.200527 [info]: timer tick
+2025-08-11 16:57:55.200570 [info]: timer tick
+2025-08-11 16:58:00.200628 [info]: timer tick
+2025-08-11 16:58:05.200672 [info]: timer tick
+2025-08-11 16:58:10.200738 [info]: timer tick
+2025-08-11 16:58:15.200792 [info]: timer tick
+2025-08-11 16:58:20.200855 [info]: timer tick
+2025-08-11 16:58:25.200905 [info]: timer tick
+2025-08-11 16:58:30.200966 [info]: timer tick
+2025-08-11 16:58:35.201021 [info]: timer tick
+2025-08-11 16:58:40.201090 [info]: timer tick
+2025-08-11 16:58:45.201156 [info]: timer tick
+2025-08-11 16:58:50.201205 [info]: timer tick
+2025-08-11 16:58:55.201248 [info]: timer tick
+2025-08-11 16:59:00.201297 [info]: timer tick
+2025-08-11 16:59:05.201344 [info]: timer tick
+2025-08-11 16:59:10.201414 [info]: timer tick
+2025-08-11 16:59:15.201463 [info]: timer tick
+2025-08-11 16:59:20.201517 [info]: timer tick
+2025-08-11 16:59:25.202228 [info]: timer tick
+2025-08-11 16:59:30.202263 [info]: timer tick
+2025-08-11 16:59:35.202307 [info]: timer tick
+2025-08-11 16:59:40.202346 [info]: timer tick
+2025-08-11 16:59:45.202395 [info]: timer tick
+2025-08-11 16:59:50.202448 [info]: timer tick
+2025-08-11 16:59:55.202498 [info]: timer tick
+2025-08-11 17:00:00.202544 [info]: timer tick
+2025-08-11 17:00:05.202611 [info]: timer tick
+2025-08-11 17:00:10.204173 [info]: timer tick
+2025-08-11 17:00:15.204221 [info]: timer tick
+2025-08-11 17:00:20.204271 [info]: timer tick
+2025-08-11 17:00:25.204349 [info]: timer tick
+2025-08-11 17:00:30.204395 [info]: timer tick
+2025-08-11 17:00:35.204453 [info]: timer tick
+2025-08-11 17:00:40.204509 [info]: timer tick
+2025-08-11 17:00:45.204550 [info]: timer tick
+2025-08-11 17:00:50.204607 [info]: timer tick
+2025-08-11 17:00:55.204652 [info]: timer tick
+2025-08-11 17:01:00.204708 [info]: timer tick
+2025-08-11 17:01:05.204761 [info]: timer tick
+2025-08-11 17:01:10.204810 [info]: timer tick
+2025-08-11 17:01:15.204867 [info]: timer tick
+2025-08-11 17:01:20.204917 [info]: timer tick
+2025-08-11 17:01:25.204966 [info]: timer tick
+2025-08-11 17:01:30.205042 [info]: timer tick
+2025-08-11 17:01:35.205082 [info]: timer tick
+2025-08-11 17:01:40.205175 [info]: timer tick
+2025-08-11 17:01:45.205222 [info]: timer tick
+2025-08-11 17:01:50.205280 [info]: timer tick
+2025-08-11 17:01:55.205333 [info]: timer tick
+2025-08-11 17:02:00.205401 [info]: timer tick
+2025-08-11 17:02:05.205471 [info]: timer tick
+2025-08-11 17:02:10.205526 [info]: timer tick
+2025-08-11 17:02:15.205590 [info]: timer tick
+2025-08-11 17:02:20.205631 [info]: timer tick
+2025-08-11 17:02:25.205677 [info]: timer tick
+2025-08-11 17:02:30.205741 [info]: timer tick
+2025-08-11 17:02:35.205798 [info]: timer tick
+2025-08-11 17:02:40.205855 [info]: timer tick
+2025-08-11 17:02:45.205908 [info]: timer tick
+2025-08-11 17:02:50.205966 [info]: timer tick
+2025-08-11 17:02:55.206013 [info]: timer tick
+2025-08-11 17:03:00.206059 [info]: timer tick
+2025-08-11 17:03:05.206133 [info]: timer tick
+2025-08-11 17:03:10.206171 [info]: timer tick
+2025-08-11 17:03:15.206212 [info]: timer tick
+2025-08-11 17:03:20.206268 [info]: timer tick
+2025-08-11 17:03:25.206315 [info]: timer tick
+2025-08-11 17:03:30.206372 [info]: timer tick
+2025-08-11 17:03:35.206426 [info]: timer tick
+2025-08-11 17:03:40.206499 [info]: timer tick
+2025-08-11 17:03:45.206561 [info]: timer tick
+2025-08-11 17:03:50.206641 [info]: timer tick
+2025-08-11 17:03:55.206710 [info]: timer tick
+2025-08-11 17:04:00.206753 [info]: timer tick
+2025-08-11 17:04:05.206818 [info]: timer tick
+2025-08-11 17:04:10.206874 [info]: timer tick
+2025-08-11 17:04:15.206947 [info]: timer tick
+2025-08-11 17:04:20.207008 [info]: timer tick
+2025-08-11 17:04:25.207055 [info]: timer tick
+2025-08-11 17:04:30.207101 [info]: timer tick
+2025-08-11 17:04:35.207152 [info]: timer tick
+2025-08-11 17:04:40.207197 [info]: timer tick
+2025-08-11 17:05:10.132410 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:05:10.133015 [info]: adjust timer once
+2025-08-11 17:05:10.133095 [info]: GET / HTTP/1.1
+2025-08-11 17:05:10.133117 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:05:10.133144 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:05:10.133153 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:05:10.133161 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:05:10.133169 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:05:10.133184 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:05:10.133192 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:05:10.133200 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:05:10.133207 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:05:10.133214 [info]: Cache-Control: max-age=0
+2025-08-11 17:05:10.133221 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:05:10.133229 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:05:10.133237 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:05:10.133244 [info]: 
+2025-08-11 17:05:10.133293 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 17:05:10.133302 [info]: request:HTTP/1.1 200 OK
+Content-Length:4163
+
+2025-08-11 17:05:10.133309 [info]: request:HTTP/1.1 200 OK
+Content-Length:4163
+Connection:close
+
+2025-08-11 17:05:10.133318 [info]: request:HTTP/1.1 200 OK
+Content-Length:4163
+Connection:close
+
+
+2025-08-11 17:05:10.134038 [info]: close fd 16
+2025-08-11 17:05:10.567670 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:05:10.567744 [info]: adjust timer once
+2025-08-11 17:05:10.567805 [info]: GET /your_background_image.jpg HTTP/1.1
+2025-08-11 17:05:10.567822 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:05:10.567832 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:05:10.567839 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:05:10.567847 [info]: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2025-08-11 17:05:10.567855 [info]: oop!unknow header: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2025-08-11 17:05:10.567863 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:05:10.567870 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:05:10.567877 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:05:10.567885 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:05:10.567892 [info]: Referer: http://123.207.158.143:9006/
+2025-08-11 17:05:10.567900 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/
+2025-08-11 17:05:10.567908 [info]: 
+2025-08-11 17:05:12.318542 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:05:12.318606 [info]: adjust timer once
+2025-08-11 17:05:12.318674 [info]: POST /1 HTTP/1.1
+2025-08-11 17:05:12.318686 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:05:12.318703 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:05:12.318711 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:05:12.318719 [info]: Content-Length: 0
+2025-08-11 17:05:12.318733 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:05:12.318740 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:05:12.318748 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:05:12.318756 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:05:12.318763 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:05:12.318771 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:05:12.318778 [info]: Cache-Control: max-age=0
+2025-08-11 17:05:12.318785 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:05:12.318792 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:05:12.318800 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:05:12.318817 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:05:12.318824 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:05:12.318831 [info]: Referer: http://123.207.158.143:9006/
+2025-08-11 17:05:12.318839 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/
+2025-08-11 17:05:12.318846 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:05:12.318854 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:05:12.318861 [info]: 
+2025-08-11 17:05:12.318898 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 17:05:12.318907 [info]: request:HTTP/1.1 200 OK
+Content-Length:725
+
+2025-08-11 17:05:12.318914 [info]: request:HTTP/1.1 200 OK
+Content-Length:725
+Connection:close
+
+2025-08-11 17:05:12.318922 [info]: request:HTTP/1.1 200 OK
+Content-Length:725
+Connection:close
+
+
+2025-08-11 17:05:12.319738 [info]: close fd 16
+2025-08-11 17:05:13.793341 [info]: timer tick
+2025-08-11 17:05:17.793686 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:05:17.793761 [info]: adjust timer once
+2025-08-11 17:05:17.793837 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 17:05:17.793850 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:05:17.793859 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:05:17.793868 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:05:17.793876 [info]: Content-Length: 24
+2025-08-11 17:05:17.793884 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:05:17.793892 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:05:17.793899 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:05:17.793907 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:05:17.793915 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:05:17.793922 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:05:17.793929 [info]: Cache-Control: max-age=0
+2025-08-11 17:05:17.793937 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:05:17.793944 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:05:17.793951 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:05:17.793959 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:05:17.793967 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:05:17.793974 [info]: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:05:17.793981 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:05:17.793989 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:05:17.793996 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:05:17.794003 [info]: 
+2025-08-11 17:05:17.794011 [info]: user=ddd&password=123456
+2025-08-11 17:05:17.794037 [info]: User ddd logged in from 124.114.148.40:15306
+2025-08-11 17:05:18.793415 [info]: timer tick
+2025-08-11 17:05:23.793460 [info]: timer tick
+2025-08-11 17:05:28.793507 [info]: timer tick
+2025-08-11 17:05:33.793562 [info]: timer tick
+2025-08-11 17:05:35.681399 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:05:35.681484 [info]: adjust timer once
+2025-08-11 17:05:35.681548 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 17:05:35.681561 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:05:35.681571 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:05:35.681579 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:05:35.681587 [info]: Content-Length: 24
+2025-08-11 17:05:35.681605 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:05:35.681613 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:05:35.681621 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:05:35.681628 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:05:35.681636 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:05:35.681643 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:05:35.681650 [info]: Cache-Control: max-age=0
+2025-08-11 17:05:35.681658 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:05:35.681665 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:05:35.681673 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:05:35.681681 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:05:35.681698 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:05:35.681706 [info]: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:05:35.681714 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:05:35.681721 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:05:35.681728 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:05:35.681735 [info]: 
+2025-08-11 17:05:35.681743 [info]: 
+2025-08-11 17:05:35.681763 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:05:35.681774 [info]: adjust timer once
+2025-08-11 17:05:35.681827 [info]: user=ddd&password=123456
+2025-08-11 17:05:35.681845 [info]: User ddd logged in from 124.114.148.40:3218
+2025-08-11 17:05:38.793622 [info]: timer tick
+2025-08-11 17:05:41.981858 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:05:41.981911 [info]: adjust timer once
+2025-08-11 17:05:41.981973 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 17:05:41.981986 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:05:41.981995 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:05:41.982002 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:05:41.982010 [info]: Content-Length: 24
+2025-08-11 17:05:41.982018 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:05:41.982025 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:05:41.982033 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:05:41.982041 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:05:41.982048 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:05:41.982055 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:05:41.982062 [info]: Cache-Control: max-age=0
+2025-08-11 17:05:41.982070 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:05:41.982077 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:05:41.982085 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:05:41.982092 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:05:41.982100 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:05:41.982107 [info]: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:05:41.982114 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:05:41.982135 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:05:41.982148 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:05:41.982156 [info]: 
+2025-08-11 17:05:41.982163 [info]: 
+2025-08-11 17:05:41.982186 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:05:41.982207 [info]: adjust timer once
+2025-08-11 17:05:41.982249 [info]: user=ddd&password=123456
+2025-08-11 17:05:41.982268 [info]: User ddd logged in from 124.114.148.40:15311
+2025-08-11 17:05:43.793677 [info]: timer tick
+2025-08-11 17:05:48.793733 [info]: timer tick
+2025-08-11 17:05:51.028263 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:05:51.028325 [info]: adjust timer once
+2025-08-11 17:05:51.028345 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 17:05:51.028355 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:05:51.028363 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:05:51.028370 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:05:51.028378 [info]: Content-Length: 24
+2025-08-11 17:05:51.028386 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:05:51.028394 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:05:51.028401 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:05:51.028408 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:05:51.028415 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:05:51.028422 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:05:51.028430 [info]: Cache-Control: max-age=0
+2025-08-11 17:05:51.028437 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:05:51.028444 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:05:51.028452 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:05:51.028459 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:05:51.028466 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:05:51.028473 [info]: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:05:51.028480 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:05:51.028487 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:05:51.028494 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:05:51.028502 [info]: 
+2025-08-11 17:05:51.028509 [info]: 
+2025-08-11 17:05:51.028529 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:05:51.028540 [info]: adjust timer once
+2025-08-11 17:05:51.028558 [info]: user=ddd&password=123456
+2025-08-11 17:05:51.028576 [info]: User ddd logged in from 124.114.148.40:3224
+2025-08-11 17:05:53.793790 [info]: timer tick
+2025-08-11 17:05:56.924753 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:05:56.924829 [info]: adjust timer once
+2025-08-11 17:05:56.924849 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 17:05:56.924861 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:05:56.924869 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:05:56.924877 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:05:56.924884 [info]: Content-Length: 24
+2025-08-11 17:05:56.924893 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:05:56.924901 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:05:56.924908 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:05:56.924915 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:05:56.924922 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:05:56.924942 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:05:56.924949 [info]: Cache-Control: max-age=0
+2025-08-11 17:05:56.924956 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:05:56.924964 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:05:56.924971 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:05:56.924978 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:05:56.924985 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:05:56.924993 [info]: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:05:56.925000 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:05:56.925007 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:05:56.925015 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:05:56.925022 [info]: 
+2025-08-11 17:05:56.925030 [info]: 
+2025-08-11 17:05:56.925049 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:05:56.925061 [info]: adjust timer once
+2025-08-11 17:05:56.925074 [info]: user=ddd&password=123456
+2025-08-11 17:05:56.925094 [info]: User ddd logged in from 124.114.148.40:9797
+2025-08-11 17:05:58.793848 [info]: timer tick
+2025-08-11 17:06:03.793897 [info]: timer tick
+2025-08-11 17:06:08.793940 [info]: timer tick
+2025-08-11 17:06:13.793995 [info]: timer tick
+2025-08-11 17:06:18.794033 [info]: timer tick
+2025-08-11 17:06:23.794104 [info]: timer tick
+2025-08-11 17:06:28.794155 [info]: timer tick
+2025-08-11 17:06:33.794204 [info]: timer tick
+2025-08-11 17:06:38.794268 [info]: timer tick
+2025-08-11 17:06:43.794310 [info]: timer tick
+2025-08-11 17:06:48.794358 [info]: timer tick
+2025-08-11 17:07:18.900169 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:07:18.900624 [info]: adjust timer once
+2025-08-11 17:07:18.900710 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 17:07:18.900733 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:07:18.900742 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:07:18.900750 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:07:18.900758 [info]: Content-Length: 24
+2025-08-11 17:07:18.900768 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:07:18.900775 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:07:18.900783 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:07:18.900790 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:07:18.900798 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:07:18.900805 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:07:18.900813 [info]: Cache-Control: max-age=0
+2025-08-11 17:07:18.900820 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:07:18.900827 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:07:18.900835 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:07:18.900843 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:07:18.900850 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:07:18.900858 [info]: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:07:18.900865 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:07:18.900872 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:07:18.900880 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:07:18.900887 [info]: 
+2025-08-11 17:07:18.900895 [info]: 
+2025-08-11 17:07:18.900915 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:07:18.900928 [info]: adjust timer once
+2025-08-11 17:07:18.900972 [info]: user=ddd&password=123456
+2025-08-11 17:07:18.901011 [info]: User ddd logged in from 124.114.148.40:30396
+2025-08-11 17:07:20.009814 [info]: timer tick
+2025-08-11 17:07:25.009867 [info]: timer tick
+2025-08-11 17:07:26.007916 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:07:26.007972 [info]: adjust timer once
+2025-08-11 17:07:26.008039 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 17:07:26.008052 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:07:26.008060 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:07:26.008068 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:07:26.008076 [info]: Content-Length: 24
+2025-08-11 17:07:26.008085 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:07:26.008092 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:07:26.008100 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:07:26.008107 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:07:26.008115 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:07:26.008136 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:07:26.008144 [info]: Cache-Control: max-age=0
+2025-08-11 17:07:26.008151 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:07:26.008159 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:07:26.008166 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:07:26.008174 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:07:26.008181 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:07:26.008189 [info]: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:07:26.008196 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:07:26.008204 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:07:26.008211 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:07:26.008218 [info]: 
+2025-08-11 17:07:26.008226 [info]: user=ddd&password=123456
+2025-08-11 17:07:26.008242 [info]: User ddd logged in from 124.114.148.40:27286
+2025-08-11 17:07:30.009941 [info]: timer tick
+2025-08-11 17:07:35.010001 [info]: timer tick
+2025-08-11 17:07:40.010077 [info]: timer tick
+2025-08-11 17:07:45.010164 [info]: timer tick
+2025-08-11 17:07:50.010232 [info]: timer tick
+2025-08-11 17:07:55.010275 [info]: timer tick
+2025-08-11 17:08:00.010330 [info]: timer tick
+2025-08-11 17:08:05.010376 [info]: timer tick
+2025-08-11 17:08:10.011172 [info]: timer tick
+2025-08-11 17:08:15.011231 [info]: timer tick
+2025-08-11 17:08:20.011275 [info]: timer tick
+2025-08-11 17:08:25.011326 [info]: timer tick
+2025-08-11 17:08:30.011381 [info]: timer tick
+2025-08-11 17:08:35.011434 [info]: timer tick
+2025-08-11 17:08:40.011508 [info]: timer tick
+2025-08-11 17:09:02.081011 [info]: deal with the client(61.150.43.42)
+2025-08-11 17:09:02.081458 [info]: adjust timer once
+2025-08-11 17:09:02.081546 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 17:09:02.081569 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:09:02.081578 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:09:02.081586 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:09:02.081594 [info]: Content-Length: 24
+2025-08-11 17:09:02.081609 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:09:02.081617 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:09:02.081631 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:09:02.081639 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:09:02.081646 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:09:02.081653 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:09:02.081661 [info]: Cache-Control: max-age=0
+2025-08-11 17:09:02.081669 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:09:02.081676 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:09:02.081690 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:09:02.081699 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:09:02.081706 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:09:02.081714 [info]: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:09:02.081721 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:09:02.081729 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:09:02.081736 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:09:02.081744 [info]: 
+2025-08-11 17:09:02.081756 [info]: 
+2025-08-11 17:09:02.081779 [info]: deal with the client(61.150.43.42)
+2025-08-11 17:09:02.081791 [info]: adjust timer once
+2025-08-11 17:09:02.081838 [info]: user=ddd&password=123456
+2025-08-11 17:09:02.081872 [info]: User ddd logged in from 61.150.43.42:9654
+2025-08-11 17:09:04.636039 [info]: timer tick
+2025-08-11 17:09:09.636078 [info]: timer tick
+2025-08-11 17:09:14.636320 [info]: timer tick
+2025-08-11 17:09:39.792162 [info]: deal with the client(113.140.3.79)
+2025-08-11 17:09:39.792848 [info]: adjust timer once
+2025-08-11 17:09:39.793065 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 17:09:39.793097 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:09:39.793117 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:09:39.793137 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:09:39.793145 [info]: Content-Length: 24
+2025-08-11 17:09:39.793157 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:09:39.793164 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:09:39.793173 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:09:39.793180 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:09:39.793188 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:09:39.793196 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:09:39.793204 [info]: Cache-Control: max-age=0
+2025-08-11 17:09:39.793211 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:09:39.793219 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:09:39.793227 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:09:39.793234 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:09:39.793242 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:09:39.793250 [info]: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:09:39.793257 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:09:39.793265 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:09:39.793272 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:09:39.793280 [info]: 
+2025-08-11 17:09:39.793288 [info]: 
+2025-08-11 17:09:39.794971 [info]: deal with the client(113.140.3.79)
+2025-08-11 17:09:39.795014 [info]: adjust timer once
+2025-08-11 17:09:39.795080 [info]: user=ddd&password=123456
+2025-08-11 17:09:39.795140 [info]: User ddd logged in from 113.140.3.79:11968
+2025-08-11 17:09:39.795183 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 17:09:39.795192 [info]: request:HTTP/1.1 200 OK
+Content-Length:3561
+
+2025-08-11 17:09:39.795200 [info]: request:HTTP/1.1 200 OK
+Content-Length:3561
+Connection:close
+
+2025-08-11 17:09:39.795208 [info]: request:HTTP/1.1 200 OK
+Content-Length:3561
+Connection:close
+
+
+2025-08-11 17:09:39.795737 [info]: close fd 16
+2025-08-11 17:09:41.689084 [info]: timer tick
+2025-08-11 17:09:46.689149 [info]: timer tick
+2025-08-11 17:09:51.689197 [info]: timer tick
+2025-08-11 17:09:56.689244 [info]: timer tick
+2025-08-11 17:10:01.689298 [info]: timer tick
+2025-08-11 17:10:06.689336 [info]: timer tick
+2025-08-11 17:10:11.689418 [info]: timer tick
+2025-08-11 17:10:16.689488 [info]: timer tick
+2025-08-11 17:10:21.689562 [info]: timer tick
+2025-08-11 17:10:26.689601 [info]: timer tick
+2025-08-11 17:10:31.689649 [info]: timer tick
+2025-08-11 17:10:36.689706 [info]: timer tick
+2025-08-11 17:10:41.689755 [info]: timer tick
+2025-08-11 17:10:46.689810 [info]: timer tick
+2025-08-11 17:10:51.689859 [info]: timer tick
+2025-08-11 17:10:56.689909 [info]: timer tick
+2025-08-11 17:11:01.689959 [info]: timer tick
+2025-08-11 17:11:06.690015 [info]: timer tick
+2025-08-11 17:11:11.690068 [info]: timer tick
+2025-08-11 17:11:16.690130 [info]: timer tick
+2025-08-11 17:12:31.382547 [info]: timer tick
+2025-08-11 17:12:36.382590 [info]: timer tick
+2025-08-11 17:12:39.819722 [info]: deal with the client(61.150.43.42)
+2025-08-11 17:12:39.819778 [info]: adjust timer once
+2025-08-11 17:12:39.819849 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 17:12:39.819869 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:12:39.819879 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:12:39.819887 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:12:39.819895 [info]: Content-Length: 24
+2025-08-11 17:12:39.819905 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:12:39.819912 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:12:39.819920 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:12:39.819928 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:12:39.819936 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:12:39.819943 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:12:39.819950 [info]: Cache-Control: max-age=0
+2025-08-11 17:12:39.819957 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:12:39.819965 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:12:39.819972 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:12:39.819980 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:12:39.819988 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:12:39.819995 [info]: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:12:39.820002 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:12:39.820010 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:12:39.820017 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:12:39.820024 [info]: 
+2025-08-11 17:12:39.820032 [info]: user=ddd&password=123456
+2025-08-11 17:12:39.821031 [info]: User ddd logged in from 61.150.43.42:4773
+2025-08-11 17:12:41.382637 [info]: timer tick
+2025-08-11 17:12:46.382675 [info]: timer tick
+2025-08-11 17:12:51.382717 [info]: timer tick
+2025-08-11 17:12:56.382777 [info]: timer tick
+2025-08-11 17:15:17.224005 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:15:17.224590 [info]: adjust timer once
+2025-08-11 17:15:17.224691 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 17:15:17.224715 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:15:17.224724 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:15:17.224732 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:15:17.224740 [info]: Content-Length: 24
+2025-08-11 17:15:17.224749 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:15:17.224757 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:15:17.224764 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:15:17.224772 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:15:17.224779 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:15:17.224787 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:15:17.224794 [info]: Cache-Control: max-age=0
+2025-08-11 17:15:17.224801 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:15:17.224808 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:15:17.224816 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:15:17.224824 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:15:17.224831 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:15:17.224839 [info]: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:15:17.224846 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:15:17.224853 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:15:17.224860 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:15:17.224868 [info]: 
+2025-08-11 17:15:17.224876 [info]: 
+2025-08-11 17:15:17.224897 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:15:17.224908 [info]: adjust timer once
+2025-08-11 17:15:17.224951 [info]: user=ddd&password=123456
+2025-08-11 17:15:17.224984 [info]: User ddd logged in from 124.114.148.40:31238
+2025-08-11 17:15:18.420546 [info]: timer tick
+2025-08-11 17:15:23.420591 [info]: timer tick
+2025-08-11 17:15:28.420657 [info]: timer tick
+2025-08-11 17:15:33.420722 [info]: timer tick
+2025-08-11 17:15:38.420767 [info]: timer tick
+2025-08-11 17:15:43.420834 [info]: timer tick
+2025-08-11 17:15:48.420914 [info]: timer tick
+2025-08-11 17:15:53.420968 [info]: timer tick
+2025-08-11 17:15:58.421013 [info]: timer tick
+2025-08-11 17:16:03.421076 [info]: timer tick
+2025-08-11 17:16:08.421142 [info]: timer tick
+2025-08-11 17:16:13.421198 [info]: timer tick
+2025-08-11 17:16:18.421253 [info]: timer tick
+2025-08-11 17:16:23.421299 [info]: timer tick
+2025-08-11 17:16:28.421350 [info]: timer tick
+2025-08-11 17:16:33.421403 [info]: timer tick
+2025-08-11 17:16:38.421466 [info]: timer tick
+2025-08-11 17:16:43.421514 [info]: timer tick
+2025-08-11 17:16:48.421567 [info]: timer tick
+2025-08-11 17:16:53.421621 [info]: timer tick
+2025-08-11 17:16:58.421706 [info]: timer tick
+2025-08-11 17:17:03.421756 [info]: timer tick
+2025-08-11 17:17:08.421813 [info]: timer tick
+2025-08-11 17:17:13.421861 [info]: timer tick
+2025-08-11 17:17:18.421927 [info]: timer tick
+2025-08-11 17:17:23.421980 [info]: timer tick
+2025-08-11 17:17:28.422024 [info]: timer tick
+2025-08-11 17:17:33.422110 [info]: timer tick
+2025-08-11 17:17:38.422165 [info]: timer tick
+2025-08-11 17:17:43.422240 [info]: timer tick
+2025-08-11 17:17:48.422287 [info]: timer tick
+2025-08-11 17:17:53.422335 [info]: timer tick
+2025-08-11 17:17:58.422383 [info]: timer tick
+2025-08-11 17:18:03.422430 [info]: timer tick
+2025-08-11 17:18:08.422490 [info]: timer tick
+2025-08-11 17:18:13.422539 [info]: timer tick
+2025-08-11 17:18:18.422588 [info]: timer tick
+2025-08-11 17:18:23.422657 [info]: timer tick
+2025-08-11 17:18:28.422711 [info]: timer tick
+2025-08-11 17:18:33.422759 [info]: timer tick
+2025-08-11 17:18:38.422808 [info]: timer tick
+2025-08-11 17:18:43.426442 [info]: timer tick
+2025-08-11 17:19:27.736556 [info]: timer tick
+2025-08-11 17:19:29.613731 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:19:29.613794 [info]: adjust timer once
+2025-08-11 17:19:29.613866 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 17:19:29.613886 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:19:29.613895 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:19:29.613903 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:19:29.613910 [info]: Content-Length: 24
+2025-08-11 17:19:29.613920 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:19:29.613928 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:19:29.613936 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:19:29.613943 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:19:29.613951 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:19:29.613958 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:19:29.613965 [info]: Cache-Control: max-age=0
+2025-08-11 17:19:29.613973 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:19:29.613979 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:19:29.613986 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:19:29.613993 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:19:29.614000 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:19:29.614007 [info]: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:19:29.614015 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/1
+2025-08-11 17:19:29.614023 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:19:29.614030 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:19:29.614037 [info]: 
+2025-08-11 17:19:29.614045 [info]: 
+2025-08-11 17:19:29.614064 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:19:29.614076 [info]: adjust timer once
+2025-08-11 17:19:29.614120 [info]: user=ddd&password=123456
+2025-08-11 17:19:29.614175 [info]: User ddd logged in from 124.114.148.40:27470
+2025-08-11 17:19:32.736598 [info]: timer tick
+2025-08-11 17:19:35.496069 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:19:35.496148 [info]: adjust timer once
+2025-08-11 17:19:35.496229 [info]: POST /1 HTTP/1.1
+2025-08-11 17:19:35.496250 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:19:35.496260 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:19:35.496268 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:19:35.496276 [info]: Content-Length: 0
+2025-08-11 17:19:35.496285 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:19:35.496293 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:19:35.496301 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:19:35.496308 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:19:35.496316 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:19:35.496323 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:19:35.496330 [info]: Cache-Control: max-age=0
+2025-08-11 17:19:35.496348 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:19:35.496356 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:19:35.496364 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:19:35.496371 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:19:35.496378 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:19:35.496386 [info]: Referer: http://123.207.158.143:9006/
+2025-08-11 17:19:35.496394 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/
+2025-08-11 17:19:35.496401 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:19:35.496408 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:19:35.496416 [info]: 
+2025-08-11 17:19:35.497323 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 17:19:35.497351 [info]: request:HTTP/1.1 200 OK
+Content-Length:725
+
+2025-08-11 17:19:35.497359 [info]: request:HTTP/1.1 200 OK
+Content-Length:725
+Connection:close
+
+2025-08-11 17:19:35.497366 [info]: request:HTTP/1.1 200 OK
+Content-Length:725
+Connection:close
+
+
+2025-08-11 17:19:35.498139 [info]: close fd 16
+2025-08-11 17:19:37.736662 [info]: timer tick
+2025-08-11 17:19:42.736720 [info]: timer tick
+2025-08-11 17:19:47.736776 [info]: timer tick
+2025-08-11 17:19:51.613998 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:19:51.614062 [info]: adjust timer once
+2025-08-11 17:19:51.614157 [info]: POST /0 HTTP/1.1
+2025-08-11 17:19:51.614173 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:19:51.614182 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:19:51.614189 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:19:51.614197 [info]: Content-Length: 0
+2025-08-11 17:19:51.614206 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:19:51.614214 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:19:51.614221 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:19:51.614229 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:19:51.614236 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:19:51.614243 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:19:51.614251 [info]: Cache-Control: max-age=0
+2025-08-11 17:19:51.614259 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:19:51.614266 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:19:51.614273 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:19:51.614281 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:19:51.614288 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:19:51.614296 [info]: Referer: http://123.207.158.143:9006/
+2025-08-11 17:19:51.614303 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/
+2025-08-11 17:19:51.614311 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:19:51.614318 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:19:51.614325 [info]: 
+2025-08-11 17:19:51.614367 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 17:19:51.614380 [info]: request:HTTP/1.1 200 OK
+Content-Length:724
+
+2025-08-11 17:19:51.614388 [info]: request:HTTP/1.1 200 OK
+Content-Length:724
+Connection:close
+
+2025-08-11 17:19:51.614396 [info]: request:HTTP/1.1 200 OK
+Content-Length:724
+Connection:close
+
+
+2025-08-11 17:19:51.615442 [info]: close fd 16
+2025-08-11 17:19:52.736827 [info]: timer tick
+2025-08-11 17:19:57.736869 [info]: timer tick
+2025-08-11 17:20:02.736916 [info]: timer tick
+2025-08-11 17:20:02.954768 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:20:02.954817 [info]: adjust timer once
+2025-08-11 17:20:02.954885 [info]: POST /3CGISQL.cgi HTTP/1.1
+2025-08-11 17:20:02.954898 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:20:02.954906 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:20:02.954914 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:20:02.954922 [info]: Content-Length: 23
+2025-08-11 17:20:02.954931 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:20:02.954938 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:20:02.954946 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:20:02.954953 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:20:02.954960 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:20:02.954968 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:20:02.954976 [info]: Cache-Control: max-age=0
+2025-08-11 17:20:02.954983 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:20:02.954991 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:20:02.954998 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:20:02.955005 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:20:02.955013 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:20:02.955021 [info]: Referer: http://123.207.158.143:9006/0
+2025-08-11 17:20:02.955028 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/0
+2025-08-11 17:20:02.955036 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:20:02.955043 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:20:02.955050 [info]: 
+2025-08-11 17:20:02.955079 [info]: 
+2025-08-11 17:20:02.955099 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:20:02.955111 [info]: adjust timer once
+2025-08-11 17:20:02.955206 [info]: user=ddd&password=66666
+2025-08-11 17:20:02.955258 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 17:20:02.955272 [info]: request:HTTP/1.1 200 OK
+Content-Length:786
+
+2025-08-11 17:20:02.955280 [info]: request:HTTP/1.1 200 OK
+Content-Length:786
+Connection:close
+
+2025-08-11 17:20:02.955288 [info]: request:HTTP/1.1 200 OK
+Content-Length:786
+Connection:close
+
+
+2025-08-11 17:20:02.956014 [info]: close fd 16
+2025-08-11 17:20:07.736963 [info]: timer tick
+2025-08-11 17:20:12.737009 [info]: timer tick
+2025-08-11 17:20:17.737053 [info]: timer tick
+2025-08-11 17:20:19.523682 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:20:19.523763 [info]: adjust timer once
+2025-08-11 17:20:19.523835 [info]: POST /3CGISQL.cgi HTTP/1.1
+2025-08-11 17:20:19.523849 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:20:19.523858 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:20:19.523866 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:20:19.523874 [info]: Content-Length: 25
+2025-08-11 17:20:19.523883 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:20:19.523891 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:20:19.523898 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:20:19.523905 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:20:19.523913 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:20:19.523921 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:20:19.523935 [info]: Cache-Control: max-age=0
+2025-08-11 17:20:19.523942 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:20:19.523949 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:20:19.523957 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:20:19.523965 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:20:19.523972 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:20:19.523980 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 17:20:19.523987 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 17:20:19.523994 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:20:19.524001 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:20:19.524009 [info]: 
+2025-08-11 17:20:19.524017 [info]: 
+2025-08-11 17:20:19.524036 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:20:19.524048 [info]: adjust timer once
+2025-08-11 17:20:19.524093 [info]: user=dddxx&password=55555
+2025-08-11 17:20:19.567884 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 17:20:19.567930 [info]: request:HTTP/1.1 200 OK
+Content-Length:725
+
+2025-08-11 17:20:19.567943 [info]: request:HTTP/1.1 200 OK
+Content-Length:725
+Connection:close
+
+2025-08-11 17:20:19.567952 [info]: request:HTTP/1.1 200 OK
+Content-Length:725
+Connection:close
+
+
+2025-08-11 17:20:19.568064 [info]: close fd 16
+2025-08-11 17:20:22.737100 [info]: timer tick
+2025-08-11 17:20:27.737158 [info]: timer tick
+2025-08-11 17:20:32.524114 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:20:32.524204 [info]: adjust timer once
+2025-08-11 17:20:32.524224 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 17:20:32.524236 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:20:32.524245 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:20:32.524253 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:20:32.524260 [info]: Content-Length: 21
+2025-08-11 17:20:32.524269 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:20:32.524276 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:20:32.524282 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:20:32.524290 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:20:32.524298 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:20:32.524305 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:20:32.524312 [info]: Cache-Control: max-age=0
+2025-08-11 17:20:32.524320 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:20:32.524327 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:20:32.524334 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:20:32.524342 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:20:32.524349 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:20:32.524357 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 17:20:32.524364 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 17:20:32.524371 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:20:32.524379 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:20:32.524386 [info]: 
+2025-08-11 17:20:32.524394 [info]: 
+2025-08-11 17:20:32.524685 [info]: deal with the client(124.114.148.40)
+2025-08-11 17:20:32.524720 [info]: adjust timer once
+2025-08-11 17:20:32.524736 [info]: user=ddd&password=123
+2025-08-11 17:20:32.524807 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 17:20:32.524819 [info]: request:HTTP/1.1 200 OK
+Content-Length:821
+
+2025-08-11 17:20:32.524835 [info]: request:HTTP/1.1 200 OK
+Content-Length:821
+Connection:close
+
+2025-08-11 17:20:32.524844 [info]: request:HTTP/1.1 200 OK
+Content-Length:821
+Connection:close
+
+
+2025-08-11 17:20:32.524911 [info]: close fd 16
+2025-08-11 17:20:32.737198 [info]: timer tick
+2025-08-11 17:20:37.737251 [info]: timer tick
+2025-08-11 17:22:45.593815 [info]: deal with the client(61.150.43.42)
+2025-08-11 17:22:45.594288 [info]: adjust timer once
+2025-08-11 17:22:45.594389 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 17:22:45.594421 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:22:45.594431 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:22:45.594439 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:22:45.594447 [info]: Content-Length: 21
+2025-08-11 17:22:45.594457 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:22:45.594465 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:22:45.594473 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:22:45.594480 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:22:45.594487 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:22:45.594494 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:22:45.594502 [info]: Cache-Control: max-age=0
+2025-08-11 17:22:45.594509 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:22:45.594523 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:22:45.594530 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:22:45.594538 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:22:45.594550 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:22:45.594558 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 17:22:45.594565 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 17:22:45.594573 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:22:45.594580 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:22:45.594588 [info]: 
+2025-08-11 17:22:45.594595 [info]: user=ddd&password=123
+2025-08-11 17:22:45.594653 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 17:22:45.594662 [info]: request:HTTP/1.1 200 OK
+Content-Length:821
+
+2025-08-11 17:22:45.594680 [info]: request:HTTP/1.1 200 OK
+Content-Length:821
+Connection:close
+
+2025-08-11 17:22:45.594693 [info]: request:HTTP/1.1 200 OK
+Content-Length:821
+Connection:close
+
+
+2025-08-11 17:22:45.595397 [info]: close fd 16
+2025-08-11 17:22:45.952756 [info]: timer tick
+2025-08-11 17:22:50.517728 [info]: deal with the client(61.150.43.42)
+2025-08-11 17:22:50.517793 [info]: adjust timer once
+2025-08-11 17:22:50.517863 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 17:22:50.517876 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:22:50.517885 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:22:50.517893 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:22:50.517900 [info]: Content-Length: 24
+2025-08-11 17:22:50.517909 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:22:50.517916 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:22:50.517931 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:22:50.517939 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:22:50.517947 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:22:50.517954 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:22:50.517961 [info]: Cache-Control: max-age=0
+2025-08-11 17:22:50.517969 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:22:50.517976 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:22:50.517984 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:22:50.517992 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:22:50.517999 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:22:50.518006 [info]: Referer: http://123.207.158.143:9006/2CGISQL.cgi
+2025-08-11 17:22:50.518012 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/2CGISQL.cgi
+2025-08-11 17:22:50.518019 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:22:50.518026 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:22:50.518033 [info]: 
+2025-08-11 17:22:50.518040 [info]: 
+2025-08-11 17:22:50.518061 [info]: deal with the client(61.150.43.42)
+2025-08-11 17:22:50.518074 [info]: adjust timer once
+2025-08-11 17:22:50.518140 [info]: user=ddd&password=123456
+2025-08-11 17:22:50.518174 [info]: User ddd logged in from 61.150.43.42:35335
+2025-08-11 17:22:50.952807 [info]: timer tick
+2025-08-11 17:22:55.952863 [info]: timer tick
+2025-08-11 17:23:00.952915 [info]: timer tick
+2025-08-11 17:23:00.989154 [info]: deal with the client(61.150.43.42)
+2025-08-11 17:23:00.989212 [info]: adjust timer once
+2025-08-11 17:23:00.989293 [info]: GET //welcome.html?ip=61.150.43.42&port=35335 HTTP/1.1
+2025-08-11 17:23:00.989306 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:23:00.989315 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:23:00.989323 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:23:00.989331 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:23:00.989339 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:23:00.989346 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:23:00.989354 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:23:00.989362 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:23:00.989370 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:23:00.989377 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:23:00.989385 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:23:00.989392 [info]: 
+2025-08-11 17:23:05.953714 [info]: timer tick
+2025-08-11 17:23:08.420186 [info]: deal with the client(61.150.43.42)
+2025-08-11 17:23:08.420512 [info]: adjust timer once
+2025-08-11 17:23:08.420612 [info]: GET /welcome.html?ip=61.150.43.42&port=35335 HTTP/1.1
+2025-08-11 17:23:08.420664 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:23:08.420685 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:23:08.420694 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:23:08.420702 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:23:08.420710 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:23:08.420723 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:23:08.420731 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:23:08.420739 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:23:08.420746 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:23:08.420753 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:23:08.420761 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:23:08.420768 [info]: 
+2025-08-11 17:23:10.953755 [info]: timer tick
+2025-08-11 17:23:11.157748 [info]: deal with the client(61.150.43.42)
+2025-08-11 17:23:11.157814 [info]: adjust timer once
+2025-08-11 17:23:11.157889 [info]: GET /welcome.html?ip=61.150.43.42&port=35335 HTTP/1.1
+2025-08-11 17:23:11.157904 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:23:11.157913 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:23:11.157923 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:23:11.157933 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:23:11.157942 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:23:11.157951 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:23:11.157960 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:23:11.157968 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:23:11.157978 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:23:11.157987 [info]: Cache-Control: max-age=0
+2025-08-11 17:23:11.157996 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:23:11.158004 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:23:11.158013 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:23:11.158022 [info]: 
+2025-08-11 17:23:15.954396 [info]: timer tick
+2025-08-11 17:23:16.635852 [info]: deal with the client(61.150.43.42)
+2025-08-11 17:23:16.635921 [info]: adjust timer once
+2025-08-11 17:23:16.635978 [info]: GET /welcome.html HTTP/1.1
+2025-08-11 17:23:16.635991 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:23:16.635999 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:23:16.636006 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:23:16.636014 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:23:16.636023 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:23:16.636030 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:23:16.636038 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:23:16.636045 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:23:16.636052 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:23:16.636059 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:23:16.636078 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:23:16.636086 [info]: 
+2025-08-11 17:23:16.636134 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 17:23:16.636153 [info]: request:HTTP/1.1 200 OK
+Content-Length:3468
+
+2025-08-11 17:23:16.636161 [info]: request:HTTP/1.1 200 OK
+Content-Length:3468
+Connection:close
+
+2025-08-11 17:23:16.636169 [info]: request:HTTP/1.1 200 OK
+Content-Length:3468
+Connection:close
+
+
+2025-08-11 17:23:16.636913 [info]: close fd 16
+2025-08-11 17:23:20.954463 [info]: timer tick
+2025-08-11 17:23:25.954894 [info]: timer tick
+2025-08-11 17:23:30.954960 [info]: timer tick
+2025-08-11 17:23:35.955070 [info]: timer tick
+2025-08-11 17:23:40.955144 [info]: timer tick
+2025-08-11 17:23:45.955181 [info]: timer tick
+2025-08-11 17:23:50.955226 [info]: timer tick
+2025-08-11 17:23:51.383742 [info]: deal with the client(180.101.244.14)
+2025-08-11 17:23:51.383797 [info]: adjust timer once
+2025-08-11 17:23:51.383871 [info]: GET //welcome.html?ip=61.150.43.42&port=35335 HTTP/1.1
+2025-08-11 17:23:51.383883 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:23:51.383893 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:23:51.383901 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:23:51.383909 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2025-08-11 17:23:51.383917 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2025-08-11 17:23:51.383924 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:23:51.383931 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:23:51.383939 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:23:51.383947 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:23:51.383954 [info]: Cache-Control: max-age=0
+2025-08-11 17:23:51.383961 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:23:51.383969 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:23:51.383976 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:23:51.383983 [info]: 
+2025-08-11 17:23:55.955277 [info]: timer tick
+2025-08-11 17:24:00.955333 [info]: timer tick
+2025-08-11 17:24:05.955372 [info]: timer tick
+2025-08-11 17:24:10.955425 [info]: timer tick
+2025-08-11 17:24:15.955461 [info]: timer tick
+2025-08-11 17:24:20.955515 [info]: timer tick
+2025-08-11 17:24:25.956468 [info]: timer tick
+2025-08-11 17:24:30.956516 [info]: timer tick
+2025-08-11 17:24:35.956551 [info]: timer tick
+2025-08-11 17:24:36.596948 [info]: deal with the client(61.150.43.42)
+2025-08-11 17:24:36.597025 [info]: adjust timer once
+2025-08-11 17:24:36.597046 [info]: GET //welcome.html?ip=61.150.43.42&port=35335 HTTP/1.1
+2025-08-11 17:24:36.597058 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:24:36.597067 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:24:36.597075 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:24:36.597082 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:24:36.597090 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:24:36.597097 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:24:36.597104 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:24:36.597111 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:24:36.597117 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:24:36.597138 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:24:36.597146 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:24:36.597153 [info]: 
+2025-08-11 17:24:40.956596 [info]: timer tick
+2025-08-11 17:24:45.956632 [info]: timer tick
+2025-08-11 17:24:50.956687 [info]: timer tick
+2025-08-11 17:24:55.956776 [info]: timer tick
+2025-08-11 17:25:00.956818 [info]: timer tick
+2025-08-11 17:25:05.956868 [info]: timer tick
+2025-08-11 17:25:10.956915 [info]: timer tick
+2025-08-11 17:25:15.956955 [info]: timer tick
+2025-08-11 17:25:20.957013 [info]: timer tick
+2025-08-11 17:25:25.957072 [info]: timer tick
+2025-08-11 17:25:30.957131 [info]: timer tick
+2025-08-11 17:25:35.957770 [info]: timer tick
+2025-08-11 17:25:40.957822 [info]: timer tick
+2025-08-11 17:25:45.957859 [info]: timer tick
+2025-08-11 17:25:50.957935 [info]: timer tick
+2025-08-11 17:25:55.959317 [info]: timer tick
+2025-08-11 17:26:00.960839 [info]: timer tick
+2025-08-11 17:26:05.967723 [info]: timer tick
+2025-08-11 17:26:10.975241 [info]: timer tick
+2025-08-11 17:26:15.975297 [info]: timer tick
+2025-08-11 17:26:20.975339 [info]: timer tick
+2025-08-11 17:26:25.975425 [info]: timer tick
+2025-08-11 17:26:30.975466 [info]: timer tick
+2025-08-11 17:26:35.977166 [info]: timer tick
+2025-08-11 17:26:40.977210 [info]: timer tick
+2025-08-11 17:26:45.977262 [info]: timer tick
+2025-08-11 17:26:50.977311 [info]: timer tick
+2025-08-11 17:26:55.977347 [info]: timer tick
+2025-08-11 17:27:00.977392 [info]: timer tick
+2025-08-11 17:27:05.977433 [info]: timer tick
+2025-08-11 17:27:10.977495 [info]: timer tick
+2025-08-11 17:27:15.977548 [info]: timer tick
+2025-08-11 17:27:20.977599 [info]: timer tick
+2025-08-11 17:27:25.977639 [info]: timer tick
+2025-08-11 17:27:30.977704 [info]: timer tick
+2025-08-11 17:27:35.977771 [info]: timer tick
+2025-08-11 17:27:40.977814 [info]: timer tick
+2025-08-11 17:27:45.977852 [info]: timer tick
+2025-08-11 17:27:48.146958 [info]: deal with the client(113.140.3.79)
+2025-08-11 17:27:48.147026 [info]: adjust timer once
+2025-08-11 17:27:48.148352 [info]: GET //welcome.html?ip=61.150.43.42&port=35335 HTTP/1.1
+2025-08-11 17:27:48.148398 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:27:48.148410 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:27:48.148417 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:27:48.148425 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:27:48.148433 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:27:48.148440 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:27:48.148448 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:27:48.148455 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:27:48.148462 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:27:48.148470 [info]: Cache-Control: max-age=0
+2025-08-11 17:27:48.148476 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:27:48.148484 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:27:48.148491 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:27:48.148498 [info]: 
+2025-08-11 17:27:50.977904 [info]: timer tick
+2025-08-11 17:27:55.977944 [info]: timer tick
+2025-08-11 17:28:00.977987 [info]: timer tick
+2025-08-11 17:28:05.978033 [info]: timer tick
+2025-08-11 17:28:10.978077 [info]: timer tick
+2025-08-11 17:28:15.979540 [info]: timer tick
+2025-08-11 17:28:20.979583 [info]: timer tick
+2025-08-11 17:28:25.979620 [info]: timer tick
+2025-08-11 17:28:30.979671 [info]: timer tick
+2025-08-11 17:28:35.979721 [info]: timer tick
+2025-08-11 17:28:40.979771 [info]: timer tick
+2025-08-11 17:28:45.979822 [info]: timer tick
+2025-08-11 17:28:50.979872 [info]: timer tick
+2025-08-11 17:28:55.979919 [info]: timer tick
+2025-08-11 17:29:00.979962 [info]: timer tick
+2025-08-11 17:29:05.980006 [info]: timer tick
+2025-08-11 17:29:10.980047 [info]: timer tick
+2025-08-11 17:29:15.980100 [info]: timer tick
+2025-08-11 17:29:20.980159 [info]: timer tick
+2025-08-11 17:29:25.980211 [info]: timer tick
+2025-08-11 17:29:30.980267 [info]: timer tick
+2025-08-11 17:29:35.980312 [info]: timer tick
+2025-08-11 17:29:40.980366 [info]: timer tick
+2025-08-11 17:29:43.157966 [info]: deal with the client(113.140.3.79)
+2025-08-11 17:29:43.158028 [info]: adjust timer once
+2025-08-11 17:29:43.158672 [info]: POST /5 HTTP/1.1
+2025-08-11 17:29:43.158724 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:29:43.158739 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:29:43.158747 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:29:43.158755 [info]: Content-Length: 0
+2025-08-11 17:29:43.158765 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:29:43.158773 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:29:43.158781 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:29:43.158789 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:29:43.158796 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:29:43.158803 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:29:43.158811 [info]: Cache-Control: max-age=0
+2025-08-11 17:29:43.158819 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:29:43.158829 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:29:43.158837 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:29:43.158845 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:29:43.158853 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:29:43.158861 [info]: Referer: http://123.207.158.143:9006/welcome.html
+2025-08-11 17:29:43.158868 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/welcome.html
+2025-08-11 17:29:43.158877 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:29:43.158884 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:29:43.158892 [info]: 
+2025-08-11 17:29:43.158934 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 17:29:43.158944 [info]: request:HTTP/1.1 200 OK
+Content-Length:361
+
+2025-08-11 17:29:43.158951 [info]: request:HTTP/1.1 200 OK
+Content-Length:361
+Connection:close
+
+2025-08-11 17:29:43.158959 [info]: request:HTTP/1.1 200 OK
+Content-Length:361
+Connection:close
+
+
+2025-08-11 17:29:43.159721 [info]: close fd 16
+2025-08-11 17:29:43.269196 [info]: deal with the client(113.140.3.79)
+2025-08-11 17:29:43.269256 [info]: adjust timer once
+2025-08-11 17:29:43.270426 [info]: GET /xxx.jpg HTTP/1.1
+2025-08-11 17:29:43.270461 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:29:43.270473 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:29:43.270480 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:29:43.270487 [info]: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2025-08-11 17:29:43.270495 [info]: oop!unknow header: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2025-08-11 17:29:43.270507 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:29:43.270514 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:29:43.270521 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:29:43.270529 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:29:43.270536 [info]: Referer: http://123.207.158.143:9006/5
+2025-08-11 17:29:43.270543 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/5
+2025-08-11 17:29:43.270551 [info]: 
+2025-08-11 17:29:43.270604 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 17:29:43.270617 [info]: request:HTTP/1.1 200 OK
+Content-Length:6007312
+
+2025-08-11 17:29:43.270630 [info]: request:HTTP/1.1 200 OK
+Content-Length:6007312
+Connection:close
+
+2025-08-11 17:29:43.270638 [info]: request:HTTP/1.1 200 OK
+Content-Length:6007312
+Connection:close
+
+
+2025-08-11 17:29:43.271698 [info]: send data to the client(113.140.3.79)
+2025-08-11 17:29:43.272067 [info]: adjust timer once
+2025-08-11 17:29:43.330432 [info]: send data to the client(113.140.3.79)
+2025-08-11 17:29:43.330484 [info]: adjust timer once
+2025-08-11 17:29:43.358581 [info]: send data to the client(113.140.3.79)
+2025-08-11 17:29:43.358643 [info]: adjust timer once
+2025-08-11 17:29:43.396569 [info]: send data to the client(113.140.3.79)
+2025-08-11 17:29:43.396627 [info]: adjust timer once
+2025-08-11 17:29:43.451087 [info]: send data to the client(113.140.3.79)
+2025-08-11 17:29:43.451168 [info]: adjust timer once
+2025-08-11 17:29:43.908397 [info]: send data to the client(113.140.3.79)
+2025-08-11 17:29:43.908458 [info]: adjust timer once
+2025-08-11 17:29:44.439892 [info]: send data to the client(113.140.3.79)
+2025-08-11 17:29:44.439960 [info]: adjust timer once
+2025-08-11 17:29:45.015989 [info]: send data to the client(113.140.3.79)
+2025-08-11 17:29:45.016048 [info]: adjust timer once
+2025-08-11 17:29:45.534776 [info]: send data to the client(113.140.3.79)
+2025-08-11 17:29:45.534837 [info]: adjust timer once
+2025-08-11 17:29:45.975016 [info]: close fd 16
+2025-08-11 17:29:45.975060 [info]: client(113.140.3.79) disconnected
+2025-08-11 17:29:45.980410 [info]: timer tick
+2025-08-11 17:29:49.820475 [info]: deal with the client(113.140.3.79)
+2025-08-11 17:29:49.820550 [info]: adjust timer once
+2025-08-11 17:29:49.821219 [info]: GET /welcome.html?ip=61.150.43.42&port=35335 HTTP/1.1
+2025-08-11 17:29:49.821265 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:29:49.821280 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:29:49.821289 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:29:49.821297 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:29:49.821305 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:29:49.821313 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:29:49.821321 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:29:49.821329 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:29:49.821336 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:29:49.821344 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:29:49.821351 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:29:49.821358 [info]: 
+2025-08-11 17:29:50.980454 [info]: timer tick
+2025-08-11 17:29:55.980496 [info]: timer tick
+2025-08-11 17:30:00.980546 [info]: timer tick
+2025-08-11 17:30:05.980595 [info]: timer tick
+2025-08-11 17:30:10.980646 [info]: timer tick
+2025-08-11 17:30:15.980718 [info]: timer tick
+2025-08-11 17:30:20.980760 [info]: timer tick
+2025-08-11 17:30:25.980801 [info]: timer tick
+2025-08-11 17:30:30.980857 [info]: timer tick
+2025-08-11 17:30:35.980895 [info]: timer tick
+2025-08-11 17:30:40.980947 [info]: timer tick
+2025-08-11 17:30:45.981003 [info]: timer tick
+2025-08-11 17:30:50.981054 [info]: timer tick
+2025-08-11 17:30:55.981100 [info]: timer tick
+2025-08-11 17:31:00.981158 [info]: timer tick
+2025-08-11 17:31:05.981208 [info]: timer tick
+2025-08-11 17:31:10.981259 [info]: timer tick
+2025-08-11 17:31:15.981400 [info]: timer tick
+2025-08-11 17:31:20.981445 [info]: timer tick
+2025-08-11 17:31:25.981484 [info]: timer tick
+2025-08-11 17:31:30.981540 [info]: timer tick
+2025-08-11 17:31:35.981587 [info]: timer tick
+2025-08-11 17:31:40.981640 [info]: timer tick
+2025-08-11 17:31:45.981678 [info]: timer tick
+2025-08-11 17:31:50.981740 [info]: timer tick
+2025-08-11 17:31:55.981782 [info]: timer tick
+2025-08-11 17:32:00.981837 [info]: timer tick
+2025-08-11 17:32:05.981883 [info]: timer tick
+2025-08-11 17:32:10.981935 [info]: timer tick
+2025-08-11 17:32:15.981974 [info]: timer tick
+2025-08-11 17:32:20.982018 [info]: timer tick
+2025-08-11 17:32:24.501006 [info]: deal with the client(220.196.160.101)
+2025-08-11 17:32:24.501074 [info]: adjust timer once
+2025-08-11 17:32:24.502514 [info]: GET /welcome.html?ip=61.150.43.42&port=35335 HTTP/1.1
+2025-08-11 17:32:24.502552 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:32:24.502564 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:32:24.502571 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:32:24.502578 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2025-08-11 17:32:24.502585 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2025-08-11 17:32:24.502593 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:32:24.502600 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:32:24.502608 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:32:24.502615 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:32:24.502622 [info]: Cache-Control: max-age=0
+2025-08-11 17:32:24.502629 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:32:24.502636 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:32:24.502644 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:32:24.502651 [info]: 
+2025-08-11 17:32:25.982062 [info]: timer tick
+2025-08-11 17:32:30.982106 [info]: timer tick
+2025-08-11 17:32:35.982160 [info]: timer tick
+2025-08-11 17:32:40.982209 [info]: timer tick
+2025-08-11 17:32:45.982269 [info]: timer tick
+2025-08-11 17:32:50.982314 [info]: timer tick
+2025-08-11 17:32:55.982359 [info]: timer tick
+2025-08-11 17:33:00.982421 [info]: timer tick
+2025-08-11 17:33:05.982472 [info]: timer tick
+2025-08-11 17:33:10.982514 [info]: timer tick
+2025-08-11 17:33:15.982566 [info]: timer tick
+2025-08-11 17:33:20.982613 [info]: timer tick
+2025-08-11 17:33:25.982652 [info]: timer tick
+2025-08-11 17:33:30.982697 [info]: timer tick
+2025-08-11 17:33:35.982753 [info]: timer tick
+2025-08-11 17:33:40.982809 [info]: timer tick
+2025-08-11 17:33:45.775378 [info]: deal with the client(114.132.203.158)
+2025-08-11 17:33:45.775446 [info]: adjust timer once
+2025-08-11 17:33:45.776688 [info]: GET /xxx.jpg HTTP/1.1
+2025-08-11 17:33:45.776732 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:33:45.776742 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36
+2025-08-11 17:33:45.776750 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36
+2025-08-11 17:33:45.776757 [info]: Connection: close
+2025-08-11 17:33:45.776764 [info]: Accept-Encoding: gzip
+2025-08-11 17:33:45.776772 [info]: oop!unknow header: Accept-Encoding: gzip
+2025-08-11 17:33:45.776779 [info]: Referer: http://123.207.158.143:9006/5
+2025-08-11 17:33:45.776787 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/5
+2025-08-11 17:33:45.776794 [info]: 
+2025-08-11 17:33:45.776836 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 17:33:45.777486 [info]: request:HTTP/1.1 200 OK
+Content-Length:6007312
+
+2025-08-11 17:33:45.777499 [info]: request:HTTP/1.1 200 OK
+Content-Length:6007312
+Connection:close
+
+2025-08-11 17:33:45.777506 [info]: request:HTTP/1.1 200 OK
+Content-Length:6007312
+Connection:close
+
+
+2025-08-11 17:33:45.777622 [info]: send data to the client(114.132.203.158)
+2025-08-11 17:33:45.777645 [info]: adjust timer once
+2025-08-11 17:33:45.814962 [info]: send data to the client(114.132.203.158)
+2025-08-11 17:33:45.815018 [info]: adjust timer once
+2025-08-11 17:33:45.852235 [info]: send data to the client(114.132.203.158)
+2025-08-11 17:33:45.852297 [info]: adjust timer once
+2025-08-11 17:33:45.889767 [info]: send data to the client(114.132.203.158)
+2025-08-11 17:33:45.889836 [info]: adjust timer once
+2025-08-11 17:33:45.927412 [info]: send data to the client(114.132.203.158)
+2025-08-11 17:33:45.927479 [info]: adjust timer once
+2025-08-11 17:33:45.971253 [info]: send data to the client(114.132.203.158)
+2025-08-11 17:33:45.971303 [info]: adjust timer once
+2025-08-11 17:33:45.982876 [info]: timer tick
+2025-08-11 17:33:47.534349 [info]: send data to the client(114.132.203.158)
+2025-08-11 17:33:47.534410 [info]: adjust timer once
+2025-08-11 17:33:49.760627 [info]: send data to the client(114.132.203.158)
+2025-08-11 17:33:49.760690 [info]: adjust timer once
+2025-08-11 17:33:50.982916 [info]: timer tick
+2025-08-11 17:48:42.727265 [info]: timer tick
+2025-08-11 17:48:47.727297 [info]: timer tick
+2025-08-11 17:48:52.727341 [info]: timer tick
+2025-08-11 17:48:53.097514 [info]: deal with the client(61.150.43.42)
+2025-08-11 17:48:53.097571 [info]: adjust timer once
+2025-08-11 17:48:53.097645 [info]: GET /welcome.html HTTP/1.1
+2025-08-11 17:48:53.097666 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:48:53.097675 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:48:53.097683 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:48:53.097691 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:48:53.097699 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:48:53.097706 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:48:53.097714 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:48:53.097722 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:48:53.097729 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:48:53.097737 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:48:53.097744 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:48:53.097751 [info]: 
+2025-08-11 17:48:53.097810 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 17:48:53.097820 [info]: request:HTTP/1.1 200 OK
+Content-Length:3468
+
+2025-08-11 17:48:53.097829 [info]: request:HTTP/1.1 200 OK
+Content-Length:3468
+Connection:close
+
+2025-08-11 17:48:53.097836 [info]: request:HTTP/1.1 200 OK
+Content-Length:3468
+Connection:close
+
+
+2025-08-11 17:48:53.098581 [info]: close fd 16
+2025-08-11 17:48:57.727394 [info]: timer tick
+2025-08-11 17:49:02.727443 [info]: timer tick
+2025-08-11 17:49:06.743555 [info]: deal with the client(61.150.43.42)
+2025-08-11 17:49:06.743621 [info]: adjust timer once
+2025-08-11 17:49:06.743698 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 17:49:06.743712 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:49:06.743721 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:49:06.743729 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:49:06.743737 [info]: Content-Length: 24
+2025-08-11 17:49:06.743752 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:49:06.743760 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:49:06.743779 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:49:06.743787 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:49:06.743794 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:49:06.743812 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:49:06.743820 [info]: Cache-Control: max-age=0
+2025-08-11 17:49:06.743827 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:49:06.743835 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:49:06.743842 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:49:06.743849 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:49:06.743857 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:49:06.743865 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 17:49:06.743872 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 17:49:06.743880 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:49:06.743887 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:49:06.743894 [info]: 
+2025-08-11 17:49:06.743901 [info]: 
+2025-08-11 17:49:06.743922 [info]: deal with the client(61.150.43.42)
+2025-08-11 17:49:06.743934 [info]: adjust timer once
+2025-08-11 17:49:06.743974 [info]: user=ddd&password=123456
+2025-08-11 17:49:06.744002 [info]: User ddd logged in from 61.150.43.42:3114
+2025-08-11 17:49:07.727490 [info]: timer tick
+2025-08-11 17:49:12.727539 [info]: timer tick
+2025-08-11 17:49:17.727594 [info]: timer tick
+2025-08-11 17:49:22.727652 [info]: timer tick
+2025-08-11 17:49:27.727691 [info]: timer tick
+2025-08-11 17:49:32.727760 [info]: timer tick
+2025-08-11 17:49:37.727815 [info]: timer tick
+2025-08-11 17:49:42.727865 [info]: timer tick
+2025-08-11 17:49:47.727915 [info]: timer tick
+2025-08-11 17:49:52.727955 [info]: timer tick
+2025-08-11 17:49:57.728008 [info]: timer tick
+2025-08-11 17:50:02.728062 [info]: timer tick
+2025-08-11 17:50:07.728139 [info]: timer tick
+2025-08-11 17:50:12.728181 [info]: timer tick
+2025-08-11 17:50:17.728238 [info]: timer tick
+2025-08-11 17:50:22.728289 [info]: timer tick
+2025-08-11 17:50:27.728345 [info]: timer tick
+2025-08-11 17:50:32.728397 [info]: timer tick
+2025-08-11 17:50:37.728451 [info]: timer tick
+2025-08-11 17:50:42.728507 [info]: timer tick
+2025-08-11 17:50:47.728554 [info]: timer tick
+2025-08-11 17:50:52.728610 [info]: timer tick
+2025-08-11 17:50:57.728665 [info]: timer tick
+2025-08-11 17:51:02.728715 [info]: timer tick
+2025-08-11 17:51:07.728754 [info]: timer tick
+2025-08-11 17:51:12.728823 [info]: timer tick
+2025-08-11 17:51:17.728894 [info]: timer tick
+2025-08-11 17:51:22.728948 [info]: timer tick
+2025-08-11 17:51:27.729013 [info]: timer tick
+2025-08-11 17:51:32.729066 [info]: timer tick
+2025-08-11 17:51:37.729138 [info]: timer tick
+2025-08-11 17:51:42.729180 [info]: timer tick
+2025-08-11 17:51:47.729238 [info]: timer tick
+2025-08-11 17:51:52.729287 [info]: timer tick
+2025-08-11 17:51:57.729332 [info]: timer tick
+2025-08-11 17:52:02.729373 [info]: timer tick
+2025-08-11 17:52:07.729445 [info]: timer tick
+2025-08-11 17:52:12.729490 [info]: timer tick
+2025-08-11 17:52:17.729535 [info]: timer tick
+2025-08-11 17:52:22.729583 [info]: timer tick
+2025-08-11 17:52:25.112955 [info]: deal with the client(222.90.96.222)
+2025-08-11 17:52:25.113019 [info]: adjust timer once
+2025-08-11 17:52:25.113093 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 17:52:25.113106 [info]: Host: 123.207.158.143:9006
+2025-08-11 17:52:25.113115 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:52:25.113141 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 17:52:25.113149 [info]: Content-Length: 24
+2025-08-11 17:52:25.113159 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:52:25.113179 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 17:52:25.113187 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 17:52:25.113194 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 17:52:25.113202 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:52:25.113209 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 17:52:25.113217 [info]: Cache-Control: max-age=0
+2025-08-11 17:52:25.113224 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 17:52:25.113232 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:52:25.113239 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 17:52:25.113246 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 17:52:25.113253 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 17:52:25.113261 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 17:52:25.113268 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 17:52:25.113276 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 17:52:25.113283 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 17:52:25.113290 [info]: 
+2025-08-11 17:52:25.113298 [info]: 
+2025-08-11 17:52:25.113322 [info]: deal with the client(222.90.96.222)
+2025-08-11 17:52:25.113338 [info]: adjust timer once
+2025-08-11 17:52:25.113367 [info]: user=ddd&password=123456
+2025-08-11 17:52:25.113387 [info]: User ddd logged in from 222.90.96.222:21701
+2025-08-11 17:52:27.729634 [info]: timer tick
+2025-08-11 17:52:32.729675 [info]: timer tick
+2025-08-11 17:52:37.729733 [info]: timer tick
+2025-08-11 17:52:42.729792 [info]: timer tick
+2025-08-11 17:52:47.729862 [info]: timer tick
+2025-08-11 17:52:52.729931 [info]: timer tick
+2025-08-11 17:52:57.729979 [info]: timer tick
+2025-08-11 17:53:02.730032 [info]: timer tick
+2025-08-11 17:53:07.730076 [info]: timer tick
+2025-08-11 17:53:12.730115 [info]: timer tick
+2025-08-11 17:53:17.730161 [info]: timer tick
+2025-08-11 17:53:22.730234 [info]: timer tick
+2025-08-11 17:53:27.730278 [info]: timer tick
+2025-08-11 17:53:32.730332 [info]: timer tick
+2025-08-11 17:53:37.730382 [info]: timer tick
+2025-08-11 17:53:42.730428 [info]: timer tick
+2025-08-11 17:53:47.730485 [info]: timer tick
+2025-08-11 17:53:52.730533 [info]: timer tick
+2025-08-11 17:53:57.730588 [info]: timer tick
+2025-08-11 17:54:02.730634 [info]: timer tick
+2025-08-11 17:54:07.730692 [info]: timer tick
+2025-08-11 17:54:12.730748 [info]: timer tick
+2025-08-11 17:54:17.730801 [info]: timer tick
+2025-08-11 17:54:22.730850 [info]: timer tick
+2025-08-11 17:54:27.730899 [info]: timer tick
+2025-08-11 17:54:32.730947 [info]: timer tick
+2025-08-11 17:54:37.730998 [info]: timer tick
+2025-08-11 17:54:42.731045 [info]: timer tick
+2025-08-11 17:54:47.731089 [info]: timer tick
+2025-08-11 17:54:52.731159 [info]: timer tick
+2025-08-11 17:54:57.731199 [info]: timer tick
+2025-08-11 17:55:02.731250 [info]: timer tick
+2025-08-11 17:55:07.731296 [info]: timer tick
+2025-08-11 17:55:12.731347 [info]: timer tick
+2025-08-11 17:55:17.731403 [info]: timer tick
+2025-08-11 17:55:22.731447 [info]: timer tick
+2025-08-11 17:55:27.731501 [info]: timer tick
+2025-08-11 17:55:32.731547 [info]: timer tick
+2025-08-11 17:55:37.731594 [info]: timer tick
+2025-08-11 17:55:42.731644 [info]: timer tick
+2025-08-11 17:55:47.731689 [info]: timer tick
+2025-08-11 17:55:52.731741 [info]: timer tick
+2025-08-11 17:55:57.731791 [info]: timer tick
+2025-08-11 17:56:02.731843 [info]: timer tick
+2025-08-11 17:56:07.731894 [info]: timer tick
+2025-08-11 17:56:12.731941 [info]: timer tick
+2025-08-11 17:56:17.732008 [info]: timer tick
+2025-08-11 17:56:22.732055 [info]: timer tick
+2025-08-11 17:56:27.732103 [info]: timer tick
+2025-08-11 17:56:32.732161 [info]: timer tick
+2025-08-11 17:56:37.732212 [info]: timer tick
+2025-08-11 17:56:42.732276 [info]: timer tick
+2025-08-11 17:56:47.732330 [info]: timer tick
+2025-08-11 17:56:52.732382 [info]: timer tick
+2025-08-11 17:56:57.732433 [info]: timer tick
+2025-08-11 17:57:02.732495 [info]: timer tick
+2025-08-11 17:57:07.732563 [info]: timer tick
+2025-08-11 17:57:12.732609 [info]: timer tick
+2025-08-11 17:57:17.732653 [info]: timer tick
+2025-08-11 17:57:22.732698 [info]: timer tick
+2025-08-11 17:57:27.732755 [info]: timer tick
+2025-08-11 17:57:32.732795 [info]: timer tick
+2025-08-11 17:57:37.732849 [info]: timer tick
+2025-08-11 17:57:42.732909 [info]: timer tick
+2025-08-11 17:57:47.732955 [info]: timer tick
+2025-08-11 17:57:52.733009 [info]: timer tick
+2025-08-11 17:57:57.733061 [info]: timer tick
+2025-08-11 17:58:02.733108 [info]: timer tick
+2025-08-11 17:58:07.733159 [info]: timer tick
+2025-08-11 17:58:12.733208 [info]: timer tick
+2025-08-11 17:58:17.733305 [info]: timer tick
+2025-08-11 17:58:22.733392 [info]: timer tick
+2025-08-11 17:58:27.733447 [info]: timer tick
+2025-08-11 17:58:32.733494 [info]: timer tick
+2025-08-11 17:58:37.733544 [info]: timer tick
+2025-08-11 17:58:42.733593 [info]: timer tick
+2025-08-11 17:58:47.733647 [info]: timer tick
+2025-08-11 17:58:52.733683 [info]: timer tick
+2025-08-11 17:58:57.733725 [info]: timer tick
+2025-08-11 17:59:02.733772 [info]: timer tick
+2025-08-11 17:59:07.733827 [info]: timer tick
+2025-08-11 17:59:12.733889 [info]: timer tick
+2025-08-11 17:59:17.733936 [info]: timer tick
+2025-08-11 17:59:22.733985 [info]: timer tick
+2025-08-11 17:59:27.734026 [info]: timer tick
+2025-08-11 17:59:32.734083 [info]: timer tick
+2025-08-11 17:59:37.734140 [info]: timer tick
+2025-08-11 17:59:42.734186 [info]: timer tick
+2025-08-11 17:59:47.734242 [info]: timer tick
+2025-08-11 17:59:52.734280 [info]: timer tick
+2025-08-11 17:59:57.734344 [info]: timer tick
+2025-08-11 18:00:02.734379 [info]: timer tick
+2025-08-11 18:00:07.734437 [info]: timer tick
+2025-08-11 18:00:12.734483 [info]: timer tick
+2025-08-11 18:00:17.734548 [info]: timer tick
+2025-08-11 18:00:22.734603 [info]: timer tick
+2025-08-11 18:00:27.734666 [info]: timer tick
+2025-08-11 18:00:32.734709 [info]: timer tick
+2025-08-11 18:00:37.734752 [info]: timer tick
+2025-08-11 18:00:42.735100 [info]: timer tick
+2025-08-11 18:00:47.735157 [info]: timer tick
+2025-08-11 18:00:52.735212 [info]: timer tick
+2025-08-11 18:00:57.735256 [info]: timer tick
+2025-08-11 18:01:02.735304 [info]: timer tick
+2025-08-11 18:01:07.735366 [info]: timer tick
+2025-08-11 18:01:12.735415 [info]: timer tick
+2025-08-11 18:01:17.735462 [info]: timer tick
+2025-08-11 18:01:22.735513 [info]: timer tick
+2025-08-11 18:01:27.735558 [info]: timer tick
+2025-08-11 18:01:32.735621 [info]: timer tick
+2025-08-11 18:01:37.735662 [info]: timer tick
+2025-08-11 18:01:38.351966 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:01:38.352037 [info]: adjust timer once
+2025-08-11 18:01:38.352136 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 18:01:38.352155 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:01:38.352164 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:01:38.352172 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:01:38.352179 [info]: Content-Length: 24
+2025-08-11 18:01:38.352188 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:01:38.352196 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:01:38.352203 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:01:38.352210 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:01:38.352218 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:01:38.352226 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:01:38.352240 [info]: Cache-Control: max-age=0
+2025-08-11 18:01:38.352248 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 18:01:38.352255 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:01:38.352263 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:01:38.352271 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 18:01:38.352278 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 18:01:38.352286 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:01:38.352293 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:01:38.352300 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 18:01:38.352307 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 18:01:38.352315 [info]: 
+2025-08-11 18:01:38.352323 [info]: 
+2025-08-11 18:01:38.352932 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:01:38.352963 [info]: adjust timer once
+2025-08-11 18:01:38.353006 [info]: user=ddd&password=123456
+2025-08-11 18:01:38.353027 [info]: User ddd logged in from 124.114.148.40:51064
+2025-08-11 18:01:42.735709 [info]: timer tick
+2025-08-11 18:01:47.735758 [info]: timer tick
+2025-08-11 18:01:52.735819 [info]: timer tick
+2025-08-11 18:01:57.735870 [info]: timer tick
+2025-08-11 18:02:02.735914 [info]: timer tick
+2025-08-11 18:02:07.735960 [info]: timer tick
+2025-08-11 18:02:12.736027 [info]: timer tick
+2025-08-11 18:02:17.736073 [info]: timer tick
+2025-08-11 18:02:22.736149 [info]: timer tick
+2025-08-11 18:02:27.736194 [info]: timer tick
+2025-08-11 18:02:32.736266 [info]: timer tick
+2025-08-11 18:02:37.736328 [info]: timer tick
+2025-08-11 18:02:42.736379 [info]: timer tick
+2025-08-11 18:02:47.736426 [info]: timer tick
+2025-08-11 18:02:52.736461 [info]: timer tick
+2025-08-11 18:02:57.736501 [info]: timer tick
+2025-08-11 18:03:02.736546 [info]: timer tick
+2025-08-11 18:03:07.736583 [info]: timer tick
+2025-08-11 18:03:12.736620 [info]: timer tick
+2025-08-11 18:03:17.736667 [info]: timer tick
+2025-08-11 18:03:22.736710 [info]: timer tick
+2025-08-11 18:03:27.736775 [info]: timer tick
+2025-08-11 18:03:32.736825 [info]: timer tick
+2025-08-11 18:03:37.736876 [info]: timer tick
+2025-08-11 18:03:42.736928 [info]: timer tick
+2025-08-11 18:03:47.736979 [info]: timer tick
+2025-08-11 18:03:52.737484 [info]: timer tick
+2025-08-11 18:03:57.737530 [info]: timer tick
+2025-08-11 18:04:02.737578 [info]: timer tick
+2025-08-11 18:04:07.737634 [info]: timer tick
+2025-08-11 18:04:12.737686 [info]: timer tick
+2025-08-11 18:04:17.737739 [info]: timer tick
+2025-08-11 18:04:22.737821 [info]: timer tick
+2025-08-11 18:04:27.737866 [info]: timer tick
+2025-08-11 18:04:32.737951 [info]: timer tick
+2025-08-11 18:04:37.738163 [info]: timer tick
+2025-08-11 18:04:42.739526 [info]: timer tick
+2025-08-11 18:04:47.745460 [info]: timer tick
+2025-08-11 18:04:52.747102 [info]: timer tick
+2025-08-11 18:04:57.747157 [info]: timer tick
+2025-08-11 18:05:02.747204 [info]: timer tick
+2025-08-11 18:05:07.747270 [info]: timer tick
+2025-08-11 18:05:12.749168 [info]: timer tick
+2025-08-11 18:05:17.749232 [info]: timer tick
+2025-08-11 18:05:22.749293 [info]: timer tick
+2025-08-11 18:05:27.749344 [info]: timer tick
+2025-08-11 18:05:29.521610 [info]: deal with the client(113.140.3.79)
+2025-08-11 18:05:29.521684 [info]: adjust timer once
+2025-08-11 18:05:29.523251 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 18:05:29.523293 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:05:29.523304 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:05:29.523312 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:05:29.523320 [info]: Content-Length: 24
+2025-08-11 18:05:29.523329 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:05:29.523342 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:05:29.523350 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:05:29.523357 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:05:29.523365 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:05:29.523371 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:05:29.523379 [info]: Cache-Control: max-age=0
+2025-08-11 18:05:29.523387 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 18:05:29.523394 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:05:29.523401 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:05:29.523409 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 18:05:29.523416 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 18:05:29.523424 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:05:29.523432 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:05:29.523439 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 18:05:29.523446 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 18:05:29.523454 [info]: 
+2025-08-11 18:05:29.523461 [info]: 
+2025-08-11 18:05:29.523486 [info]: deal with the client(113.140.3.79)
+2025-08-11 18:05:29.523499 [info]: adjust timer once
+2025-08-11 18:05:29.525118 [info]: user=ddd&password=123456
+2025-08-11 18:05:29.525182 [info]: User ddd logged in from 113.140.3.79:25425
+2025-08-11 18:05:32.749396 [info]: timer tick
+2025-08-11 18:05:37.749445 [info]: timer tick
+2025-08-11 18:05:42.749500 [info]: timer tick
+2025-08-11 18:05:47.749558 [info]: timer tick
+2025-08-11 18:05:52.749607 [info]: timer tick
+2025-08-11 18:05:57.749650 [info]: timer tick
+2025-08-11 18:06:02.749694 [info]: timer tick
+2025-08-11 18:06:07.749744 [info]: timer tick
+2025-08-11 18:06:12.749794 [info]: timer tick
+2025-08-11 18:06:17.749882 [info]: timer tick
+2025-08-11 18:06:22.749944 [info]: timer tick
+2025-08-11 18:06:27.749999 [info]: timer tick
+2025-08-11 18:06:32.750085 [info]: timer tick
+2025-08-11 18:06:37.750158 [info]: timer tick
+2025-08-11 18:06:42.750212 [info]: timer tick
+2025-08-11 18:06:47.750265 [info]: timer tick
+2025-08-11 18:06:52.750307 [info]: timer tick
+2025-08-11 18:06:57.750357 [info]: timer tick
+2025-08-11 18:07:02.750402 [info]: timer tick
+2025-08-11 18:07:07.750455 [info]: timer tick
+2025-08-11 18:07:12.750516 [info]: timer tick
+2025-08-11 18:07:17.750567 [info]: timer tick
+2025-08-11 18:07:22.750629 [info]: timer tick
+2025-08-11 18:07:27.750701 [info]: timer tick
+2025-08-11 18:07:32.750761 [info]: timer tick
+2025-08-11 18:07:37.751177 [info]: timer tick
+2025-08-11 18:07:42.752770 [info]: timer tick
+2025-08-11 18:07:47.752823 [info]: timer tick
+2025-08-11 18:07:52.752899 [info]: timer tick
+2025-08-11 18:07:57.752945 [info]: timer tick
+2025-08-11 18:08:02.752998 [info]: timer tick
+2025-08-11 18:08:07.753055 [info]: timer tick
+2025-08-11 18:08:12.753109 [info]: timer tick
+2025-08-11 18:08:17.753173 [info]: timer tick
+2025-08-11 18:08:22.753223 [info]: timer tick
+2025-08-11 18:08:27.753291 [info]: timer tick
+2025-08-11 18:08:32.753345 [info]: timer tick
+2025-08-11 18:08:37.753415 [info]: timer tick
+2025-08-11 18:08:42.753458 [info]: timer tick
+2025-08-11 18:08:47.753503 [info]: timer tick
+2025-08-11 18:08:52.753547 [info]: timer tick
+2025-08-11 18:08:57.753587 [info]: timer tick
+2025-08-11 18:09:02.753634 [info]: timer tick
+2025-08-11 18:09:07.753681 [info]: timer tick
+2025-08-11 18:09:12.753724 [info]: timer tick
+2025-08-11 18:09:17.753777 [info]: timer tick
+2025-08-11 18:09:22.753834 [info]: timer tick
+2025-08-11 18:09:27.753877 [info]: timer tick
+2025-08-11 18:09:32.753963 [info]: timer tick
+2025-08-11 18:09:37.754007 [info]: timer tick
+2025-08-11 18:09:42.754053 [info]: timer tick
+2025-08-11 18:09:47.754099 [info]: timer tick
+2025-08-11 18:09:52.754160 [info]: timer tick
+2025-08-11 18:09:57.754216 [info]: timer tick
+2025-08-11 18:10:02.754258 [info]: timer tick
+2025-08-11 18:10:07.754307 [info]: timer tick
+2025-08-11 18:10:12.754363 [info]: timer tick
+2025-08-11 18:10:17.754417 [info]: timer tick
+2025-08-11 18:10:22.754468 [info]: timer tick
+2025-08-11 18:10:27.754512 [info]: timer tick
+2025-08-11 18:10:32.754561 [info]: timer tick
+2025-08-11 18:10:37.754611 [info]: timer tick
+2025-08-11 18:10:42.754659 [info]: timer tick
+2025-08-11 18:10:47.754705 [info]: timer tick
+2025-08-11 18:10:52.754760 [info]: timer tick
+2025-08-11 18:10:57.754817 [info]: timer tick
+2025-08-11 18:11:02.754858 [info]: timer tick
+2025-08-11 18:11:07.754903 [info]: timer tick
+2025-08-11 18:11:12.754948 [info]: timer tick
+2025-08-11 18:11:17.754990 [info]: timer tick
+2025-08-11 18:11:22.755040 [info]: timer tick
+2025-08-11 18:11:27.755085 [info]: timer tick
+2025-08-11 18:11:32.755149 [info]: timer tick
+2025-08-11 18:11:37.755195 [info]: timer tick
+2025-08-11 18:11:42.755243 [info]: timer tick
+2025-08-11 18:11:47.755293 [info]: timer tick
+2025-08-11 18:11:52.755337 [info]: timer tick
+2025-08-11 18:11:57.755384 [info]: timer tick
+2025-08-11 18:12:02.755436 [info]: timer tick
+2025-08-11 18:12:07.755487 [info]: timer tick
+2025-08-11 18:12:12.757567 [info]: timer tick
+2025-08-11 18:12:17.757616 [info]: timer tick
+2025-08-11 18:12:22.757664 [info]: timer tick
+2025-08-11 18:12:27.757715 [info]: timer tick
+2025-08-11 18:12:32.757769 [info]: timer tick
+2025-08-11 18:12:37.757823 [info]: timer tick
+2025-08-11 18:12:42.757871 [info]: timer tick
+2025-08-11 18:12:47.757916 [info]: timer tick
+2025-08-11 18:12:52.757983 [info]: timer tick
+2025-08-11 18:12:57.758029 [info]: timer tick
+2025-08-11 18:13:02.758077 [info]: timer tick
+2025-08-11 18:13:07.758140 [info]: timer tick
+2025-08-11 18:13:12.758185 [info]: timer tick
+2025-08-11 18:13:17.758230 [info]: timer tick
+2025-08-11 18:13:22.758275 [info]: timer tick
+2025-08-11 18:13:27.758324 [info]: timer tick
+2025-08-11 18:13:32.758372 [info]: timer tick
+2025-08-11 18:13:37.758419 [info]: timer tick
+2025-08-11 18:13:42.758476 [info]: timer tick
+2025-08-11 18:13:47.758522 [info]: timer tick
+2025-08-11 18:13:52.758588 [info]: timer tick
+2025-08-11 18:13:57.758641 [info]: timer tick
+2025-08-11 18:14:02.758685 [info]: timer tick
+2025-08-11 18:14:07.758728 [info]: timer tick
+2025-08-11 18:14:12.758773 [info]: timer tick
+2025-08-11 18:14:17.758828 [info]: timer tick
+2025-08-11 18:14:22.758876 [info]: timer tick
+2025-08-11 18:14:27.758934 [info]: timer tick
+2025-08-11 18:14:32.758991 [info]: timer tick
+2025-08-11 18:14:37.759036 [info]: timer tick
+2025-08-11 18:14:42.759101 [info]: timer tick
+2025-08-11 18:14:47.759160 [info]: timer tick
+2025-08-11 18:14:52.759218 [info]: timer tick
+2025-08-11 18:14:57.759261 [info]: timer tick
+2025-08-11 18:15:02.759312 [info]: timer tick
+2025-08-11 18:15:07.759360 [info]: timer tick
+2025-08-11 18:15:12.759408 [info]: timer tick
+2025-08-11 18:15:17.759462 [info]: timer tick
+2025-08-11 18:15:22.759513 [info]: timer tick
+2025-08-11 18:15:27.759558 [info]: timer tick
+2025-08-11 18:15:32.759602 [info]: timer tick
+2025-08-11 18:15:37.759657 [info]: timer tick
+2025-08-11 18:15:42.759702 [info]: timer tick
+2025-08-11 18:15:47.759766 [info]: timer tick
+2025-08-11 18:15:52.759820 [info]: timer tick
+2025-08-11 18:15:57.759869 [info]: timer tick
+2025-08-11 18:16:02.759918 [info]: timer tick
+2025-08-11 18:16:07.759961 [info]: timer tick
+2025-08-11 18:16:12.760013 [info]: timer tick
+2025-08-11 18:16:17.760078 [info]: timer tick
+2025-08-11 18:16:22.760131 [info]: timer tick
+2025-08-11 18:16:27.760192 [info]: timer tick
+2025-08-11 18:16:32.760235 [info]: timer tick
+2025-08-11 18:16:37.760287 [info]: timer tick
+2025-08-11 18:16:42.760347 [info]: timer tick
+2025-08-11 18:16:47.760394 [info]: timer tick
+2025-08-11 18:16:52.760465 [info]: timer tick
+2025-08-11 18:16:57.760527 [info]: timer tick
+2025-08-11 18:17:02.760584 [info]: timer tick
+2025-08-11 18:17:07.760632 [info]: timer tick
+2025-08-11 18:17:12.762179 [info]: timer tick
+2025-08-11 18:17:17.762224 [info]: timer tick
+2025-08-11 18:17:22.762261 [info]: timer tick
+2025-08-11 18:17:27.762304 [info]: timer tick
+2025-08-11 18:17:32.762352 [info]: timer tick
+2025-08-11 18:17:37.762395 [info]: timer tick
+2025-08-11 18:17:42.762736 [info]: timer tick
+2025-08-11 18:17:47.763075 [info]: timer tick
+2025-08-11 18:17:52.763160 [info]: timer tick
+2025-08-11 18:17:57.763205 [info]: timer tick
+2025-08-11 18:18:02.763269 [info]: timer tick
+2025-08-11 18:18:07.763314 [info]: timer tick
+2025-08-11 18:18:12.763367 [info]: timer tick
+2025-08-11 18:18:17.763415 [info]: timer tick
+2025-08-11 18:18:22.763475 [info]: timer tick
+2025-08-11 18:18:27.763520 [info]: timer tick
+2025-08-11 18:18:32.763585 [info]: timer tick
+2025-08-11 18:18:37.763629 [info]: timer tick
+2025-08-11 18:18:42.763694 [info]: timer tick
+2025-08-11 18:18:47.766178 [info]: timer tick
+2025-08-11 18:18:52.766218 [info]: timer tick
+2025-08-11 18:18:57.766287 [info]: timer tick
+2025-08-11 18:19:02.771447 [info]: timer tick
+2025-08-11 18:19:07.771494 [info]: timer tick
+2025-08-11 18:19:12.771557 [info]: timer tick
+2025-08-11 18:19:17.771602 [info]: timer tick
+2025-08-11 18:19:22.771692 [info]: timer tick
+2025-08-11 18:19:27.771746 [info]: timer tick
+2025-08-11 18:19:32.771796 [info]: timer tick
+2025-08-11 18:19:37.771845 [info]: timer tick
+2025-08-11 18:19:42.771893 [info]: timer tick
+2025-08-11 18:19:47.771947 [info]: timer tick
+2025-08-11 18:19:52.771995 [info]: timer tick
+2025-08-11 18:19:57.772059 [info]: timer tick
+2025-08-11 18:20:02.772105 [info]: timer tick
+2025-08-11 18:20:07.772165 [info]: timer tick
+2025-08-11 18:20:12.772231 [info]: timer tick
+2025-08-11 18:20:17.772283 [info]: timer tick
+2025-08-11 18:20:22.772331 [info]: timer tick
+2025-08-11 18:20:27.772393 [info]: timer tick
+2025-08-11 18:20:32.772436 [info]: timer tick
+2025-08-11 18:20:37.772494 [info]: timer tick
+2025-08-11 18:20:42.772544 [info]: timer tick
+2025-08-11 18:20:47.772580 [info]: timer tick
+2025-08-11 18:20:52.772621 [info]: timer tick
+2025-08-11 18:20:57.772657 [info]: timer tick
+2025-08-11 18:21:02.772726 [info]: timer tick
+2025-08-11 18:21:07.772772 [info]: timer tick
+2025-08-11 18:21:12.772834 [info]: timer tick
+2025-08-11 18:21:17.772876 [info]: timer tick
+2025-08-11 18:21:22.772921 [info]: timer tick
+2025-08-11 18:21:27.772975 [info]: timer tick
+2025-08-11 18:21:32.773020 [info]: timer tick
+2025-08-11 18:21:37.773075 [info]: timer tick
+2025-08-11 18:21:42.773162 [info]: timer tick
+2025-08-11 18:21:47.773205 [info]: timer tick
+2025-08-11 18:21:52.773267 [info]: timer tick
+2025-08-11 18:21:57.773303 [info]: timer tick
+2025-08-11 18:22:02.773350 [info]: timer tick
+2025-08-11 18:22:07.773410 [info]: timer tick
+2025-08-11 18:22:12.773464 [info]: timer tick
+2025-08-11 18:22:17.773514 [info]: timer tick
+2025-08-11 18:22:22.773559 [info]: timer tick
+2025-08-11 18:22:27.773618 [info]: timer tick
+2025-08-11 18:22:32.773668 [info]: timer tick
+2025-08-11 18:22:37.773719 [info]: timer tick
+2025-08-11 18:22:42.773774 [info]: timer tick
+2025-08-11 18:22:47.773838 [info]: timer tick
+2025-08-11 18:22:52.773885 [info]: timer tick
+2025-08-11 18:22:57.773940 [info]: timer tick
+2025-08-11 18:23:02.773987 [info]: timer tick
+2025-08-11 18:23:07.774094 [info]: timer tick
+2025-08-11 18:23:12.774161 [info]: timer tick
+2025-08-11 18:23:17.774203 [info]: timer tick
+2025-08-11 18:23:22.774245 [info]: timer tick
+2025-08-11 18:23:27.774489 [info]: timer tick
+2025-08-11 18:23:32.774517 [info]: timer tick
+2025-08-11 18:23:37.774565 [info]: timer tick
+2025-08-11 18:23:42.774627 [info]: timer tick
+2025-08-11 18:23:47.774674 [info]: timer tick
+2025-08-11 18:23:52.774716 [info]: timer tick
+2025-08-11 18:23:57.774754 [info]: timer tick
+2025-08-11 18:24:02.774787 [info]: timer tick
+2025-08-11 18:24:07.774852 [info]: timer tick
+2025-08-11 18:24:12.774899 [info]: timer tick
+2025-08-11 18:24:17.774962 [info]: timer tick
+2025-08-11 18:24:22.775010 [info]: timer tick
+2025-08-11 18:24:27.775066 [info]: timer tick
+2025-08-11 18:24:32.775145 [info]: timer tick
+2025-08-11 18:24:37.775198 [info]: timer tick
+2025-08-11 18:24:42.775247 [info]: timer tick
+2025-08-11 18:24:47.775293 [info]: timer tick
+2025-08-11 18:24:52.775339 [info]: timer tick
+2025-08-11 18:24:57.775390 [info]: timer tick
+2025-08-11 18:25:02.775435 [info]: timer tick
+2025-08-11 18:25:07.775496 [info]: timer tick
+2025-08-11 18:25:12.775537 [info]: timer tick
+2025-08-11 18:25:17.775585 [info]: timer tick
+2025-08-11 18:25:22.775647 [info]: timer tick
+2025-08-11 18:25:27.777174 [info]: timer tick
+2025-08-11 18:25:32.777225 [info]: timer tick
+2025-08-11 18:25:57.896335 [info]: timer tick
+2025-08-11 18:26:00.301445 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:26:00.301507 [info]: adjust timer once
+2025-08-11 18:26:00.301582 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 18:26:00.301601 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:26:00.301611 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:26:00.301619 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:26:00.301627 [info]: Content-Length: 24
+2025-08-11 18:26:00.301637 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:26:00.301645 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:26:00.301654 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:26:00.301661 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:26:00.301669 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:26:00.301677 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:26:00.301684 [info]: Cache-Control: max-age=0
+2025-08-11 18:26:00.301692 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 18:26:00.301700 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:26:00.301708 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:26:00.301716 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 18:26:00.301723 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 18:26:00.301731 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:26:00.301738 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:26:00.301746 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 18:26:00.301753 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 18:26:00.301761 [info]: 
+2025-08-11 18:26:00.301768 [info]: user=ddd&password=123456
+2025-08-11 18:26:00.301800 [info]: User ddd logged in from 124.114.148.40:33438
+2025-08-11 18:26:00.301837 [info]: request:HTTP/1.1 302 Found
+
+2025-08-11 18:26:00.301846 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+
+2025-08-11 18:26:00.301854 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+Connection:close
+
+2025-08-11 18:26:00.301862 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+Connection:close
+Location: /welcome.html?ip=124.114.148.40&port=33438
+
+2025-08-11 18:26:00.301870 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+Connection:close
+Location: /welcome.html?ip=124.114.148.40&port=33438
+
+
+2025-08-11 18:26:00.301932 [info]: close fd 16
+2025-08-11 18:26:00.356192 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:26:00.356269 [info]: adjust timer once
+2025-08-11 18:26:00.356349 [info]: GET /welcome.html?ip=124.114.148.40&port=33438 HTTP/1.1
+2025-08-11 18:26:00.356363 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:26:00.356372 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:26:00.356380 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:26:00.356396 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:26:00.356404 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:26:00.356412 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:26:00.356419 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:26:00.356427 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:26:00.356434 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:26:00.356442 [info]: Cache-Control: max-age=0
+2025-08-11 18:26:00.356449 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 18:26:00.356457 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:26:00.356465 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:26:00.356473 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 18:26:00.356480 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 18:26:00.356487 [info]: 
+2025-08-11 18:26:02.896357 [info]: timer tick
+2025-08-11 18:26:07.896425 [info]: timer tick
+2025-08-11 18:26:12.896481 [info]: timer tick
+2025-08-11 18:26:17.896531 [info]: timer tick
+2025-08-11 18:26:22.896585 [info]: timer tick
+2025-08-11 18:26:27.896645 [info]: timer tick
+2025-08-11 18:26:32.896708 [info]: timer tick
+2025-08-11 18:26:37.896755 [info]: timer tick
+2025-08-11 18:26:42.896794 [info]: timer tick
+2025-08-11 18:26:47.896845 [info]: timer tick
+2025-08-11 18:26:52.896901 [info]: timer tick
+2025-08-11 18:26:57.896938 [info]: timer tick
+2025-08-11 18:27:02.896979 [info]: timer tick
+2025-08-11 18:27:07.897022 [info]: timer tick
+2025-08-11 18:27:12.897073 [info]: timer tick
+2025-08-11 18:27:17.897132 [info]: timer tick
+2025-08-11 18:27:22.897196 [info]: timer tick
+2025-08-11 18:27:27.897252 [info]: timer tick
+2025-08-11 18:27:32.897307 [info]: timer tick
+2025-08-11 18:27:37.897351 [info]: timer tick
+2025-08-11 18:27:42.897391 [info]: timer tick
+2025-08-11 18:27:47.897447 [info]: timer tick
+2025-08-11 18:27:52.897502 [info]: timer tick
+2025-08-11 18:27:57.897556 [info]: timer tick
+2025-08-11 18:28:02.897610 [info]: timer tick
+2025-08-11 18:28:07.897908 [info]: timer tick
+2025-08-11 18:28:12.897965 [info]: timer tick
+2025-08-11 18:28:17.898011 [info]: timer tick
+2025-08-11 18:28:22.898055 [info]: timer tick
+2025-08-11 18:28:27.898136 [info]: timer tick
+2025-08-11 18:28:32.898190 [info]: timer tick
+2025-08-11 18:28:37.898258 [info]: timer tick
+2025-08-11 18:28:42.898303 [info]: timer tick
+2025-08-11 18:28:47.898346 [info]: timer tick
+2025-08-11 18:28:52.898390 [info]: timer tick
+2025-08-11 18:28:57.898454 [info]: timer tick
+2025-08-11 18:29:02.898503 [info]: timer tick
+2025-08-11 18:29:07.898555 [info]: timer tick
+2025-08-11 18:29:12.898607 [info]: timer tick
+2025-08-11 18:29:15.141109 [info]: deal with the client(113.140.3.79)
+2025-08-11 18:29:15.141199 [info]: adjust timer once
+2025-08-11 18:29:15.141387 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 18:29:15.141415 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:29:15.141423 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:29:15.141430 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:29:15.141437 [info]: Content-Length: 24
+2025-08-11 18:29:15.141445 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:29:15.141452 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:29:15.141458 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:29:15.141464 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:29:15.141483 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:29:15.141490 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:29:15.141496 [info]: Cache-Control: max-age=0
+2025-08-11 18:29:15.141502 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 18:29:15.141508 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:29:15.141514 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:29:15.141521 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 18:29:15.141527 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 18:29:15.141534 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:29:15.141540 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:29:15.141546 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 18:29:15.141553 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 18:29:15.141560 [info]: 
+2025-08-11 18:29:15.141567 [info]: user=ddd&password=123456
+2025-08-11 18:29:15.141583 [info]: User ddd logged in from 113.140.3.79:15285
+2025-08-11 18:29:15.141598 [info]: request:HTTP/1.1 302 Found
+
+2025-08-11 18:29:15.141604 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+
+2025-08-11 18:29:15.141609 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+Connection:close
+
+2025-08-11 18:29:15.141614 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+Connection:close
+Location: /welcome.html?ip=113.140.3.79&port=15285
+
+2025-08-11 18:29:15.141619 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+Connection:close
+Location: /welcome.html?ip=113.140.3.79&port=15285
+
+
+2025-08-11 18:29:15.141690 [info]: close fd 16
+2025-08-11 18:29:15.195296 [info]: deal with the client(113.140.3.79)
+2025-08-11 18:29:15.195359 [info]: adjust timer once
+2025-08-11 18:29:15.195433 [info]: GET /welcome.html?ip=113.140.3.79&port=15285 HTTP/1.1
+2025-08-11 18:29:15.195446 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:29:15.195455 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:29:15.195464 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:29:15.195472 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:29:15.195480 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:29:15.195488 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:29:15.195495 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:29:15.195503 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:29:15.195511 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:29:15.195519 [info]: Cache-Control: max-age=0
+2025-08-11 18:29:15.195526 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 18:29:15.195533 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:29:15.195541 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:29:15.195548 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 18:29:15.195556 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 18:29:15.195564 [info]: 
+2025-08-11 18:29:17.898653 [info]: timer tick
+2025-08-11 18:29:22.898714 [info]: timer tick
+2025-08-11 18:29:27.898774 [info]: timer tick
+2025-08-11 18:29:32.898846 [info]: timer tick
+2025-08-11 18:29:37.898898 [info]: timer tick
+2025-08-11 18:29:42.898953 [info]: timer tick
+2025-08-11 18:29:47.899017 [info]: timer tick
+2025-08-11 18:29:52.899070 [info]: timer tick
+2025-08-11 18:29:57.899136 [info]: timer tick
+2025-08-11 18:30:02.899167 [info]: timer tick
+2025-08-11 18:30:07.899224 [info]: timer tick
+2025-08-11 18:30:12.899274 [info]: timer tick
+2025-08-11 18:30:17.899342 [info]: timer tick
+2025-08-11 18:30:22.899411 [info]: timer tick
+2025-08-11 18:30:27.899475 [info]: timer tick
+2025-08-11 18:30:32.899541 [info]: timer tick
+2025-08-11 18:30:37.899600 [info]: timer tick
+2025-08-11 18:30:42.899645 [info]: timer tick
+2025-08-11 18:30:47.899698 [info]: timer tick
+2025-08-11 18:30:52.899747 [info]: timer tick
+2025-08-11 18:30:57.899801 [info]: timer tick
+2025-08-11 18:31:02.899853 [info]: timer tick
+2025-08-11 18:31:07.899915 [info]: timer tick
+2025-08-11 18:31:12.899961 [info]: timer tick
+2025-08-11 18:31:17.900011 [info]: timer tick
+2025-08-11 18:31:22.900054 [info]: timer tick
+2025-08-11 18:31:27.900096 [info]: timer tick
+2025-08-11 18:31:32.900159 [info]: timer tick
+2025-08-11 18:31:37.900206 [info]: timer tick
+2025-08-11 18:31:42.900258 [info]: timer tick
+2025-08-11 18:31:47.900319 [info]: timer tick
+2025-08-11 18:31:52.900373 [info]: timer tick
+2025-08-11 18:31:57.900436 [info]: timer tick
+2025-08-11 18:32:02.900488 [info]: timer tick
+2025-08-11 18:32:07.900551 [info]: timer tick
+2025-08-11 18:32:12.900614 [info]: timer tick
+2025-08-11 18:32:17.900672 [info]: timer tick
+2025-08-11 18:32:22.900721 [info]: timer tick
+2025-08-11 18:32:27.900782 [info]: timer tick
+2025-08-11 18:32:32.900847 [info]: timer tick
+2025-08-11 18:32:37.900894 [info]: timer tick
+2025-08-11 18:32:42.900949 [info]: timer tick
+2025-08-11 18:32:47.900998 [info]: timer tick
+2025-08-11 18:32:52.901075 [info]: timer tick
+2025-08-11 18:32:57.901137 [info]: timer tick
+2025-08-11 18:33:02.901192 [info]: timer tick
+2025-08-11 18:33:07.901241 [info]: timer tick
+2025-08-11 18:33:12.901298 [info]: timer tick
+2025-08-11 18:33:15.225353 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:33:15.225434 [info]: adjust timer once
+2025-08-11 18:33:15.225493 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 18:33:15.225505 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:33:15.225513 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:33:15.225532 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:33:15.225540 [info]: Content-Length: 24
+2025-08-11 18:33:15.225549 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:33:15.225557 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:33:15.225564 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:33:15.225572 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:33:15.225580 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:33:15.225587 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:33:15.225595 [info]: Cache-Control: max-age=0
+2025-08-11 18:33:15.225602 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 18:33:15.225610 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:33:15.225618 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:33:15.225626 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 18:33:15.225633 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 18:33:15.225641 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:33:15.225648 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:33:15.225655 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 18:33:15.225662 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 18:33:15.225670 [info]: 
+2025-08-11 18:33:15.225678 [info]: user=ddd&password=123456
+2025-08-11 18:33:15.225696 [info]: User ddd logged in from 124.114.148.40:33900
+2025-08-11 18:33:15.225713 [info]: request:HTTP/1.1 302 Found
+
+2025-08-11 18:33:15.225728 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+
+2025-08-11 18:33:15.225736 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+Connection:close
+
+2025-08-11 18:33:15.225744 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+Connection:close
+Location: /welcome.html?ip=124.114.148.40&port=33900
+
+2025-08-11 18:33:15.225751 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+Connection:close
+Location: /welcome.html?ip=124.114.148.40&port=33900
+
+
+2025-08-11 18:33:15.225820 [info]: close fd 16
+2025-08-11 18:33:15.287287 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:33:15.287343 [info]: adjust timer once
+2025-08-11 18:33:15.287409 [info]: GET /welcome.html?ip=124.114.148.40&port=33900 HTTP/1.1
+2025-08-11 18:33:15.287426 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:33:15.287435 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:33:15.287443 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:33:15.287452 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:33:15.287459 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:33:15.287467 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:33:15.287474 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:33:15.287482 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:33:15.287489 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:33:15.287497 [info]: Cache-Control: max-age=0
+2025-08-11 18:33:15.287505 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 18:33:15.287512 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:33:15.287520 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:33:15.287527 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 18:33:15.287535 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 18:33:15.287542 [info]: 
+2025-08-11 18:33:17.901347 [info]: timer tick
+2025-08-11 18:33:22.901408 [info]: timer tick
+2025-08-11 18:33:27.901467 [info]: timer tick
+2025-08-11 18:33:32.901549 [info]: timer tick
+2025-08-11 18:33:37.901594 [info]: timer tick
+2025-08-11 18:33:42.901668 [info]: timer tick
+2025-08-11 18:33:47.901707 [info]: timer tick
+2025-08-11 18:33:52.901762 [info]: timer tick
+2025-08-11 18:33:57.901821 [info]: timer tick
+2025-08-11 18:34:02.901879 [info]: timer tick
+2025-08-11 18:34:19.930623 [info]: timer tick
+2025-08-11 18:34:22.497955 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:34:22.498015 [info]: adjust timer once
+2025-08-11 18:34:22.498086 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 18:34:22.498106 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:34:22.498115 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:34:22.498137 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:34:22.498146 [info]: Content-Length: 24
+2025-08-11 18:34:22.498156 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:34:22.498164 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:34:22.498172 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:34:22.498179 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:34:22.498187 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:34:22.498200 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:34:22.498208 [info]: Cache-Control: max-age=0
+2025-08-11 18:34:22.498215 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 18:34:22.498223 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:34:22.498230 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:34:22.498238 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 18:34:22.498245 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 18:34:22.498252 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:34:22.498259 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:34:22.498267 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 18:34:22.498275 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 18:34:22.498282 [info]: 
+2025-08-11 18:34:22.498289 [info]: 
+2025-08-11 18:34:22.498309 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:34:22.498320 [info]: adjust timer once
+2025-08-11 18:34:22.498364 [info]: user=ddd&password=123456
+2025-08-11 18:34:22.498397 [info]: User ddd logged in from 124.114.148.40:20515
+2025-08-11 18:34:22.498423 [info]: request:HTTP/1.1 302 Found
+
+2025-08-11 18:34:22.498432 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+
+2025-08-11 18:34:22.498439 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+Connection:close
+
+2025-08-11 18:34:22.498447 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+Connection:close
+Location: /welcome.html?ip=124.114.148.40&port=20515
+
+2025-08-11 18:34:22.498455 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+Connection:close
+Location: /welcome.html?ip=124.114.148.40&port=20515
+
+
+2025-08-11 18:34:22.498509 [info]: close fd 16
+2025-08-11 18:34:22.560430 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:34:22.560517 [info]: adjust timer once
+2025-08-11 18:34:22.560647 [info]: GET /welcome.html?ip=124.114.148.40&port=20515 HTTP/1.1
+2025-08-11 18:34:22.560670 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:34:22.560680 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:34:22.560688 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:34:22.560697 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:34:22.560704 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:34:22.560712 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:34:22.560719 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:34:22.560726 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:34:22.560733 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:34:22.560740 [info]: Cache-Control: max-age=0
+2025-08-11 18:34:22.560748 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 18:34:22.560755 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:34:22.560762 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:34:22.560769 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 18:34:22.560776 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 18:34:22.560784 [info]: 
+2025-08-11 18:34:24.930660 [info]: timer tick
+2025-08-11 18:34:29.930738 [info]: timer tick
+2025-08-11 18:34:34.930790 [info]: timer tick
+2025-08-11 18:34:39.930845 [info]: timer tick
+2025-08-11 18:34:44.930890 [info]: timer tick
+2025-08-11 18:34:49.930940 [info]: timer tick
+2025-08-11 18:34:54.930985 [info]: timer tick
+2025-08-11 18:34:59.931045 [info]: timer tick
+2025-08-11 18:35:04.931100 [info]: timer tick
+2025-08-11 18:35:09.931164 [info]: timer tick
+2025-08-11 18:35:14.931211 [info]: timer tick
+2025-08-11 18:35:19.931246 [info]: timer tick
+2025-08-11 18:35:24.931293 [info]: timer tick
+2025-08-11 18:35:29.931329 [info]: timer tick
+2025-08-11 18:35:34.931390 [info]: timer tick
+2025-08-11 18:35:39.931443 [info]: timer tick
+2025-08-11 18:35:44.931495 [info]: timer tick
+2025-08-11 18:35:49.931547 [info]: timer tick
+2025-08-11 18:35:54.931590 [info]: timer tick
+2025-08-11 18:35:59.931651 [info]: timer tick
+2025-08-11 18:36:04.931687 [info]: timer tick
+2025-08-11 18:36:09.931737 [info]: timer tick
+2025-08-11 18:36:14.931780 [info]: timer tick
+2025-08-11 18:36:19.931878 [info]: timer tick
+2025-08-11 18:36:24.931919 [info]: timer tick
+2025-08-11 18:36:29.931974 [info]: timer tick
+2025-08-11 18:36:56.140726 [info]: timer tick
+2025-08-11 18:37:01.140755 [info]: timer tick
+2025-08-11 18:37:03.514042 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:37:03.514096 [info]: adjust timer once
+2025-08-11 18:37:03.514177 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 18:37:03.514200 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:37:03.514209 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:37:03.514217 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:37:03.514224 [info]: Content-Length: 24
+2025-08-11 18:37:03.514235 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:37:03.514242 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:37:03.514250 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:37:03.514257 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:37:03.514265 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:37:03.514273 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:37:03.514280 [info]: Cache-Control: max-age=0
+2025-08-11 18:37:03.514287 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 18:37:03.514294 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:37:03.514302 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:37:03.514310 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 18:37:03.514317 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 18:37:03.514325 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:37:03.514332 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:37:03.514339 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 18:37:03.514347 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 18:37:03.514354 [info]: 
+2025-08-11 18:37:03.514362 [info]: 
+2025-08-11 18:37:03.514828 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:37:03.514870 [info]: adjust timer once
+2025-08-11 18:37:03.514923 [info]: user=ddd&password=123456
+2025-08-11 18:37:03.514959 [info]: User ddd logged in from 124.114.148.40:42135
+2025-08-11 18:37:03.514984 [info]: request:HTTP/1.1 302 Found
+
+2025-08-11 18:37:03.514993 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+
+2025-08-11 18:37:03.515001 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+Connection:close
+
+2025-08-11 18:37:03.515009 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+Connection:close
+Location: /welcome.html?ip=124.114.148.40&port=42135
+
+2025-08-11 18:37:03.515016 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+Connection:close
+Location: /welcome.html?ip=124.114.148.40&port=42135
+
+
+2025-08-11 18:37:03.515071 [info]: close fd 16
+2025-08-11 18:37:03.574207 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:37:03.574268 [info]: adjust timer once
+2025-08-11 18:37:03.574339 [info]: GET /welcome.html?ip=124.114.148.40&port=42135 HTTP/1.1
+2025-08-11 18:37:03.574352 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:37:03.574360 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:37:03.574368 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:37:03.574376 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:37:03.574384 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:37:03.574391 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:37:03.574398 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:37:03.574406 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:37:03.574414 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:37:03.574421 [info]: Cache-Control: max-age=0
+2025-08-11 18:37:03.574428 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 18:37:03.574436 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:37:03.574443 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:37:03.574451 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 18:37:03.574458 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 18:37:03.574465 [info]: 
+2025-08-11 18:37:03.574515 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 18:37:03.574524 [info]: request:HTTP/1.1 200 OK
+Content-Length:3468
+
+2025-08-11 18:37:03.574532 [info]: request:HTTP/1.1 200 OK
+Content-Length:3468
+Connection:close
+
+2025-08-11 18:37:03.574539 [info]: request:HTTP/1.1 200 OK
+Content-Length:3468
+Connection:close
+
+
+2025-08-11 18:37:03.575355 [info]: close fd 16
+2025-08-11 18:37:06.140811 [info]: timer tick
+2025-08-11 18:37:11.140872 [info]: timer tick
+2025-08-11 18:37:16.140920 [info]: timer tick
+2025-08-11 18:37:21.140975 [info]: timer tick
+2025-08-11 18:37:26.141023 [info]: timer tick
+2025-08-11 18:37:31.141089 [info]: timer tick
+2025-08-11 18:37:36.141158 [info]: timer tick
+2025-08-11 18:37:41.141206 [info]: timer tick
+2025-08-11 18:37:46.141253 [info]: timer tick
+2025-08-11 18:37:51.141300 [info]: timer tick
+2025-08-11 18:37:56.141349 [info]: timer tick
+2025-08-11 18:38:01.141386 [info]: timer tick
+2025-08-11 18:38:06.141455 [info]: timer tick
+2025-08-11 18:38:11.141517 [info]: timer tick
+2025-08-11 18:38:16.141566 [info]: timer tick
+2025-08-11 18:38:20.161970 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:38:20.162037 [info]: adjust timer once
+2025-08-11 18:38:20.166543 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:38:20.166606 [info]: adjust timer once
+2025-08-11 18:38:20.176859 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:38:20.176902 [info]: adjust timer once
+2025-08-11 18:38:20.192592 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:38:20.192629 [info]: adjust timer once
+2025-08-11 18:38:21.141617 [info]: timer tick
+2025-08-11 18:38:26.141666 [info]: timer tick
+2025-08-11 18:38:31.141723 [info]: timer tick
+2025-08-11 18:38:36.141844 [info]: timer tick
+2025-08-11 18:38:36.190033 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:38:36.190102 [info]: adjust timer once
+2025-08-11 18:38:36.193159 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:38:36.193197 [info]: adjust timer once
+2025-08-11 18:38:36.208199 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:38:36.208256 [info]: adjust timer once
+2025-08-11 18:38:36.227437 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:38:36.227488 [info]: adjust timer once
+2025-08-11 18:38:41.141902 [info]: timer tick
+2025-08-11 18:38:45.284608 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:38:45.284682 [info]: adjust timer once
+2025-08-11 18:38:45.284703 [info]: GET / HTTP/1.1
+2025-08-11 18:38:45.284714 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:38:45.284722 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:38:45.284730 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:38:45.284738 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:38:45.284745 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:38:45.284752 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:38:45.284759 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:38:45.284767 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:38:45.284774 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:38:45.284780 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 18:38:45.284788 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 18:38:45.284795 [info]: 
+2025-08-11 18:38:45.285928 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 18:38:45.285969 [info]: request:HTTP/1.1 200 OK
+Content-Length:4163
+
+2025-08-11 18:38:45.285979 [info]: request:HTTP/1.1 200 OK
+Content-Length:4163
+Connection:close
+
+2025-08-11 18:38:45.285987 [info]: request:HTTP/1.1 200 OK
+Content-Length:4163
+Connection:close
+
+
+2025-08-11 18:38:45.286786 [info]: close fd 18
+2025-08-11 18:38:45.955070 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:38:45.955114 [info]: adjust timer once
+2025-08-11 18:38:45.955177 [info]: GET /your_background_image.jpg HTTP/1.1
+2025-08-11 18:38:45.955190 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:38:45.955198 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:38:45.955205 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:38:45.955214 [info]: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2025-08-11 18:38:45.955221 [info]: oop!unknow header: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2025-08-11 18:38:45.955228 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:38:45.955235 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:38:45.955242 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:38:45.955249 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:38:45.955257 [info]: Referer: http://123.207.158.143:9006/
+2025-08-11 18:38:45.955264 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/
+2025-08-11 18:38:45.955271 [info]: 
+2025-08-11 18:38:46.086753 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:38:46.086820 [info]: adjust timer once
+2025-08-11 18:38:46.086848 [info]: GET /favicon.ico HTTP/1.1
+2025-08-11 18:38:46.086860 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:38:46.086869 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:38:46.086876 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:38:46.086884 [info]: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2025-08-11 18:38:46.086892 [info]: oop!unknow header: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2025-08-11 18:38:46.086899 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:38:46.086907 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:38:46.086913 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:38:46.086929 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:38:46.086937 [info]: Referer: http://123.207.158.143:9006/
+2025-08-11 18:38:46.086944 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/
+2025-08-11 18:38:46.086951 [info]: 
+2025-08-11 18:38:46.087000 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 18:38:46.087016 [info]: request:HTTP/1.1 200 OK
+Content-Length:4286
+
+2025-08-11 18:38:46.087025 [info]: request:HTTP/1.1 200 OK
+Content-Length:4286
+Connection:close
+
+2025-08-11 18:38:46.087033 [info]: request:HTTP/1.1 200 OK
+Content-Length:4286
+Connection:close
+
+
+2025-08-11 18:38:46.088369 [info]: close fd 18
+2025-08-11 18:38:46.141942 [info]: timer tick
+2025-08-11 18:38:49.802614 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:38:49.802683 [info]: adjust timer once
+2025-08-11 18:38:49.802704 [info]: POST /0 HTTP/1.1
+2025-08-11 18:38:49.802715 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:38:49.802723 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:38:49.802731 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:38:49.802738 [info]: Content-Length: 0
+2025-08-11 18:38:49.802747 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:38:49.802754 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:38:49.802761 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:38:49.802768 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:38:49.802775 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:38:49.802782 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:38:49.802790 [info]: Cache-Control: max-age=0
+2025-08-11 18:38:49.802797 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 18:38:49.802804 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:38:49.802812 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:38:49.802819 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 18:38:49.802826 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 18:38:49.802842 [info]: Referer: http://123.207.158.143:9006/
+2025-08-11 18:38:49.802851 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/
+2025-08-11 18:38:49.802858 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 18:38:49.802865 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 18:38:49.802872 [info]: 
+2025-08-11 18:38:49.802914 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 18:38:49.802932 [info]: request:HTTP/1.1 200 OK
+Content-Length:724
+
+2025-08-11 18:38:49.802941 [info]: request:HTTP/1.1 200 OK
+Content-Length:724
+Connection:close
+
+2025-08-11 18:38:49.802948 [info]: request:HTTP/1.1 200 OK
+Content-Length:724
+Connection:close
+
+
+2025-08-11 18:38:49.803710 [info]: close fd 18
+2025-08-11 18:38:51.142054 [info]: timer tick
+2025-08-11 18:38:55.090416 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:38:55.090483 [info]: adjust timer once
+2025-08-11 18:38:55.090503 [info]: POST /3CGISQL.cgi HTTP/1.1
+2025-08-11 18:38:55.090514 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:38:55.090533 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:38:55.090540 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:38:55.090548 [info]: Content-Length: 17
+2025-08-11 18:38:55.090557 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:38:55.090574 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:38:55.090582 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:38:55.090590 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:38:55.090597 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:38:55.090604 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:38:55.090612 [info]: Cache-Control: max-age=0
+2025-08-11 18:38:55.090619 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 18:38:55.090626 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:38:55.090634 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:38:55.090642 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 18:38:55.090649 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 18:38:55.090656 [info]: Referer: http://123.207.158.143:9006/0
+2025-08-11 18:38:55.090663 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/0
+2025-08-11 18:38:55.090671 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 18:38:55.090678 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 18:38:55.090685 [info]: 
+2025-08-11 18:38:55.090693 [info]: 
+2025-08-11 18:38:55.090744 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:38:55.090757 [info]: adjust timer once
+2025-08-11 18:38:55.090770 [info]: user=1&password=1
+2025-08-11 18:38:55.190230 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 18:38:55.190303 [info]: request:HTTP/1.1 200 OK
+Content-Length:725
+
+2025-08-11 18:38:55.190318 [info]: request:HTTP/1.1 200 OK
+Content-Length:725
+Connection:close
+
+2025-08-11 18:38:55.190329 [info]: request:HTTP/1.1 200 OK
+Content-Length:725
+Connection:close
+
+
+2025-08-11 18:38:55.191161 [info]: close fd 16
+2025-08-11 18:38:56.142113 [info]: timer tick
+2025-08-11 18:38:58.629516 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:38:58.629594 [info]: POST /2CGISQL.cgi HTTP/1.1
+2025-08-11 18:38:58.629609 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:38:58.629617 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:38:58.629624 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:38:58.629633 [info]: Content-Length: 17
+2025-08-11 18:38:58.629641 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:38:58.629648 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:38:58.629656 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:38:58.629663 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:38:58.629670 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:38:58.629676 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:38:58.629684 [info]: Cache-Control: max-age=0
+2025-08-11 18:38:58.629692 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 18:38:58.629699 [info]: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:38:58.629707 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2025-08-11 18:38:58.629714 [info]: Origin: http://123.207.158.143:9006
+2025-08-11 18:38:58.629722 [info]: oop!unknow header: Origin: http://123.207.158.143:9006
+2025-08-11 18:38:58.629729 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:38:58.629737 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:38:58.629744 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 18:38:58.629752 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 18:38:58.629768 [info]: 
+2025-08-11 18:38:58.629775 [info]: 
+2025-08-11 18:38:58.629789 [info]: adjust timer once
+2025-08-11 18:38:58.629803 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:38:58.629814 [info]: adjust timer once
+2025-08-11 18:38:58.629826 [info]: user=1&password=1
+2025-08-11 18:38:58.629856 [info]: User 1 logged in from 124.114.148.40:55061
+2025-08-11 18:38:58.629870 [info]: request:HTTP/1.1 302 Found
+
+2025-08-11 18:38:58.629878 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+
+2025-08-11 18:38:58.629885 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+Connection:close
+
+2025-08-11 18:38:58.629893 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+Connection:close
+Location: /welcome.html?ip=124.114.148.40&port=55061
+
+2025-08-11 18:38:58.629900 [info]: request:HTTP/1.1 302 Found
+Content-Length:0
+Connection:close
+Location: /welcome.html?ip=124.114.148.40&port=55061
+
+
+2025-08-11 18:38:58.629951 [info]: close fd 16
+2025-08-11 18:38:58.704950 [info]: deal with the client(124.114.148.40)
+2025-08-11 18:38:58.705017 [info]: GET /welcome.html?ip=124.114.148.40&port=55061 HTTP/1.1
+2025-08-11 18:38:58.705030 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:38:58.705039 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:38:58.705046 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:38:58.705055 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:38:58.705062 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2025-08-11 18:38:58.705069 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:38:58.705076 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:38:58.705084 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:38:58.705091 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:38:58.705097 [info]: Cache-Control: max-age=0
+2025-08-11 18:38:58.705104 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 18:38:58.705112 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:38:58.705130 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:38:58.705139 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 18:38:58.705146 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 18:38:58.705153 [info]: 
+2025-08-11 18:38:58.705194 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 18:38:58.705203 [info]: request:HTTP/1.1 200 OK
+Content-Length:3468
+
+2025-08-11 18:38:58.705211 [info]: request:HTTP/1.1 200 OK
+Content-Length:3468
+Connection:close
+
+2025-08-11 18:38:58.705218 [info]: request:HTTP/1.1 200 OK
+Content-Length:3468
+Connection:close
+
+
+2025-08-11 18:38:58.705232 [info]: adjust timer once
+2025-08-11 18:38:58.705321 [info]: close fd 16
+2025-08-11 18:39:01.142161 [info]: timer tick
+2025-08-11 18:39:06.142215 [info]: timer tick
+2025-08-11 18:39:11.142270 [info]: timer tick
+2025-08-11 18:39:16.142321 [info]: timer tick
+2025-08-11 18:39:21.142403 [info]: timer tick
+2025-08-11 18:39:26.142449 [info]: timer tick
+2025-08-11 18:39:31.142505 [info]: timer tick
+2025-08-11 18:39:36.142549 [info]: timer tick
+2025-08-11 18:39:41.142628 [info]: timer tick
+2025-08-11 18:39:46.142673 [info]: timer tick
+2025-08-11 18:39:51.142720 [info]: timer tick
+2025-08-11 18:39:56.142771 [info]: timer tick
+2025-08-11 18:40:01.142816 [info]: timer tick
+2025-08-11 18:40:06.142864 [info]: timer tick
+2025-08-11 18:40:11.142912 [info]: timer tick
+2025-08-11 18:40:16.142963 [info]: timer tick
+2025-08-11 18:40:21.143011 [info]: timer tick
+2025-08-11 18:40:26.143065 [info]: timer tick
+2025-08-11 18:40:31.143133 [info]: timer tick
+2025-08-11 18:40:36.143211 [info]: timer tick
+2025-08-11 18:40:41.143256 [info]: timer tick
+2025-08-11 18:40:46.143301 [info]: timer tick
+2025-08-11 18:40:51.143348 [info]: timer tick
+2025-08-11 18:40:56.143392 [info]: timer tick
+2025-08-11 18:41:01.143440 [info]: timer tick
+2025-08-11 18:41:06.143497 [info]: timer tick
+2025-08-11 18:41:11.143545 [info]: timer tick
+2025-08-11 18:41:16.143607 [info]: timer tick
+2025-08-11 18:41:21.143653 [info]: timer tick
+2025-08-11 18:41:26.143706 [info]: timer tick
+2025-08-11 18:41:31.143751 [info]: timer tick
+2025-08-11 18:41:36.143815 [info]: timer tick
+2025-08-11 18:41:41.143866 [info]: timer tick
+2025-08-11 18:41:46.143936 [info]: timer tick
+2025-08-11 18:41:51.143994 [info]: timer tick
+2025-08-11 18:41:56.144041 [info]: timer tick
+2025-08-11 18:42:01.144093 [info]: timer tick
+2025-08-11 18:42:06.144171 [info]: timer tick
+2025-08-11 18:42:11.144222 [info]: timer tick
+2025-08-11 18:42:14.676258 [info]: deal with the client(220.196.160.73)
+2025-08-11 18:42:14.676329 [info]: adjust timer once
+2025-08-11 18:42:14.676355 [info]: GET /welcome.html?ip=124.114.148.40&port=20515 HTTP/1.1
+2025-08-11 18:42:14.676367 [info]: Host: 123.207.158.143:9006
+2025-08-11 18:42:14.676375 [info]: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:42:14.676383 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-08-11 18:42:14.676392 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2025-08-11 18:42:14.676399 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2025-08-11 18:42:14.676406 [info]: Accept-Encoding: gzip, deflate
+2025-08-11 18:42:14.676413 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2025-08-11 18:42:14.676420 [info]: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:42:14.676427 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9
+2025-08-11 18:42:14.676435 [info]: Cache-Control: max-age=0
+2025-08-11 18:42:14.676442 [info]: oop!unknow header: Cache-Control: max-age=0
+2025-08-11 18:42:14.676449 [info]: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:42:14.676456 [info]: oop!unknow header: Referer: http://123.207.158.143:9006/3CGISQL.cgi
+2025-08-11 18:42:14.676464 [info]: Upgrade-Insecure-Requests: 1
+2025-08-11 18:42:14.676471 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2025-08-11 18:42:14.676478 [info]: 
+2025-08-11 18:42:14.676521 [info]: request:HTTP/1.1 200 OK
+
+2025-08-11 18:42:14.676540 [info]: request:HTTP/1.1 200 OK
+Content-Length:3468
+
+2025-08-11 18:42:14.676547 [info]: request:HTTP/1.1 200 OK
+Content-Length:3468
+Connection:close
+
+2025-08-11 18:42:14.676554 [info]: request:HTTP/1.1 200 OK
+Content-Length:3468
+Connection:close
+
+
+2025-08-11 18:42:14.676634 [info]: close fd 16
+2025-08-11 18:42:16.144270 [info]: timer tick
+2025-08-11 18:42:21.144320 [info]: timer tick
+2025-08-11 18:42:26.144369 [info]: timer tick
+2025-08-11 18:42:31.144419 [info]: timer tick
+2025-08-11 18:42:36.144474 [info]: timer tick
+2025-08-11 18:42:41.144520 [info]: timer tick
+2025-08-11 18:42:46.144569 [info]: timer tick
+2025-08-11 18:42:51.144618 [info]: timer tick
+2025-08-11 18:42:56.144669 [info]: timer tick
+2025-08-11 18:43:01.144727 [info]: timer tick
+2025-08-11 18:43:06.144785 [info]: timer tick
+2025-08-11 18:43:11.144853 [info]: timer tick
+2025-08-11 18:43:16.144904 [info]: timer tick
+2025-08-11 18:43:21.144955 [info]: timer tick
+2025-08-11 18:43:26.145021 [info]: timer tick
+2025-08-11 18:43:31.145071 [info]: timer tick
+2025-08-11 18:43:36.145114 [info]: timer tick
+2025-08-11 18:43:41.145165 [info]: timer tick
+2025-08-11 18:43:46.145230 [info]: timer tick
+2025-08-11 18:43:51.145284 [info]: timer tick
+2025-08-11 18:43:56.145332 [info]: timer tick
+2025-08-11 18:44:01.145380 [info]: timer tick
+2025-08-11 18:44:06.145431 [info]: timer tick
+2025-08-11 18:44:11.145480 [info]: timer tick

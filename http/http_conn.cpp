@@ -129,8 +129,6 @@ void http_conn::init(int sockfd, const sockaddr_in &addr, char *root, int TRIGMo
     strcpy(sql_name, sqlname.c_str());
 
     init();
-
-
 }
 
 // 初始化新接受的连接
@@ -155,7 +153,9 @@ void http_conn::init()
     m_state = 0;
     timer_flag = 0;
     improv = 0;
-
+    server_port_ = storage::Config::GetInstance()->GetServerPort();
+    server_ip_ = storage::Config::GetInstance()->GetServerIp();
+    download_prefix_ = storage::Config::GetInstance()->GetDownloadPrefix();
     memset(m_read_buf, '\0', READ_BUFFER_SIZE);
     memset(m_write_buf, '\0', WRITE_BUFFER_SIZE);
     memset(m_real_file, '\0', FILENAME_LEN);
@@ -301,9 +301,17 @@ http_conn::HTTP_CODE http_conn::parse_request_line(char *text)
 
     if (!m_url || m_url[0] != '/')
         return BAD_REQUEST;
+
     // 当url为/时，显示判断界面
     if (strlen(m_url) == 1)
         strcat(m_url, "judge.html");
+
+    // 去掉 URL 中的查询参数部分
+    char *query_pos = strchr(m_url, '?');
+    if (query_pos)
+    {
+        *query_pos = '\0';
+    }
     // 请求行处理完毕，将主状态机转移处理请求头
     m_check_state = CHECK_STATE_HEADER;
     return NO_REQUEST;
@@ -530,8 +538,21 @@ http_conn::HTTP_CODE http_conn::do_request()
         else if (*(p + 1) == '2')
         {
             if (users.find(name) != users.end() && users[name] == password)
-                strcpy(m_url, "/welcome.html");
+            {
+                // strcpy(m_url, "/welcome.html");
+                sockaddr_in *peer_addr = get_address();
+                std::string client_ip = inet_ntoa(peer_addr->sin_addr);
+                int client_port = ntohs(peer_addr->sin_port);
+                LOG_INFO("User %s logged in from %s:%d", name, inet_ntoa(peer_addr->sin_addr), ntohs(peer_addr->sin_port));
+                // 构建重定向 URL
+                std::string welcome_url = "/welcome.html?ip=" + client_ip + "&port=" + std::to_string(client_port);
+                m_redirect_url = welcome_url; // 保存重定向的 URL
+
+                // 返回 302 重定向响应
+                return REDIRECT_REQUEST;
+            }
             else
+
                 strcpy(m_url, "/logError.html");
         }
     }
@@ -578,7 +599,14 @@ http_conn::HTTP_CODE http_conn::do_request()
 
         free(m_url_real);
     }
+    else if (*(p + 1) == '8')
+    {
+        char *m_url_real = (char *)malloc(sizeof(char) * 200);
+        strcpy(m_url_real, "/index.html");
+        strncpy(m_real_file + len, m_url_real, strlen(m_url_real));
 
+        free(m_url_real);
+    }
     else
         strncpy(m_real_file + len, m_url, FILENAME_LEN - len - 1);
 
@@ -836,6 +864,18 @@ bool http_conn::process_write(HTTP_CODE ret)
                 return false;
         }
         break;
+    case REDIRECT_REQUEST:
+        // 处理 302 重定向
+        add_status_line(302, "Found"); // 设置 302 状态码
+        add_content_length(0);         // 重定向通常没有正文内容
+        add_linger();
+        add_response("Location: %s\r\n", m_redirect_url.c_str()); // Location 头
+        add_blank_line();                                         // 空行
+        m_iv[0].iov_base = m_write_buf;
+        m_iv[0].iov_len = m_write_idx;
+        m_iv_count = 1;
+        bytes_to_send = m_write_idx;
+        return true;
     default:
         return false;
     }

@@ -26,6 +26,7 @@
 #include "../timer/lst_timer.h"
 #include "../log/log.h"
 #include "../metrics/metrics.h"
+#include "../Util/StorageConfig.hpp"
 
 class http_conn
 {
@@ -66,7 +67,8 @@ public:
         FORBIDDEN_REQUEST,
         FILE_REQUEST,
         INTERNAL_ERROR,
-        CLOSED_CONNECTION
+        CLOSED_CONNECTION,
+        REDIRECT_REQUEST
     };
     // 从状态机状态
     enum LINE_STATUS
@@ -99,7 +101,6 @@ public:
     int timer_flag;
     int improv;
 
-
 private:
     void init();
     // 从m_read_buf读取，并处理请求报文
@@ -126,17 +127,19 @@ private:
     bool add_status_line(int status, const char *title);
     bool add_headers(int content_length);
     bool add_content_type();
-    bool add_content_type(const char* type);
+    bool add_content_type(const char *type);
 
     bool add_content_length(int content_length);
     bool add_linger();
     bool add_blank_line();
-
+    
 public:
     static int m_epollfd;
     static int m_user_count;
     MYSQL *mysql;
     int m_state; // 读为0, 写为1
+
+   
 
 private:
     int m_sockfd;
@@ -163,6 +166,7 @@ private:
     // 存储读取文件的名称
     char m_real_file[FILENAME_LEN];
     char *m_url;
+    std::string  m_redirect_url; // 重定向URL
     char *m_version;
     char *m_host;
     long m_content_length;
@@ -185,8 +189,12 @@ private:
     char sql_passwd[100];
     char sql_name[100];
 
-public:
+    // 存储系统
+    uint16_t server_port_;
+    std::string server_ip_;
+    std::string download_prefix_;
 
+public:
     // 用于处理API响应
     bool m_is_api_response;
     std::string m_api_response_content;

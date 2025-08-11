@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ZXY 的 WebServer - 选择</title> <!-- 更新标题以反映其功能 -->
+    <title>ZXY 的 WebServer - 选择</title>
     <style>
         /* 通用样式，与之前登录页和欢迎页保持一致 */
         body {
@@ -16,7 +16,6 @@
             min-height: 100vh;
             margin: 0;
             background-color: #f4f7f6;
-            /* 与登录页背景保持一致 */
         }
 
         /* 容器样式 */
@@ -41,14 +40,11 @@
         /* 按钮表单样式 */
         .button-form {
             margin-bottom: 20px;
-            /* 每个按钮表单下方留出间距 */
             text-align: center;
-            /* 确保按钮在div中居中 */
         }
 
         .button-form button {
             background-color: #007bff;
-            /* 蓝色按钮，与之前设计语言一致 */
             color: white;
             border: none;
             padding: 15px 30px;
@@ -57,16 +53,13 @@
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
             width: 100%;
-            /* 按钮宽度100% */
             max-width: 250px;
-            /* 限制按钮最大宽度 */
             box-sizing: border-box;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .button-form button:hover {
             background-color: #0056b3;
-            /* 悬停时深蓝色 */
             transform: translateY(-2px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
@@ -75,23 +68,16 @@
             transform: translateY(0);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        /* 为监控按钮定义一个不同的颜色，使其更突出或表示不同类型的功能 */
-        .monitor-button button {
-            background-color: #28a745;
-            /* 绿色按钮，常用于“状态”、“查看”等 */
-        }
-
-        .monitor-button button:hover {
-            background-color: #218838;
-        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>是时候做出选择了</h1>
+        <h1>欢迎！</h1>
+        <!-- 显示客户端 IP 和端口 -->
+        <p id="client-info"></p>
 
+        <!-- 按钮部分 -->
         <form action="/5" method="post" class="button-form">
             <button type="submit">查看图片 (xxx.jpg)</button>
         </form>
@@ -104,7 +90,24 @@
         <form action="/monitor.html" method="post" class="button-form">
             <button type="submit">服务器监控</button>
         </form>
+        <form action="/storage.html" method="post" class="button-form">
+            <button type="submit">存储系统</button>
+        </form>
     </div>
+
+    <script>
+        // 获取 URL 参数
+        const urlParams = new URLSearchParams(window.location.search);
+        const clientIp = urlParams.get('ip');
+        const clientPort = urlParams.get('port');
+
+        // 在页面中显示 IP 和端口
+        if (clientIp && clientPort) {
+            document.getElementById("client-info").textContent = `你来自 ${clientIp}:${clientPort}`;
+        } else {
+            document.getElementById("client-info").textContent = "IP 和端口信息无法获取";
+        }
+    </script>
 </body>
 
 </html>
