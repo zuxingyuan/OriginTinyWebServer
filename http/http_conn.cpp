@@ -539,10 +539,9 @@ http_conn::HTTP_CODE http_conn::process_read()
     }
     return NO_REQUEST;
 }
-
 http_conn::HTTP_CODE http_conn::do_request()
 {
-    // “doc_root”：网站根目录，文件夹内存放请求的资源和跳转的html文件
+    // "doc_root"：网站根目录，文件夹内存放请求的资源和跳转的html文件
     // 将初始化的m_real_file赋值为网站根目录
     strcpy(m_real_file, doc_root);
     int len = strlen(doc_root);
@@ -559,6 +558,7 @@ http_conn::HTTP_CODE http_conn::do_request()
     m_is_api_response = false;
     m_api_response_content.clear();
     m_api_content_type.clear();
+    
     // 优先处理API请求：/monitor
     if (strcmp(m_url, "/monitor") == 0) // 当请求路径是 /monitor 时
     {
@@ -567,6 +567,41 @@ http_conn::HTTP_CODE http_conn::do_request()
         m_api_content_type = "application/json";                          // 设置Content-Type
         return FILE_REQUEST;                                              // 返回 FILE_REQUEST，表示内容已在 m_api_response_content 中准备好
     }
+    
+    // 添加文件列表API接口：/api/files
+    else if (strcmp(m_url, "/api/files") == 0)
+    {
+        std::vector<storage::StorageInfo> files;
+        std::string json_response = "[";
+        
+        if (storage::DataManager::GetInstance()->GetAll(&files))
+        {
+            for (size_t i = 0; i < files.size(); ++i)
+            {
+                const auto& file = files[i];
+                storage::FileUtil fu(file.storage_path_);
+                
+                // 判断存储类型
+                std::string storage_type = (file.storage_path_.find("deep") != std::string::npos) ? "deep" : "low";
+                
+                if (i > 0) json_response += ",";
+                json_response += "{";
+                json_response += "\"filename\":\"" + fu.FileName() + "\",";
+                json_response += "\"size\":" + std::to_string(file.fsize_) + ",";
+                json_response += "\"url\":\"" + file.url_ + "\",";
+                json_response += "\"storage_type\":\"" + storage_type + "\",";
+                json_response += "\"mtime\":" + std::to_string(file.mtime_);
+                json_response += "}";
+            }
+        }
+        json_response += "]";
+        
+        m_is_api_response = true;
+        m_api_response_content = json_response;
+        m_api_content_type = "application/json";
+        return FILE_REQUEST;
+    }
+    
     // 处理静态文件请求：/monitor.html
     else if (strcmp(m_url, "/monitor.html") == 0)
     {
@@ -574,6 +609,7 @@ http_conn::HTTP_CODE http_conn::do_request()
         strncpy(m_real_file, full_path.c_str(), FILENAME_LEN - 1);
         m_real_file[FILENAME_LEN - 1] = '\0';
     }
+    
     // 处理下载请求
     if (std::string(m_url).find("/download/") != std::string::npos)
     {
@@ -590,7 +626,6 @@ http_conn::HTTP_CODE http_conn::do_request()
     // 实现登陆和注册校验
     if (cgi == 1 && (*(p + 1) == '2' || *(p + 1) == '3'))
     {
-
         // 根据标志判断是登录检测还是注册检测
         char flag = m_url[1];
 
@@ -646,7 +681,6 @@ http_conn::HTTP_CODE http_conn::do_request()
         {
             if (users.find(name) != users.end() && users[name] == password)
             {
-                // strcpy(m_url, "/welcome.html");
                 sockaddr_in *peer_addr = get_address();
                 std::string client_ip = inet_ntoa(peer_addr->sin_addr);
                 int client_port = ntohs(peer_addr->sin_port);
@@ -662,6 +696,7 @@ http_conn::HTTP_CODE http_conn::do_request()
                 strcpy(m_url, "/logError.html");
         }
     }
+    
     // 如果请求资源为/0,表示跳转注册界面
     if (*(p + 1) == '0')
     {
@@ -669,7 +704,6 @@ http_conn::HTTP_CODE http_conn::do_request()
         strcpy(m_url_real, "/register.html");
         // 将网站目录和/register.teml进行拼接，更新到m_real_file中
         strncpy(m_real_file + len, m_url_real, strlen(m_url_real));
-
         free(m_url_real);
     }
     // 如果请求资源为/1，表示跳转登陆界面
@@ -678,7 +712,6 @@ http_conn::HTTP_CODE http_conn::do_request()
         char *m_url_real = (char *)malloc(sizeof(char) * 200);
         strcpy(m_url_real, "/log.html");
         strncpy(m_real_file + len, m_url_real, strlen(m_url_real));
-
         free(m_url_real);
     }
     else if (*(p + 1) == '5')
@@ -686,7 +719,6 @@ http_conn::HTTP_CODE http_conn::do_request()
         char *m_url_real = (char *)malloc(sizeof(char) * 200);
         strcpy(m_url_real, "/picture.html");
         strncpy(m_real_file + len, m_url_real, strlen(m_url_real));
-
         free(m_url_real);
     }
     else if (*(p + 1) == '6')
@@ -694,7 +726,6 @@ http_conn::HTTP_CODE http_conn::do_request()
         char *m_url_real = (char *)malloc(sizeof(char) * 200);
         strcpy(m_url_real, "/video.html");
         strncpy(m_real_file + len, m_url_real, strlen(m_url_real));
-
         free(m_url_real);
     }
     else if (*(p + 1) == '7')
@@ -702,7 +733,6 @@ http_conn::HTTP_CODE http_conn::do_request()
         char *m_url_real = (char *)malloc(sizeof(char) * 200);
         strcpy(m_url_real, "/fans.html");
         strncpy(m_real_file + len, m_url_real, strlen(m_url_real));
-
         free(m_url_real);
     }
     else if (*(p + 1) == '8')
@@ -712,14 +742,23 @@ http_conn::HTTP_CODE http_conn::do_request()
         strncpy(m_real_file + len, m_url_real, strlen(m_url_real));
         free(m_url_real);
     }
+    // 添加 /9 路径映射到文件管理界面
+    else if (*(p + 1) == '9')
+    {
+        char *m_url_real = (char *)malloc(sizeof(char) * 200);
+        strcpy(m_url_real, "/index.html");  // 映射到文件管理页面
+        strncpy(m_real_file + len, m_url_real, strlen(m_url_real));
+        free(m_url_real);
+    }
     else
         strncpy(m_real_file + len, m_url, FILENAME_LEN - len - 1);
-
+    
     // 如果是API响应，到这里就可以直接返回了，跳过文件处理部分
     if (m_is_api_response)
     {
         return FILE_REQUEST;
     }
+    
     // 通过stat获取请求资源文件信息，成功则将信息更新到m_file_stat结构体中
     // 失败返回NO_RESOURCE状态，表示资源不存在
     if (stat(m_real_file, &m_file_stat) < 0)
@@ -736,6 +775,7 @@ http_conn::HTTP_CODE http_conn::do_request()
     close(fd);
     return FILE_REQUEST;
 }
+
 
 void http_conn::unmap()
 {
