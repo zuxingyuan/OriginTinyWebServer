@@ -233,7 +233,6 @@ void ServerMetrics::addConnectedIP(const std::string &ip)
     {
         increment_active_connections(); // 只有在新IP被添加时才增加活跃连接数
     }
-    m_connected_ips.insert(ip);
     m_connected_ips_mutex.unlock();
 }
 
