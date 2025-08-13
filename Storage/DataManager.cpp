@@ -6,7 +6,7 @@
 namespace storage
 {
     // 静态成员变量定义
-    DataManager* DataManager::instance_ = nullptr;
+    DataManager *DataManager::instance_ = nullptr;
     std::mutex DataManager::instance_mutex_;
 
     // StorageInfo 方法实现
@@ -32,7 +32,7 @@ namespace storage
     {
         storage::Config *config = storage::Config::GetInstance();
         storage_file_ = config ? config->GetStorageInfoFile() : "./storage.data";
-        
+
         // 检查 pthread_rwlock_init 的返回值
         int ret = pthread_rwlock_init(&rwlock_, NULL);
         if (ret != 0)
@@ -97,44 +97,21 @@ namespace storage
             return false;
         }
 
-        if (body.empty())
-        {
-            return true;
-        }
-
         Json::Value root;
-        if (!storage::JsonUtil::UnSerialize(body, &root))
-        {
-            return false;
-        }
-
-        if (!root.isArray())
-        {
-            return true;
-        }
+        storage::JsonUtil::UnSerialize(body, &root);
 
         // 直接操作table_，不调用Insert()避免死锁
-        for (Json::Value::ArrayIndex i = 0; i < root.size(); i++)
+        for (int i = 0; i < root.size(); i++)
         {
-            try
-            {
-                const Json::Value &item = root[i];
-                StorageInfo info;
-                info.fsize_ = item.get("fsize_", 0).asInt();
-                info.atime_ = item.get("atime_", 0).asInt();
-                info.mtime_ = item.get("mtime_", 0).asInt();
-                info.storage_path_ = item.get("storage_path_", "").asString();
-                info.url_ = item.get("url_", "").asString();
 
-                if (!info.url_.empty() && !info.storage_path_.empty())
-                {
-                    table_[info.url_] = info; // 直接插入，不调用Insert()
-                }
-            }
-            catch (...)
-            {
-                continue;
-            }
+            const Json::Value &item = root[i];
+            StorageInfo info;
+            info.fsize_ = item.get("fsize_", 0).asInt();
+            info.atime_ = item.get("atime_", 0).asInt();
+            info.mtime_ = item.get("mtime_", 0).asInt();
+            info.storage_path_ = item.get("storage_path_", "").asString();
+            info.url_ = item.get("url_", "").asString();
+            Insert(info);
         }
         return true;
     }
@@ -142,27 +119,34 @@ namespace storage
     // 存储到文件
     bool DataManager::Storage()
     {
-        pthread_rwlock_rdlock(&rwlock_);
+        std::vector<StorageInfo> arr;
+        if (!GetAll(&arr))
+        {
+            // mylog::GetLogger("asynclogger")->Warn("GetAll fail,can't get StorageInfo");
+            return false;
+        }
+        // pthread_rwlock_rdlock(&rwlock_);
 
         Json::Value root;
-        for (auto e : table_) // 直接访问table_
+        for (auto e : arr) // 直接访问table_
         {
             Json::Value item;
-            item["mtime_"] = (Json::Int64)e.second.mtime_;
-            item["atime_"] = (Json::Int64)e.second.atime_;
-            item["fsize_"] = (Json::Int64)e.second.fsize_;
-            item["url_"] = e.second.url_.c_str();
-            item["storage_path_"] = e.second.storage_path_.c_str();
+            item["mtime_"] = (Json::Int64)e.mtime_;
+            item["atime_"] = (Json::Int64)e.atime_;
+            item["fsize_"] = (Json::Int64)e.fsize_;
+            item["url_"] = e.url_.c_str();
+            item["storage_path_"] = e.storage_path_.c_str();
             root.append(item);
         }
 
-        pthread_rwlock_unlock(&rwlock_);
+        // pthread_rwlock_unlock(&rwlock_);
 
         // 在锁外进行文件操作
         std::string body;
         JsonUtil::Serialize(root, &body);
         FileUtil f(storage_file_);
-        return f.SetContent(body.c_str(), body.size());
+        f.SetContent(body.c_str(), body.size());
+        return true;
     }
 
     // 插入数据
@@ -170,10 +154,6 @@ namespace storage
     {
         // 尝试获取写锁，并检查返回值
         int ret = pthread_rwlock_wrlock(&rwlock_);
-        if (ret != 0)
-        {
-            return false;
-        }
 
         table_[info.url_] = info;
         pthread_rwlock_unlock(&rwlock_);
