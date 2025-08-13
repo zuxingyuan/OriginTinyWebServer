@@ -20,13 +20,16 @@
 #include <sys/wait.h>
 #include <sys/uio.h>
 #include <map>
-
+#include <unordered_map>
+#include <evhttp.h>
+#include "../Util/base64.h" // 来自 cpp-base64 库
 #include "../lock/locker.h"
 #include "../CGImysql/sql_connection_pool.h"
 #include "../timer/lst_timer.h"
 #include "../log/log.h"
 #include "../metrics/metrics.h"
 #include "../Util/StorageConfig.hpp"
+#include "../Storage/DataManager.h"
 
 class http_conn
 {
@@ -34,9 +37,10 @@ public:
     // 设置读取文件的名称m_real_file大小
     static const int FILENAME_LEN = 200;
     // 设置读缓冲区m_read_buf大小
-    static const int READ_BUFFER_SIZE = 2048;
+    static const int READ_BUFFER_SIZE = 64*1024;
     // 设置写缓冲区m_write_buf大小
-    static const int WRITE_BUFFER_SIZE = 1024;
+    static const int WRITE_BUFFER_SIZE = 4096;
+    static const int MAX_UPLOAD_SIZE = 100 * 1024 * 1024; // 100MB
     // 报文的请求方法，本项目只用到GET和POST
     enum METHOD
     {
@@ -68,7 +72,8 @@ public:
         FILE_REQUEST,
         INTERNAL_ERROR,
         CLOSED_CONNECTION,
-        REDIRECT_REQUEST
+        REDIRECT_REQUEST,
+         REQUEST_ENTITY_TOO_LARGE, // 413 请求实体过大
     };
     // 从状态机状态
     enum LINE_STATUS
@@ -113,6 +118,8 @@ private:
     HTTP_CODE parse_headers(char *text);
     // 主状态及解析报文中的请求内容
     HTTP_CODE parse_content(char *text);
+        // 新增一个专门处理文件上传逻辑的私有方法
+    HTTP_CODE handle_file_upload(const char* file_content, size_t content_len);
     // 生成响应报文
     HTTP_CODE do_request();
     // m_start_line是已经解析的字符
@@ -132,14 +139,12 @@ private:
     bool add_content_length(int content_length);
     bool add_linger();
     bool add_blank_line();
-    
+
 public:
     static int m_epollfd;
     static int m_user_count;
     MYSQL *mysql;
     int m_state; // 读为0, 写为1
-
-   
 
 private:
     int m_sockfd;
@@ -166,7 +171,8 @@ private:
     // 存储读取文件的名称
     char m_real_file[FILENAME_LEN];
     char *m_url;
-    std::string  m_redirect_url; // 重定向URL
+    std::unordered_map<std::string, std::string> m_headers;
+    std::string m_redirect_url; // 重定向URL
     char *m_version;
     char *m_host;
     long m_content_length;
@@ -176,7 +182,7 @@ private:
     struct iovec m_iv[2]; // io向量机制iovec
     int m_iv_count;
     int cgi;             // 是否启用的POST
-    char *m_string;      // 存储请求头数据
+    std::string m_string;      // 存储请求头数据
     int bytes_to_send;   // 剩余发送字节数
     int bytes_have_send; // 已发送字节数
     char *doc_root;
@@ -193,7 +199,11 @@ private:
     uint16_t server_port_;
     std::string server_ip_;
     std::string download_prefix_;
-
+    std::string m_etag;
+    std::string m_upload_filename;
+    std::string m_upload_storage_type;
+    std::string m_content_body;  // 存储POST请求体内容
+    std::string m_temp_file_path; // 临时文件路径
 public:
     // 用于处理API响应
     bool m_is_api_response;
@@ -202,6 +212,25 @@ public:
 
 public:
     const char *get_file_content_type(const char *file_path);
+
+    // 判断是否包含api请求
+    bool is_api_request();
+    // 判断是否包含下载请求
+    bool is_download_request();
+
+    // 判断是否为用户登录注册
+    HTTP_CODE handle_cgi_request(const char *p);
+
+    // 处理申请的静态文件
+
+    HTTP_CODE handle_static_file_request(const std::string &base_path, int len, const char *p);
+
+    void parse_user_password(std::string &name, std::string &password);
+    HTTP_CODE process_registration(const std::string &name, const std::string &password);
+    HTTP_CODE process_login(const std::string &name, const std::string &password);
+    HTTP_CODE Download();
+    HTTP_CODE Upload();
+    std::string GetETag(const storage::StorageInfo &info);
 };
 
 #endif

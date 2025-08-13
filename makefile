@@ -21,6 +21,8 @@ server: main.cpp \
 webserver.cpp \
 config.cpp \
 ./Util/StorageConfig.cpp \
+./Util/base64.cpp \
+./Storage/DataManager.cpp \
 
 	$(CXX) -o server $^ $(CXXFLAGS)  -L$(MYSQL_LIB) -lpthread -lmysqlclient -ljsoncpp -L$(BUNDLE_LIB) -lbundle -lstdc++fs
 clean:

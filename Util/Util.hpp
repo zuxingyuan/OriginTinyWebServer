@@ -1,4 +1,5 @@
-#pragma once
+#ifndef UTIL_HPP
+#define UTIL_HPP
 #include "json/json.h"
 #include <cassert>
 #include <sstream>
@@ -14,6 +15,45 @@
 namespace storage
 {
     namespace fs = std::experimental::filesystem;
+
+    static unsigned char ToHex(unsigned char x)
+    {
+        return x > 9 ? x + 55 : x + 48;
+    }
+
+    static unsigned char FromHex(unsigned char x)
+    {
+        unsigned char y;
+        if (x >= 'A' && x <= 'Z')
+            y = x - 'A' + 10;
+        else if (x >= 'a' && x <= 'z')
+            y = x - 'a' + 10;
+        else if (x >= '0' && x <= '9')
+            y = x - '0';
+        else
+            assert(0);
+        return y;
+    }
+    static std::string UrlDecode(const std::string &str)
+    {
+        std::string strTemp = "";
+        size_t length = str.length();
+        for (size_t i = 0; i < length; i++)
+        {
+            // if (str[i] == '+')
+            //     strTemp += ' ';
+            if (str[i] == '%')
+            {
+                assert(i + 2 < length);
+                unsigned char high = FromHex((unsigned char)str[++i]);
+                unsigned char low = FromHex((unsigned char)str[++i]);
+                strTemp += high * 16 + low;
+            }
+            else
+                strTemp += str[i];
+        }
+        return strTemp;
+    }
 
     class FileUtil
     {
@@ -83,7 +123,7 @@ namespace storage
             // 打开文件
             std::ifstream ifs;
             ifs.open(filename_.c_str(), std::ios::binary);
-            if (!ifs.is_open() == false)
+            if (ifs.is_open() == false)
             {
                 return false;
             }
@@ -168,30 +208,72 @@ namespace storage
             return true;
         }
         ///////////////////////////////////////////
+        ///////////////////////////////////////////
         // 目录操作
-        // 以下三个函数使用c++17中文件系统给的库函数实现
+        // 添加调试和错误处理的版本
         bool Exists()
         {
-            return fs::exists(filename_);
+            try
+            {
+                bool result = fs::exists(filename_);
+                // printf("Exists check for '%s': %s\n", filename_.c_str(), result ? "true" : "false");
+                return result;
+            }
+            catch (const std::exception &e)
+            {
+                // printf("Error checking existence of '%s': %s\n", filename_.c_str(), e.what());
+                return false;
+            }
         }
 
         bool CreateDirectory()
         {
-            if (Exists())
-                return true;
-            return fs::create_directories(filename_);
+
+
+            try
+            {
+                if (Exists())
+                {
+                    return true;
+                }
+
+               
+                bool result = fs::create_directories(filename_);
+                return result;
+            }
+            catch (const fs::filesystem_error &e)
+            {
+                // printf("Filesystem error: %s\n", e.what());
+                // printf("Error code: %d\n", e.code().value());
+                // printf("Path1: %s\n", e.path1().c_str());
+
+                return false;
+            }
+            catch (const std::exception &e)
+            {
+                // printf("General error in CreateDirectory: %s\n", e.what());
+                return false;
+            }
         }
 
         bool ScanDirectory(std::vector<std::string> *arry)
         {
-            for (auto &p : fs::directory_iterator(filename_))
+            try
             {
-                if (fs::is_directory(p) == true)
-                    continue;
-                // relative_path带有路径的文件名
-                arry->push_back(fs::path(p).relative_path().string());
+                for (auto &p : fs::directory_iterator(filename_))
+                {
+                    if (fs::is_directory(p) == true)
+                        continue;
+                    // relative_path带有路径的文件名
+                    arry->push_back(fs::path(p).relative_path().string());
+                }
+                return true;
             }
-            return true;
+            catch (const std::exception &e)
+            {
+                // printf("Error scanning directory '%s': %s\n", filename_.c_str(), e.what());
+                return false;
+            }
         }
     };
 
@@ -213,7 +295,7 @@ namespace storage
             *str = ss.str();
             return true;
         }
-        
+
         static bool UnSerialize(const std::string &str, Json::Value *val)
         {
             // 操作方法类似序列化
@@ -229,3 +311,4 @@ namespace storage
         }
     };
 }
+#endif

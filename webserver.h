@@ -16,7 +16,7 @@
 #include "./threadpool/threadpool.h"
 #include "./http/http_conn.h"
 #include "./metrics/metrics.h"
-const int MAX_FD = 65536;           // 最大文件描述符
+const int MAX_FD = 2048;           // 最大文件描述符
 const int MAX_EVENT_NUMBER = 10000; // 最大事件数
 const int TIMESLOT = 5;             // 最小超时单位
 
@@ -57,6 +57,8 @@ public:
     int m_pipefd[2];
     int m_epollfd;
     http_conn *users;
+
+    // storage::DataManager *data_; // 数据管理模块
 
 
     // 数据库相关

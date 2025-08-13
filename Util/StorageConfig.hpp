@@ -21,8 +21,8 @@ namespace storage
         int bundle_format_;
 
     private:
-        static std::mutex _mutex;     // 只声明，不定义
-        static Config *_instance;     // 只声明，不定义
+        static std::mutex _mutex; // 只声明，不定义
+        static Config *_instance; // 只声明，不定义
 
         Config()
         {
@@ -35,6 +35,7 @@ namespace storage
     public:
         bool ReadConfig()
         {
+            
             storage::FileUtil fu(Config_File);
             std::string content;
             if (!fu.GetContent(&content))
@@ -51,7 +52,7 @@ namespace storage
             deep_storage_dir_ = root["deep_storage_dir"].asString();
             low_storage_dir_ = root["low_storage_dir"].asString();
             bundle_format_ = root["bundle_format"].asInt();
-            
+
             return true;
         }
 

@@ -13,6 +13,7 @@ const char *error_404_form = "The requested file was not found on this server.\n
 const char *error_500_title = "Internal Error";
 const char *error_500_form = "There was an unusual problem serving the request file.\n";
 
+
 locker m_lock;
 map<string, string> users;
 
@@ -156,6 +157,7 @@ void http_conn::init()
     server_port_ = storage::Config::GetInstance()->GetServerPort();
     server_ip_ = storage::Config::GetInstance()->GetServerIp();
     download_prefix_ = storage::Config::GetInstance()->GetDownloadPrefix();
+    storage::DataManager* data_ = storage::DataManager::GetInstance();
     memset(m_read_buf, '\0', READ_BUFFER_SIZE);
     memset(m_write_buf, '\0', WRITE_BUFFER_SIZE);
     memset(m_real_file, '\0', FILENAME_LEN);
@@ -317,65 +319,166 @@ http_conn::HTTP_CODE http_conn::parse_request_line(char *text)
     return NO_REQUEST;
 }
 
-// 解析http请求的一个头部信息
+// 解析http请求头,获得请求头相关信息
 http_conn::HTTP_CODE http_conn::parse_headers(char *text)
 {
-    // 判断是空行还是请求头
     if (text[0] == '\0')
     {
-        // 判断是GET还是POST请求
         if (m_content_length != 0)
         {
-            // POST需要跳转到消息体处理状态
             m_check_state = CHECK_STATE_CONTENT;
             return NO_REQUEST;
         }
         return GET_REQUEST;
     }
-    // 解析请求头部连接字段
-    else if (strncasecmp(text, "Connection:", 11) == 0)
+
+    // 找到冒号位置
+    char *colon = strchr(text, ':');
+    if (colon)
     {
-        text += 11;
-        // 跳过空格和\t字符
-        text += strspn(text, " \t");
-        if (strcasecmp(text, "keep-alive") == 0)
+        *colon = '\0'; // 把冒号改成字符串结束符
+        std::string key = text;
+        std::string value = colon + 1;
+
+        // 去掉 key 和 value 前后的空格
+        auto trim = [](std::string &s)
         {
-            // 如果是长连接，则将linger标志设置为true
-            m_linger = true;
+            size_t start = s.find_first_not_of(" \t");
+            size_t end = s.find_last_not_of(" \t");
+            if (start == std::string::npos)
+            {
+                s.clear();
+            }
+            else
+            {
+                s = s.substr(start, end - start + 1);
+            }
+        };
+        trim(key);
+        trim(value);
+
+        // 保存到 m_headers
+        m_headers[key] = value;
+
+        // 特殊字段的额外处理
+        if (strcasecmp(key.c_str(), "Connection") == 0)
+        {
+            if (strcasecmp(value.c_str(), "keep-alive") == 0)
+                m_linger = true;
         }
-    }
-    // 解析请求头部内容长度字段
-    else if (strncasecmp(text, "Content-length:", 15) == 0)
-    {
-        text += 15;
-        text += strspn(text, " \t");
-        m_content_length = atol(text);
-    }
-    // 解析请求头部HOST字段
-    else if (strncasecmp(text, "Host:", 5) == 0)
-    {
-        text += 5;
-        text += strspn(text, " \t");
-        m_host = text;
+        else if (strcasecmp(key.c_str(), "Content-length") == 0)
+        {
+            m_content_length = atol(value.c_str());
+        }
+        else if (strcasecmp(key.c_str(), "Host") == 0)
+        {
+            m_host = value.data();
+        }
+        // 新增：处理自定义头部字段
+        else if (strcasecmp(key.c_str(), "FileName") == 0)
+        {
+            // 解码文件名（如果是base64编码）
+            m_upload_filename = base64_decode(value);
+        }
+        else if (strcasecmp(key.c_str(), "StorageType") == 0)
+        {
+            m_upload_storage_type = value;
+        }
     }
     else
     {
-        LOG_INFO("oop!unknow header: %s", text);
+        LOG_INFO("oop! unknown header format: %s", text);
     }
+
     return NO_REQUEST;
 }
 
-// 判断http请求是否被完整读入
 http_conn::HTTP_CODE http_conn::parse_content(char *text)
 {
-    if (m_read_idx >= (m_content_length + m_checked_idx))
+    // printf("=== parse_content Debug ===\n");
+    // printf("m_read_idx: %d\n", m_read_idx);
+    // printf("m_content_length: %d\n", m_content_length);
+    // printf("m_checked_idx: %d\n", m_checked_idx);
+
+    // ⚠️ 关键修改：计算实际内容的起始位置
+    // 内容从 m_checked_idx 开始，不是从 text 开始
+    int content_start = m_checked_idx;
+    int available_content = m_read_idx - content_start;
+
+    // printf("content_start: %d\n", content_start);
+    // printf("available_content: %d\n", available_content);
+    // printf("needed_content: %d\n", m_content_length);
+
+    // 检查是否有足够的内容数据
+    if (available_content >= m_content_length)
     {
-        text[m_content_length] = '\0';
-        // POST请求中最后为输入的用户名和密码
-        m_string = text;
+
+        if (m_method == POST && strcmp(m_url, "/upload") == 0)
+        {
+            // printf("Processing file upload...\n");
+
+            // ⚠️ 关键修改：从正确的位置读取内容
+            char *content_ptr = m_read_buf + content_start;
+
+            try
+            {
+                m_string.assign(content_ptr, m_content_length);
+                // printf("Successfully parsed %zu bytes of binary data\n", m_string.size());
+
+                // 显示前16个字节用于调试
+                // printf("First 16 bytes (hex): ");
+                // for (int i = 0; i < std::min(16, (int)m_content_length); i++) {
+                //     printf("%02X ", (unsigned char)content_ptr[i]);
+                // }
+                // printf("\n");
+
+                // 检测文件类型
+                if (m_content_length >= 4)
+                {
+                    unsigned char *bytes = (unsigned char *)content_ptr;
+                    if (bytes[0] == 0xFF && bytes[1] == 0xD8)
+                    {
+                        // printf("Detected: JPEG image\n");
+                    }
+                    else if (bytes[0] == 0x89 && bytes[1] == 0x50 && bytes[2] == 0x4E)
+                    {
+                        // printf("Detected: PNG image\n");
+                    }
+                }
+            }
+            catch (const std::exception &e)
+            {
+                // printf("Error copying binary data: %s\n", e.what());
+                return INTERNAL_ERROR;
+            }
+        }
+        else
+        {
+            // 普通POST处理
+            // printf("Processing regular POST data...\n");
+
+            if (m_content_length > 0)
+            {
+                char *content_ptr = m_read_buf + content_start;
+                m_string.assign(content_ptr, m_content_length);
+                // printf("POST data: %.*s\n", m_content_length, content_ptr);
+            }
+            else
+            {
+                m_string.clear();
+            }
+        }
+
+        // printf("=== parse_content Complete ===\n\n");
         return GET_REQUEST;
     }
-    return NO_REQUEST;
+    else
+    {
+        // printf("Content incomplete - have %d bytes, need %d bytes\n",
+            //    available_content, m_content_length);
+        // printf("=== parse_content Waiting ===\n\n");
+        return NO_REQUEST;
+    }
 }
 
 http_conn::HTTP_CODE http_conn::process_read()
@@ -390,6 +493,7 @@ http_conn::HTTP_CODE http_conn::process_read()
         text = get_line();
         m_start_line = m_checked_idx;
         LOG_INFO("%s", text);
+        // printf("got 1 http line: %s\n", text);
         // 主状态机的三种状态转移逻辑
         switch (m_check_state)
         {
@@ -420,6 +524,12 @@ http_conn::HTTP_CODE http_conn::process_read()
             ret = parse_content(text);
             if (ret == GET_REQUEST)
                 return do_request();
+            // ⚠️ 关键修改：对于大文件，继续读取数据
+            if (ret == NO_REQUEST && m_method == POST)
+            {
+                // 数据还没读完，继续读取
+                return NO_REQUEST;
+            }
             line_status = LINE_OPEN;
             break;
         }
@@ -464,6 +574,18 @@ http_conn::HTTP_CODE http_conn::do_request()
         strncpy(m_real_file, full_path.c_str(), FILENAME_LEN - 1);
         m_real_file[FILENAME_LEN - 1] = '\0';
     }
+    // 处理下载请求
+    if (std::string(m_url).find("/download/") != std::string::npos)
+    {
+        return Download();
+    }
+
+    // 处理上传请求 (POST方法)
+    if (m_method == POST && strcmp(m_url, "/upload") == 0)
+    {
+        return Upload();
+    }
+
     // 处理cgi
     // 实现登陆和注册校验
     if (cgi == 1 && (*(p + 1) == '2' || *(p + 1) == '3'))
@@ -537,7 +659,6 @@ http_conn::HTTP_CODE http_conn::do_request()
                 return REDIRECT_REQUEST;
             }
             else
-
                 strcpy(m_url, "/logError.html");
         }
     }
@@ -589,7 +710,6 @@ http_conn::HTTP_CODE http_conn::do_request()
         char *m_url_real = (char *)malloc(sizeof(char) * 200);
         strcpy(m_url_real, "/index.html");
         strncpy(m_real_file + len, m_url_real, strlen(m_url_real));
-
         free(m_url_real);
     }
     else
@@ -616,6 +736,7 @@ http_conn::HTTP_CODE http_conn::do_request()
     close(fd);
     return FILE_REQUEST;
 }
+
 void http_conn::unmap()
 {
     if (m_file_address)
@@ -806,7 +927,23 @@ bool http_conn::process_write(HTTP_CODE ret)
         break;
     case FILE_REQUEST:
         add_status_line(200, ok_200_title);
+        // 如果是上传响应
+        if (m_method == POST && strcmp(m_url, "/upload") == 0)
+        {
+            const char *success_msg = "{\"status\":\"success\",\"message\":\"File uploaded successfully\"}";
+            add_content_type("application/json");
+            add_headers(strlen(success_msg));
+            if (!add_content(success_msg))
+            {
+                return false;
+            }
 
+            m_iv[0].iov_base = m_write_buf;
+            m_iv[0].iov_len = m_write_idx;
+            m_iv_count = 1;
+            bytes_to_send = m_write_idx;
+            return true;
+        }
         // --- 新增：处理 API 响应 ---
         if (m_is_api_response)
         {
@@ -824,20 +961,50 @@ bool http_conn::process_write(HTTP_CODE ret)
             m_file_stat.st_size = 0;
             return true;
         }
-        // --- 静态文件 ---
+        // --- 处理文件响应 ---
         else if (m_file_stat.st_size != 0 && m_file_address != nullptr)
         {
-            // add_content_type(get_file_content_type(m_real_file)); // 动态设置Content-Type
-            add_headers(m_file_stat.st_size);
-            // add_blank_line();
+            // 处理断点续传
+            auto range_header = m_headers["Range"];
+            if (!range_header.empty())
+            {
+                // 解析 Range 请求字段
+                std::string range = range_header.substr(6); // "bytes="
+                size_t dash_pos = range.find('-');
+                size_t start = std::stoul(range.substr(0, dash_pos));
+                size_t end = m_file_stat.st_size - 1;
 
-            m_iv[0].iov_base = m_write_buf;
-            m_iv[0].iov_len = m_write_idx;
-            m_iv[1].iov_base = m_file_address;
-            m_iv[1].iov_len = m_file_stat.st_size;
-            m_iv_count = 2;
-            bytes_to_send = m_write_idx + m_file_stat.st_size;
-            return true;
+                // 如果没有结束位置，则设置为文件的结尾
+                if (dash_pos != std::string::npos && dash_pos + 1 < range.length())
+                {
+                    end = std::stoul(range.substr(dash_pos + 1));
+                }
+
+                // 返回 206 状态码，表示部分内容
+                add_status_line(206, "Partial Content");
+                add_headers(end - start + 1);
+
+                // 发送文件的指定范围
+                m_iv[0].iov_base = m_write_buf;
+                m_iv[0].iov_len = m_write_idx;
+                m_iv[1].iov_base = m_file_address + start;
+                m_iv[1].iov_len = end - start + 1;
+                m_iv_count = 2;
+                bytes_to_send = m_write_idx + m_iv[1].iov_len;
+                return true;
+            }
+            else
+            {
+                // 普通文件请求，发送完整内容
+                add_headers(m_file_stat.st_size);
+                m_iv[0].iov_base = m_write_buf;
+                m_iv[0].iov_len = m_write_idx;
+                m_iv[1].iov_base = m_file_address;
+                m_iv[1].iov_len = m_file_stat.st_size;
+                m_iv_count = 2;
+                bytes_to_send = m_write_idx + m_file_stat.st_size;
+                return true;
+            }
         }
         else
         {
@@ -849,6 +1016,7 @@ bool http_conn::process_write(HTTP_CODE ret)
                 return false;
         }
         break;
+
     case REDIRECT_REQUEST:
         // 处理 302 重定向
         add_status_line(302, "Found"); // 设置 302 状态码
@@ -917,4 +1085,172 @@ const char *http_conn::get_file_content_type(const char *file_path)
         // ... 其他类型
     }
     return "application/octet-stream"; // 默认二进制流
+}
+
+http_conn::HTTP_CODE http_conn::Download()
+{
+    // 1. 获取客户端请求的资源路径
+    std::string resource_path = m_url;
+    resource_path = storage::UrlDecode(resource_path);
+
+    // 2. 根据资源路径，获取StorageInfo
+    storage::StorageInfo info;
+    if (!storage::DataManager::GetInstance()->GetOneByURL(resource_path, &info))
+    {
+        return NO_RESOURCE;
+    }
+
+    std::string download_path = info.storage_path_;
+
+    // 3. 如果是压缩文件，需要解压缩
+    if (info.storage_path_.find(storage::Config::GetInstance()->GetDeepStorageDir()) != std::string::npos)
+    {
+        storage::FileUtil fu(info.storage_path_);
+        download_path = storage::Config::GetInstance()->GetLowStorageDir() +
+                        std::string(download_path.begin() + download_path.find_last_of('/') + 1, download_path.end());
+
+        // 创建临时目录
+        storage::FileUtil dirCreate(storage::Config::GetInstance()->GetLowStorageDir());
+        dirCreate.CreateDirectory();
+
+        // 解压缩文件
+        if (!fu.UnCompress(download_path))
+        {
+            return INTERNAL_ERROR;
+        }
+    }
+
+    // 4. 检查文件是否存在
+    storage::FileUtil fu(download_path);
+    if (!fu.Exists())
+    {
+        return NO_RESOURCE;
+    }
+
+    // 5. 打开文件
+    int fd = open(download_path.c_str(), O_RDONLY);
+    if (fd == -1)
+    {
+        return INTERNAL_ERROR;
+    }
+
+    // 6. 获取文件信息
+    if (fstat(fd, &m_file_stat) < 0)
+    {
+        close(fd);
+        return INTERNAL_ERROR;
+    }
+
+    // 7. 映射文件到内存
+    m_file_address = (char *)mmap(0, m_file_stat.st_size, PROT_READ, MAP_PRIVATE, fd, 0);
+    close(fd);
+
+    if (m_file_address == MAP_FAILED)
+    {
+        return INTERNAL_ERROR;
+    }
+
+    // 8. 设置响应参数
+    m_is_api_response = false;
+    m_etag = GetETag(info);
+
+    // 9. 如果是临时解压缩的文件，标记为需要删除
+    if (download_path != info.storage_path_)
+    {
+        // 可以在响应完成后删除临时文件
+        // 这里先记录路径，在 unmap() 中处理
+        m_temp_file_path = download_path;
+    }
+
+    return FILE_REQUEST;
+}
+
+std::string http_conn::GetETag(const storage::StorageInfo &info)
+{
+    // 自定义etag :  filename-fsize-mtime
+    storage::FileUtil fu(info.storage_path_);
+    std::string etag = fu.FileName();
+    etag += "-";
+    etag += std::to_string(info.fsize_);
+    etag += "-";
+    etag += std::to_string(info.mtime_);
+    return etag;
+}
+
+http_conn::HTTP_CODE http_conn::Upload()
+{
+    printf("m_method: %d, m_url: %s\n", m_method, m_url);
+    printf("m_upload_filename: %s, m_upload_storage_type: %s\n", m_upload_filename.c_str(), m_upload_storage_type.c_str());
+    // 1. 检查是否有文件名和存储类型
+    if (m_upload_filename.empty() || m_upload_storage_type.empty())
+    {
+        return BAD_REQUEST;
+    }
+
+    // 2. 检查请求体是否存在
+    if (m_string.empty() || m_content_length == 0)
+    {
+        return BAD_REQUEST;
+    }
+
+    // 3. 确定存储路径
+    std::string storage_path;
+    if (m_upload_storage_type == "low")
+    {
+        storage_path = storage::Config::GetInstance()->GetLowStorageDir();
+    }
+    else if (m_upload_storage_type == "deep")
+    {
+        storage_path = storage::Config::GetInstance()->GetDeepStorageDir();
+    }
+    else
+    {
+        return BAD_REQUEST;
+    }
+
+    printf("Storage path: %s\n", storage_path.c_str());
+
+    // 4. 创建存储目录
+    storage::FileUtil dirCreate(storage_path);
+    if (!dirCreate.CreateDirectory())
+    {
+        printf("Failed to create storage directory: %s\n", storage_path.c_str());
+        return INTERNAL_ERROR;
+    }
+
+    // 5. 完整的文件路径
+    storage_path += m_upload_filename;
+
+    // 6. 根据存储类型处理文件
+    storage::FileUtil fu(storage_path);
+    bool success = false;
+
+    if (m_upload_storage_type == "low")
+    {
+        // 普通存储：直接写入文件
+        success = fu.SetContent(m_string.c_str(), m_content_length);
+    }
+    else if (m_upload_storage_type == "deep")
+    {
+        // 压缩存储：压缩后写入
+        success = fu.Compress(m_string, storage::Config::GetInstance()->GetBundleFormat());
+    }
+    printf("File upload success: %d\n", success);
+    if (!success)
+    {
+        return INTERNAL_ERROR;
+    }
+
+    // 7. 添加到数据管理模块
+    storage::StorageInfo info;
+    info.NewStorageInfo(storage_path);
+    
+    if (!storage::DataManager::GetInstance()->Insert(info))
+    {
+        // 如果数据库插入失败，删除已创建的文件
+        remove(storage_path.c_str());
+        return INTERNAL_ERROR;
+    }
+
+    return FILE_REQUEST;
 }
